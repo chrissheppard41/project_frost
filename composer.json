@@ -1,0 +1,16 @@
+{
+    "name": "project/frost",
+    "description": "Launching People",
+    "config": {
+        "vendor-dir": "Vendor"
+    },
+    "require": {
+        "cakephp/debug_kit": "dev-master",
+    },
+    "authors": [
+        {
+            "name": "Chris Sheppard",
+            "email": "chrissheppard@rehabstudio.com"
+        }
+    ]
+}
