@@ -5,7 +5,7 @@
         "vendor-dir": "Vendor"
     },
     "require": {
-        "cakephp/debug_kit": "dev-master",
+        "cakephp/debug_kit": "dev-master"
     },
     "authors": [
         {

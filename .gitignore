@@ -1,0 +1,64 @@
+### reference: https://github.com/github/gitignore
+
+# CakePHP
+Cake
+tmp/*
+[Cc]onfig/database.php
+!empty
+/Vendor/
+Plugin/DebugKit
+Plugin/ClearCache
+Plugin/Uploader
+Plugin/Monolog
+Plugin/Search
+webroot/index.php
+/tmp/
+
+### SASS
+*.sass-cache
+/webroot/npm-debug.log
+
+### Linux
+.*
+!.gitignore
+*~
+
+### Apple
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+### Windows
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### SublimeText project files
+*.sublime-workspace
+
+### Vim
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*.bak
+
+/webroot/node_modules
+
+/composer.phar
+
+/webroot/files/*
