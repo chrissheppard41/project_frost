@@ -12,7 +12,6 @@ Plugin/Uploader
 Plugin/Monolog
 Plugin/Search
 webroot/index.php
-/tmp/
 
 ### SASS
 *.sass-cache
