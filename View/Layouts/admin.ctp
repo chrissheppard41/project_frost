@@ -17,31 +17,35 @@
 </head>
 <body>
 	<!-- Opening topNavigation. -->
-	<nav id="topNavigation" class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<?php echo $this->Html->link(Configure::read('Company.name'), '/', array('class' => 'brand')); ?>
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-				<div class="nav-collapse">
-					<?php if ($this->Session->check('Auth.User.id')) { ?>
-					<ul class="nav pull-right">
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Account <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><?php echo $this->Html->link('Edit', array('plugin' => 'users', 'controller' => 'users', 'action' => 'edit', $this->Session->read('Auth.User.id')), array('class' => 'icon icon-edit')); ?></li>
-								<li><?php echo $this->Html->link('Logout', array('plugin' => 'users', 'controller' => 'users', 'action' => 'logout'), array('class' => 'icon icon-logout')); ?></li>
-							</ul>
-						</li>
+<nav class="navbar navbar-fixed-top">
+	<div class="container">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<a class="navbar-brand" href="/"><?php echo Configure::read('Company.name');?></a>
+
+		<div class="nav-collapse collapse navbar-responsive-collapse">
+			<?php if ($this->Session->check('Auth.User.id')) { ?>
+			<ul class="nav  navbar-nav pull-right">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<span class="glyphicon glyphicon-star"></span>
+						Account <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><?php echo $this->Html->link('Edit', array('plugin' => 'users', 'controller' => 'users', 'action' => 'edit', $this->Session->read('Auth.User.id')), array('class' => 'icon icon-edit')); ?></li>
+						<li><?php echo $this->Html->link('Logout', array('plugin' => 'users', 'controller' => 'users', 'action' => 'logout'), array('class' => 'icon icon-logout')); ?></li>
 					</ul>
-					<?php } ?>
-				</div>
-			</div>
+				</li>
+			</ul>
+			<?php } ?>
 		</div>
-	</nav>
+	</div>
+</nav>
 	<!-- Closing topNavigation. -->
 
 	<!-- Opening mainContainer. -->
@@ -57,13 +61,31 @@
 			<li class="<?php echo $this->Html->highlight('/^\/admin\/users/'); ?>">
 				<?php echo $this->Html->link('Users', array('plugin' => 'users', 'controller' => 'users', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt')); ?>
 			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/ArmyLists/'); ?>">
+				<?php echo $this->Html->link('Army Lists', array('plugin' => false, 'controller' => 'ArmyLists', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/types/'); ?>">
+				<?php echo $this->Html->link('Types', array('plugin' => false, 'controller' => 'types', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/RaceTypes/'); ?>">
+				<?php echo $this->Html->link('Race Types', array('plugin' => false, 'controller' => 'RaceTypes', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/races/'); ?>">
+				<?php echo $this->Html->link('Races', array('plugin' => false, 'controller' => 'races', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/squads/'); ?>">
+				<?php echo $this->Html->link('Squads', array('plugin' => false, 'controller' => 'squads', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/units/'); ?>">
+				<?php echo $this->Html->link('Units', array('plugin' => false, 'controller' => 'units', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
 		</ul>
 		<div id="main" role="main">
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<footer>
-			<p class="pull-right">rehabstudio ltd. &copy; <?php echo date('Y'); ?></p>
-			<p>Licensed for use by <?php echo Configure::read('Company.name'); ?>, developed by <strong>rehabstudio</strong>.</p>
+			<p class="pull-right">--- &copy; <?php echo date('Y'); ?></p>
+			<p>Licensed for use by <?php echo Configure::read('Company.name'); ?>, developed by <strong>---</strong>.</p>
 		</footer>
 	</div>
 	<!-- Closing mainContainer. -->

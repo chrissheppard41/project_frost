@@ -1,54 +1,100 @@
 body {
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-#mainContainer {
-    min-height: 600px;
-}
-h2 {
-    margin-bottom: 30px;
+  padding-top: 64px;
 }
 
-footer {
-    border-top: 1px solid #ddd;
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
+/* Forms */
+.input {
+    margin: 10px 0;
+}
+
+.footer {
+    border-top: 1px solid #eee;
     color: #999;
     margin-top: 100px;
-    padding: 40px 20px;
-}
-footer p {
-    font-size: 11px;
-    margin-bottom: 0;
+    padding: 20px 0;
 }
 
-table#sortable {
-	position: relative;
+.sortable {
+    position: relative;
 }
 
-table#sortable tr {
-	cursor: pointer;
+.sortable tr {
+    cursor: pointer;
 }
 
-td.actions a {
-	margin-right: 10px;
+.nav.projects {
+  float: left;
+  margin-bottom: 20px;
 }
 
-td.actions a:last-child {
-	margin-right: 0;
+.nav + .table {
+    margin-top: 40px;
 }
 
-/******************************
-    Login Page
-******************************/
-
-#loginView { 
-    margin: auto;
+.dash {
+    line-height: 4em;
+    font-size: 1.2em;
+}
+.dash .h1 {
+    font-size: 3em;
 }
 
+.toggle_search {
+    float: right;
+    margin: 5px 0 0 0;
+}
 
-/* Helper classes */
-/* For image replacement */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
-.ir br { display: none; }
-.alignRight {
+.search {
+    width: 300px;
+    float: right;
+    clear: right;
     text-align: right;
+    display: none;
+}
+
+.search input {
+    margin: 5px 0 0;
+}
+
+.search .search-btn {
+    margin: 5px 0;
+}
+
+.no_projects {
+    clear: left;
+    text-align: center;
+}
+
+.replacement-img {
+    height: 120px;
+}
+
+input[type="file"] {
+    line-height: 0;
+}
+
+#progress_bar {
+    width: 200px;
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+}
+#progress_bar.loading {
+    opacity: 1.0;
+}
+#progress_bar .percent {
+    background-color: #99ccff;
+    height: auto;
+    width: 0;
 }
