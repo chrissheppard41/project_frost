@@ -5,7 +5,7 @@
 		echo $this->Form->input('name', array('label' => 'Name'));
 		echo $this->Form->input('descr', array('label' => 'Description'));
 		echo $this->Form->input('point_limit', array('label' => 'Point Limit'));
-		echo $this->Form->input('hide', array('label' => 'Hide'));
+		echo $this->Form->input('hide', array('label' => 'Hide', 'type' => 'checkbox'));
 		echo $this->Form->input('races_id', array('label' => 'Race'));
 		echo $this->Form->input('users_id', array('label' => 'Username'));
 		echo $this->Form->submit(__('Save'));

@@ -1,9 +1,9 @@
 <div class="users index">
     <div class="row">
-        <h2 class="span11"><?php echo __d('users', 'Users'); ?></h2>
-        <div class="span1">
+        <h2 class="col-md-11"><?php echo __d('users', 'Users'); ?></h2>
+        <div class="col-md-1 pull-right text-right">
             <?php echo $this->Html->link(__d('users', 'Add'), array('action' => 'add'), array('class' => 'btn btn-success icon icon-add')); ?>
-        </div>        
+        </div>
     </div>
     <table class="table table-striped table-bordered">
         <tr>

@@ -9,7 +9,7 @@
 		echo $this->Html->meta(array('name' => 'robots', 'content' => 'noindex, nofollow'));
 
 		/* Including CSS and favicon. Also outputting blocks of inline meta and CSS. */
-		echo $this->Html->css(array('libs/bootstrap.min.css', 'libs/bootstrap-responsive.min.css', 'libs/icons.css', 'admin/main.css'));
+		echo $this->Html->css(array('libs/bootstrap.min.css', 'libs/bootstrap.css', 'libs/bootstrap-responsive.min.css', 'libs/icons.css', 'admin/main.css'));
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->Html->meta('icon');
@@ -17,7 +17,7 @@
 </head>
 <body>
 	<!-- Opening topNavigation. -->
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
 
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -28,9 +28,9 @@
 
 		<a class="navbar-brand" href="/"><?php echo Configure::read('Company.name');?></a>
 
-		<div class="nav-collapse collapse navbar-responsive-collapse">
+		<div class="nav-collapse navbar-responsive-collapse">
 			<?php if ($this->Session->check('Auth.User.id')) { ?>
-			<ul class="nav  navbar-nav pull-right">
+			<ul class="nav navbar-nav pull-right">
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 						<span class="glyphicon glyphicon-star"></span>

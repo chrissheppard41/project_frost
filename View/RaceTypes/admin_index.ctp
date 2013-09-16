@@ -1,7 +1,7 @@
 <div class="raceTypes index">
     <div class="row">
-        <h2 class="span6"><?php echo __('Race Types');?></h2>
-        <div class="span6 alignRight">
+        <h2 class="col-md-6"><?php echo __('Race Types');?></h2>
+        <div class="col-md-6 pull-right text-right">
             <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success icon icon-add')); ?>
         </div>
     </div>
