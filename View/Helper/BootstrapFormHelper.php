@@ -1,37 +1,10 @@
 <?php
 App::uses('FormHelper', 'View/Helper');
 
-/**
- * BootstrapFormHelper.
- *
- * Applies styling-rules for Bootstrap 3
- *
- * To use it, just save this file in /app/View/Helper/BootstrapFormHelper.php
- * and add the following code to your AppController:
- *      public $helpers = array(
- *          'Form' => array(
- *              'className' => 'BootstrapForm'
- *          )
- *      );
- *
- * @link https://gist.github.com/Suven/6325905
- */
 class BootstrapFormHelper extends FormHelper {
 
     public function create($model = null, $options = array()) {
         $defaultOptions = array(
-            /*'inputDefaults' => array(
-                'div' => array(
-                    'class' => 'form-group'
-                ),
-                'label' => array(
-                    'class' => 'col-lg-2 control-label pull-left'
-                ),
-                'between' => '<div class="col-lg-10 pull-right">',
-                'seperator' => '</div>',
-                'after' => '</div>',
-                'class' => 'form-control',
-            ),*/
             'class' => 'form-horizontal',
             'role' => 'form',
         );

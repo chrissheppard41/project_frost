@@ -2,7 +2,7 @@
     <div class="row">
         <h2 class="col-md-6"><?php echo __('Race Types');?></h2>
         <div class="col-md-6 pull-right text-right">
-            <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success icon icon-add')); ?>
+            <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success glyphicon glyphicon-add')); ?>
         </div>
     </div>
     <?php if(!empty($raceTypes)) { ?>
@@ -24,9 +24,9 @@
 								<td><?php echo h($this->Time->timeAgoInWords($raceType['RaceType']['modified'])); ?></td>
 								<td><?php echo h($this->Time->timeAgoInWords($raceType['RaceType']['created'])); ?></td>
 								<td class="actions">
-					<?php echo $this->Html->link(__('View'), array('action' => 'view', $raceType['RaceType']['id']), array('class' => 'icon icon-eye')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $raceType['RaceType']['id']), array('class' => 'icon icon-edit')); ?>
-					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $raceType['RaceType']['id']), array('class' => 'icon icon-delete'), __('Are you sure you want to delete this record?')); ?>
+					<?php echo $this->Html->link(__('View'), array('action' => 'view', $raceType['RaceType']['id']), array('class' => 'glyphicon glyphicon-eye-open')); ?>
+					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $raceType['RaceType']['id']), array('class' => 'glyphicon glyphicon-edit')); ?>
+					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $raceType['RaceType']['id']), array('class' => 'glyphicon glyphicon-trash'), __('Are you sure you want to delete this record?')); ?>
 				</td>
 			</tr>
 			<?php } ?>

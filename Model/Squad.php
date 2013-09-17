@@ -76,4 +76,27 @@ class Squad extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Unit' => array(
+			'className' => 'Unit',
+			'joinTable' => 'squad_bridges',
+			'foreignKey' => 'units_id',
+			'associationForeignKey' => 'squads_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+			'deleteQuery' => '',
+			'insertQuery' => ''
+		)
+	);
 }

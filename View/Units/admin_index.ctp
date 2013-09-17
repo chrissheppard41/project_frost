@@ -2,7 +2,7 @@
     <div class="row">
         <h2 class="col-md-6"><?php echo __('Units');?></h2>
         <div class="col-md-6 pull-right text-right">
-            <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success icon icon-add')); ?>
+            <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success glyphicon glyphicon-add')); ?>
         </div>
     </div>
     <?php if(!empty($units)) { ?>
@@ -34,7 +34,7 @@
 			<tr id="units-<?php echo $unit['Unit']['id']; ?>" data-id="<?php echo $unit['Unit']['id']; ?>">
 								<td><?php echo h($unit['Unit']['id']); ?></td>
 								<td><?php echo h($unit['Unit']['name']); ?></td>
-								<td><?php echo h($unit['Unit']['sargeant']); ?><span class="glyphicon glyphicon-search"></span></td>
+								<td><span class="glyphicon glyphicon-<?php echo (($unit['Unit']['sargeant'])?'ok':'remove'); ?>"></span></td>
 								<td><?php echo h($unit['Unit']['weapon_skill']); ?></td>
 								<td><?php echo h($unit['Unit']['ballistic_skill']); ?></td>
 								<td><?php echo h($unit['Unit']['strength']); ?></td>
@@ -47,12 +47,12 @@
 								<td><?php echo h($unit['Unit']['invulnerable_save']); ?></td>
 								<td><?php echo h($unit['Unit']['pts']); ?></td>
 								<td><?php echo $this->Html->link($unit['RaceTypes']['name'], array('controller' => 'race_types', 'action' => 'view', $unit['RaceTypes']['id'])); ?></td>
-								<td><?php echo h($unit['Unit']['created']); ?></td>
-								<td><?php echo h($unit['Unit']['modified']); ?></td>
+								<td><?php echo h($this->Time->timeAgoInWords($unit['Unit']['created'])); ?></td>
+								<td><?php echo h($this->Time->timeAgoInWords($unit['Unit']['modified'])); ?></td>
 								<td class="actions">
-					<?php echo $this->Html->link(__('View'), array('action' => 'view', $unit['Unit']['id']), array('class' => 'icon icon-eye')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $unit['Unit']['id']), array('class' => 'icon icon-edit')); ?>
-					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $unit['Unit']['id']), array('class' => 'icon icon-delete'), __('Are you sure you want to delete this record?')); ?>
+					<?php echo $this->Html->link(__('View'), array('action' => 'view', $unit['Unit']['id']), array('class' => 'glyphicon glyphicon-eye-open')); ?>
+					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $unit['Unit']['id']), array('class' => 'glyphicon glyphicon-edit')); ?>
+					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $unit['Unit']['id']), array('class' => 'glyphicon glyphicon-trash'), __('Are you sure you want to delete this record?')); ?>
 				</td>
 			</tr>
 			<?php } ?>

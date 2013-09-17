@@ -44,3 +44,8 @@
 	</dl>
 </div>
 
+<?php
+echo "<pre>";
+print_r($squad);
+echo "</pre>";
+?>
