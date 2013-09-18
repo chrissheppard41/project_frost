@@ -1,10 +1,10 @@
+<div class="page-header">
+	<h1><?php echo "<?php echo __('{$pluralHumanName}');?>";?></h1>
+</div>
 <div class="<?php echo $pluralVar;?> index">
-    <div class="row">
-        <h2 class="span6"><?php echo "<?php echo __('{$pluralHumanName}');?>";?></h2>
-        <div class="span6 alignRight">
-            <?php echo "<?php echo \$this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success icon icon-add')); ?>\n"; ?>
-        </div>
-    </div>
+	<p class="pull-right">
+        <?php echo "<?php echo \$this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success icon icon-add')); ?>\n"; ?>
+    </p>
     <?php echo "<?php if(!empty(\${$pluralVar})) { ?>"; ?>
 
 	<table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo "<?php echo Router::url(array('controller' => '{$pluralVar}', 'action' => 'save_order')); ?>"; ?>">
@@ -35,30 +35,30 @@
 										$isKey = true;
 				?>
 				<td><?php echo "<?php echo \$this->Html->link(\${$singularVar}['{$alias}']['{$details['displayField']}'], array('controller' => '{$details['controller']}', 'action' => 'view', \${$singularVar}['{$alias}']['{$details['primaryKey']}'])); ?>"; ?></td>
-				<?php 
+				<?php
 										break;
 									}
 								}
 							}
-							if ($isKey !== true) { 
+							if ($isKey !== true) {
 				?>
 				<td><?php echo "<?php echo h(\${$singularVar}['{$modelClass}']['{$field}']); ?>";?></td>
-				<?php 
+				<?php
 							}
-						} 
+						}
 					}
 				?>
 				<td class="actions">
-					<?php echo "<?php echo \$this->Html->link(__('View'), array('action' => 'view', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'icon icon-eye')); ?>\n"; ?>
-					<?php echo "<?php echo \$this->Html->link(__('Edit'), array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'icon icon-edit')); ?>\n"; ?>
-					<?php echo "<?php echo \$this->Form->postLink(__('Delete'), array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'icon icon-delete'), __('Are you sure you want to delete this record?')); ?>\n"; ?>
+					<?php echo "<?php echo \$this->Html->link(__('View'), array('action' => 'view', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn-sm btn-primary')); ?>\n"; ?>
+					<?php echo "<?php echo \$this->Html->link(__('Edit'), array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn-sm btn-warning')); ?>\n"; ?>
+					<?php echo "<?php echo \$this->Form->postLink(__('Delete'), array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>\n"; ?>
 				</td>
 			</tr>
 			<?php echo "<?php } ?>\n";?>
 		</tbody>
 	</table>
     <?php echo "<?php } else { ?>\n";?>
-        <p>No <?php echo "<?php echo __('{$pluralHumanName}');?>";?> available, why not <?php echo "<?php echo \$this->Html->link(__('create one'), array('action' => 'add')); ?>\n"; ?></p>
+        <p class='clearfix'>No <?php echo "<?php echo __('{$pluralHumanName}');?>";?> available, why not <?php echo "<?php echo \$this->Html->link(__('create one'), array('action' => 'add')); ?>\n"; ?></p>
     <?php echo "<?php } ?>\n";?>
     <?php echo "<?php echo \$this->element('pagination'); ?>\n";?>
 </div>

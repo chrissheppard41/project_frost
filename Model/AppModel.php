@@ -15,4 +15,28 @@ class AppModel extends Model {
 		return $this->getDatasource()->getLog();
 	}
 
+	/**
+	 * awesome <pre> wrapper method
+	 *
+	 * @param ( mixed ) $data
+	 * @param ( bool ) $doDie
+	 * @return ( bool ) || ( void )
+	 */
+	public function pre($data, $doDie = true) {
+		echo "<pre>";
+
+		if (is_array($data)) {
+			print_r($data);
+		} else {
+			var_dump($data);
+		}
+
+		echo "</pre>";
+
+		if ($doDie) {
+			die();
+		}
+
+		return true;
+	}
 }

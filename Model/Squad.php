@@ -61,9 +61,9 @@ class Squad extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'RaceTypes' => array(
-			'className' => 'RaceTypes',
-			'foreignKey' => 'race_types_id',
+		'Races' => array(
+			'className' => 'Races',
+			'foreignKey' => 'races_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -85,9 +85,24 @@ class Squad extends AppModel {
 	public $hasAndBelongsToMany = array(
 		'Unit' => array(
 			'className' => 'Unit',
-			'joinTable' => 'squad_bridges',
-			'foreignKey' => 'units_id',
-			'associationForeignKey' => 'squads_id',
+			'joinTable' => 'squad_units',
+			'foreignKey' => 'squads_id',
+			'associationForeignKey' => 'units_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+			'deleteQuery' => '',
+			'insertQuery' => ''
+		),
+		'SpecialRule' => array(
+			'className' => 'SpecialRule',
+			'joinTable' => 'special_squad_rules',
+			'foreignKey' => 'squads_id',
+			'associationForeignKey' => 'special_rules_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

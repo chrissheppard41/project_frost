@@ -1,34 +1,34 @@
+<div class="page-header">
+	<h1><?php echo __('Races');?></h1>
+</div>
 <div class="races index">
-    <div class="row">
-        <h2 class="col-md-6"><?php echo __('Races');?></h2>
-        <div class="col-md-6 pull-right text-right">
-            <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success glyphicon glyphicon-add')); ?>
-        </div>
-    </div>
+	<p class="pull-right">
+        <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success')); ?>
+    </p>
     <?php if(!empty($races)) { ?>
 	<table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'races', 'action' => 'save_order')); ?>">
 		<thead>
 			<tr>
-								<th><?php echo $this->Paginator->sort('id');?></th>
-								<th><?php echo $this->Paginator->sort('race_types_id');?></th>
-								<th><?php echo $this->Paginator->sort('name');?></th>
-								<th><?php echo $this->Paginator->sort('created');?></th>
-								<th><?php echo $this->Paginator->sort('modified');?></th>
-								<th class="actions"><?php echo __('Actions');?></th>
+				<th><?php echo $this->Paginator->sort('id');?></th>
+				<th><?php echo $this->Paginator->sort('race_types_id');?></th>
+				<th><?php echo $this->Paginator->sort('name');?></th>
+				<th><?php echo $this->Paginator->sort('created');?></th>
+				<th><?php echo $this->Paginator->sort('modified');?></th>
+				<th class="actions"><?php echo __('Actions');?></th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php foreach ($races as $race){ ?>
 			<tr id="races-<?php echo $race['Race']['id']; ?>" data-id="<?php echo $race['Race']['id']; ?>">
-								<td><?php echo h($race['Race']['id']); ?></td>
-								<td><?php echo $this->Html->link($race['RaceTypes']['name'], array('controller' => 'race_types', 'action' => 'view', $race['RaceTypes']['id'])); ?></td>
-								<td><?php echo h($race['Race']['name']); ?></td>
-								<td><?php echo h($this->Time->timeAgoInWords($race['Race']['created'])); ?></td>
-								<td><?php echo h($this->Time->timeAgoInWords($race['Race']['modified'])); ?></td>
-								<td class="actions">
-					<?php echo $this->Html->link(__('View'), array('action' => 'view', $race['Race']['id']), array('class' => 'glyphicon glyphicon-eye-open')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $race['Race']['id']), array('class' => 'glyphicon glyphicon-edit')); ?>
-					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $race['Race']['id']), array('class' => 'glyphicon glyphicon-trash'), __('Are you sure you want to delete this record?')); ?>
+				<td><?php echo h($race['Race']['id']); ?></td>
+				<td><?php echo $this->Html->link($race['RaceTypes']['name'], array('controller' => 'race_types', 'action' => 'view', $race['RaceTypes']['id'])); ?></td>
+				<td><?php echo h($race['Race']['name']); ?></td>
+				<td><?php echo h($this->Time->timeAgoInWords($race['Race']['created'])); ?></td>
+				<td><?php echo h($this->Time->timeAgoInWords($race['Race']['modified'])); ?></td>
+				<td class="actions">
+					<?php echo $this->Html->link(__('View'), array('action' => 'view', $race['Race']['id']), array('class' => 'btn-sm btn-primary')); ?>
+					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $race['Race']['id']), array('class' => 'btn-sm btn-warning')); ?>
+					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $race['Race']['id']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>
 				</td>
 			</tr>
 			<?php } ?>

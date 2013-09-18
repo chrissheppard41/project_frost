@@ -1,6 +1,17 @@
-<div class="<?php echo $pluralVar;?> view">
-<h2><?php echo "<?php  echo __('{$singularHumanName}');?>";?></h2>
-	<dl>
+<div class="page-header">
+	<h1><?php echo "<?php echo \$this->Html->link(__('{$singularHumanName}'), array('action' => 'index')); ?>"; ?></h1>
+</div>
+
+<div class="panel panel-default">
+  	<div class="panel-heading">
+  		<?php echo "<?php  echo __('{$singularHumanName} view');?>\n";?>
+  		<span class="pull-right">
+  			<?php echo "<?php echo \$this->Html->link(__('Edit'), array('action' => 'edit', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn-sm btn-warning')); ?>\n"; ?>
+			<?php echo "<?php echo \$this->Form->postLink(__('Delete'), array('action' => 'delete', \${$singularVar}['{$modelClass}']['{$primaryKey}']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>\n"; ?>
+  		</span>
+  	</div>
+  	<div class="panel-body">
+
 <?php
 foreach ($fields as $field) {
 	$isKey = false;
@@ -8,19 +19,24 @@ foreach ($fields as $field) {
 		foreach ($associations['belongsTo'] as $alias => $details) {
 			if ($field === $details['foreignKey']) {
 				$isKey = true;
-				echo "\t\t<dt><?php echo __('" . Inflector::humanize(Inflector::underscore($alias)) . "'); ?></dt>\n";
-				echo "\t\t<dd>\n\t\t\t<?php echo \$this->Html->link(\${$singularVar}['{$alias}']['{$details['displayField']}'], array('controller' => '{$details['controller']}', 'action' => 'view', \${$singularVar}['{$alias}']['{$details['primaryKey']}'])); ?>\n\t\t\t&nbsp;\n\t\t</dd>\n";
+				echo "\t\t<div class='row'>\n";
+				echo "\t\t\t<span class='col-md-3'><?php echo __('" . Inflector::humanize(Inflector::underscore($alias)) . "'); ?></span>\n";
+				echo "\t\t\t<span class='col-md-9'><?php echo \$this->Html->link(\${$singularVar}['{$alias}']['{$details['displayField']}'], array('controller' => '{$details['controller']}', 'action' => 'view', \${$singularVar}['{$alias}']['{$details['primaryKey']}'])); ?></span>\n";
+				echo "\t\t</div>\n";
 				break;
 			}
 		}
 	}
 	if ($isKey !== true) {
-		echo "\t\t<dt><?php echo __('" . Inflector::humanize($field) . "'); ?></dt>\n";
-		echo "\t\t<dd>\n\t\t\t<?php echo h(\${$singularVar}['{$modelClass}']['{$field}']); ?>\n\t\t\t&nbsp;\n\t\t</dd>\n";
+		echo "\t\t<div class='row'>\n";
+		echo "\t\t\t<span class='col-md-3'><?php echo __('" . Inflector::humanize($field) . "'); ?></span>\n";
+		echo "\t\t\t<span class='col-md-9'><?php echo h(\${$singularVar}['{$modelClass}']['{$field}']); ?></span>\n";
+		echo "\t\t</div>\n";
 	}
 }
 ?>
-	</dl>
+
+  	</div>
 </div>
 
 <?php

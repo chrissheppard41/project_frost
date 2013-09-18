@@ -45,8 +45,8 @@ class UnitsController extends AppController {
                 $this->flashMessage(__('The unit could not be saved. Please, try again.'), 'alert-error');
             }
         }
-		$raceTypes = $this->Unit->RaceType->find('list');
-		$this->set(compact('raceTypes'));
+		$races = $this->Unit->Race->find('list');
+		$this->set(compact('races'));
     }
 
 /**
@@ -69,8 +69,8 @@ class UnitsController extends AppController {
         } else {
             $this->request->data = $this->Unit->read(null, $id);
         }
-		$raceTypes = $this->Unit->RaceType->find('list');
-		$this->set(compact('raceTypes'));
+		$races = $this->Unit->Race->find('list');
+		$this->set(compact('races'));
     }
 
 /**
@@ -129,8 +129,9 @@ class UnitsController extends AppController {
                 $this->flashMessage(__('The unit could not be saved. Please, try again.'), 'alert-error');
             }
         }
-		$raceTypes = $this->Unit->RaceTypes->find('list');
-		$this->set(compact('raceTypes'));
+        $races = $this->Unit->Races->find('list');
+        $unitTypes = $this->Unit->UnitTypes->find('list');
+		$this->set(compact('races', 'unitTypes'));
     }
 
 /**
@@ -153,8 +154,9 @@ class UnitsController extends AppController {
         } else {
             $this->request->data = $this->Unit->read(null, $id);
         }
-		$raceTypes = $this->Unit->RaceTypes->find('list');
-		$this->set(compact('raceTypes'));
+		$races = $this->Unit->Races->find('list');
+        $unitTypes = $this->Unit->UnitTypes->find('list');
+        $this->set(compact('races', 'unitTypes'));
     }
 
 /**

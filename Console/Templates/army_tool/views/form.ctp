@@ -1,5 +1,8 @@
+<div class="page-header">
+    <h1><?php echo "<?php echo \$this->Html->link(__('{$modelClass}'), array('action' => 'index')); ?>";?> - <?php echo Inflector::humanize($action); ?></h1>
+</div>
+
 <div class="<?php echo $pluralVar;?> form">
-    <h2><?php echo "<?php echo \$this->Html->link('{$modelClass}', array('action' => 'index')); ?>";?> - <?php echo Inflector::humanize($action); ?></h2>
 <?php
         echo "\t<?php\n";
         echo "\techo \$this->Form->create('{$modelClass}');\n";

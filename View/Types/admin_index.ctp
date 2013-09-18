@@ -1,34 +1,34 @@
+<div class="page-header">
+	<h1><?php echo __('Types'); ?></h1>
+</div>
 <div class="types index">
-    <div class="row">
-        <h2 class="col-md-6"><?php echo __('Types');?></h2>
-        <div class="col-md-6 pull-right text-right">
-            <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success glyphicon glyphicon-add')); ?>
-        </div>
-    </div>
+	<p class="pull-right">
+        <?php echo $this->Html->link(__('Add'), array('action' => 'add'), array('class' => 'btn btn-success')); ?>
+    </p>
     <?php if(!empty($types)) { ?>
 	<table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'types', 'action' => 'save_order')); ?>">
 		<thead>
 			<tr>
-								<th><?php echo $this->Paginator->sort('id');?></th>
-								<th><?php echo $this->Paginator->sort('name');?></th>
-								<th><?php echo $this->Paginator->sort('count');?></th>
-								<th><?php echo $this->Paginator->sort('created');?></th>
-								<th><?php echo $this->Paginator->sort('modified');?></th>
-								<th class="actions"><?php echo __('Actions');?></th>
+				<th><?php echo $this->Paginator->sort('id');?></th>
+				<th><?php echo $this->Paginator->sort('name');?></th>
+				<th><?php echo $this->Paginator->sort('count');?></th>
+				<th><?php echo $this->Paginator->sort('created');?></th>
+				<th><?php echo $this->Paginator->sort('modified');?></th>
+				<th class="actions"><?php echo __('Actions');?></th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php foreach ($types as $type){ ?>
 			<tr id="types-<?php echo $type['Type']['id']; ?>" data-id="<?php echo $type['Type']['id']; ?>">
-								<td><?php echo h($type['Type']['id']); ?></td>
-								<td><?php echo h($type['Type']['name']); ?></td>
-								<td><?php echo h($type['Type']['count']); ?></td>
-								<td><?php echo h($this->Time->timeAgoInWords($type['Type']['created'])); ?></td>
-								<td><?php echo h($this->Time->timeAgoInWords($type['Type']['modified'])); ?></td>
-								<td class="actions">
-					<?php echo $this->Html->link(__('View'), array('action' => 'view', $type['Type']['id']), array('class' => 'glyphicon glyphicon-eye-open')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $type['Type']['id']), array('class' => 'glyphicon glyphicon-edit')); ?>
-					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $type['Type']['id']), array('class' => 'glyphicon glyphicon-trash'), __('Are you sure you want to delete this record?')); ?>
+				<td><?php echo h($type['Type']['id']); ?></td>
+				<td><?php echo h($type['Type']['name']); ?></td>
+				<td><?php echo h($type['Type']['count']); ?></td>
+				<td><?php echo h($this->Time->timeAgoInWords($type['Type']['created'])); ?></td>
+				<td><?php echo h($this->Time->timeAgoInWords($type['Type']['modified'])); ?></td>
+				<td class="actions">
+					<?php echo $this->Html->link(__('View'), array('action' => 'view', $type['Type']['id']), array('class' => 'btn-sm btn-primary')); ?>
+					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $type['Type']['id']), array('class' => 'btn-sm btn-warning')); ?>
+					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $type['Type']['id']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>
 				</td>
 			</tr>
 			<?php } ?>

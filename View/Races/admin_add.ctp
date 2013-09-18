@@ -1,5 +1,7 @@
+<div class="page-header">
+	<h1><?php echo $this->Html->link('Races', array('action' => 'index')); ?> - Admin Add</h1>
+</div>
 <div class="races form">
-    <h2><?php echo $this->Html->link('Race', array('action' => 'index')); ?> - Admin Add</h2>
 	<?php
 	echo $this->Form->create('Race');
 		echo $this->Form->input('race_types_id', array('label' => 'Race type'));

@@ -73,11 +73,23 @@
 			<li class="<?php echo $this->Html->highlight('/^\/admin\/races/'); ?>">
 				<?php echo $this->Html->link('Races', array('plugin' => false, 'controller' => 'races', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
 			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/specialRules/'); ?>">
+				<?php echo $this->Html->link('Special Rules', array('plugin' => false, 'controller' => 'specialRules', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
 			<li class="<?php echo $this->Html->highlight('/^\/admin\/squads/'); ?>">
 				<?php echo $this->Html->link('Squads', array('plugin' => false, 'controller' => 'squads', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
 			</li>
 			<li class="<?php echo $this->Html->highlight('/^\/admin\/units/'); ?>">
 				<?php echo $this->Html->link('Units', array('plugin' => false, 'controller' => 'units', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/unitTypes/'); ?>">
+				<?php echo $this->Html->link('Unit Types', array('plugin' => false, 'controller' => 'unitTypes', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/weapons/'); ?>">
+				<?php echo $this->Html->link('Weapons', array('plugin' => false, 'controller' => 'weapons', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/abilities/'); ?>">
+				<?php echo $this->Html->link('Abilities', array('plugin' => false, 'controller' => 'abilities', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
 			</li>
 		</ul>
 		<div id="main" role="main">

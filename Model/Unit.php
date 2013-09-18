@@ -254,9 +254,24 @@ class Unit extends AppModel {
 		),
 		'Squad' => array(
 			'className' => 'Squad',
-			'joinTable' => 'squad_bridge',
-			'foreignKey' => 'squads_id',
-			'associationForeignKey' => 'unit_id',
+			'joinTable' => 'squad_units',
+			'foreignKey' => 'units_id',
+			'associationForeignKey' => 'squads_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+			'deleteQuery' => '',
+			'insertQuery' => ''
+		),
+		'Abilities' => array(
+			'className' => 'Abilities',
+			'joinTable' => 'unit_abilities',
+			'foreignKey' => 'units_id',
+			'associationForeignKey' => 'abilities_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
@@ -275,9 +290,16 @@ class Unit extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'RaceTypes' => array(
-			'className' => 'RaceTypes',
-			'foreignKey' => 'race_types_id',
+		'Races' => array(
+			'className' => 'Races',
+			'foreignKey' => 'races_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'UnitTypes' => array(
+			'className' => 'UnitTypes',
+			'foreignKey' => 'unit_types_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

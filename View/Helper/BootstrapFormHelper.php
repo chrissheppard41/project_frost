@@ -22,7 +22,7 @@ class BootstrapFormHelper extends FormHelper {
         $defaultOptions = array(
             'type' => null,
             'label' => array(
-                'class' => 'col-lg-2 control-label pull-left'
+                'class' => 'col-lg-2 control-label text-right'
             ),
             'before' => null, // to convert .input-prepend
             'between' => '<div class="col-lg-10 pull-right">',
@@ -33,9 +33,11 @@ class BootstrapFormHelper extends FormHelper {
             'format' => array('before', 'label', 'between', 'input', 'error', 'after'),
             'class' => 'form-control',
         );
+
+        if(isset($options['label'])) {
+            $options['label'] = array('text' => $options['label'], 'class' => 'col-lg-2 control-label text-right');
+        }
         $options = array_merge($defaultOptions, $options);
-
-
 
         if($options['type'] == 'checkbox') {
             $options['between'] = '<div class="col-lg-10 pull-right"><div class="col-lg-1 pull-left">';

@@ -86,5 +86,5 @@ if (in_array(env('REMOTE_ADDR'), array('127.0.0.1', '::1')) || strripos(env('HTT
 	Configure::write('emailConfig', 'default');
 }
 
-Configure::write('Company.name', 'Company');
+Configure::write('Company.name', 'Army tool');
 Configure::write('App.defaultEmail', 'example@example.com');

@@ -45,9 +45,9 @@ class SquadsController extends AppController {
                 $this->flashMessage(__('The squad could not be saved. Please, try again.'), 'alert-error');
             }
         }
-		$raceTypes = $this->Squad->RaceType->find('list');
+		$races = $this->Squad->Races->find('list');
 		$types = $this->Squad->Type->find('list');
-		$this->set(compact('raceTypes', 'types'));
+		$this->set(compact('races', 'types'));
     }
 
 /**
@@ -70,9 +70,9 @@ class SquadsController extends AppController {
         } else {
             $this->request->data = $this->Squad->read(null, $id);
         }
-		$raceTypes = $this->Squad->RaceType->find('list');
+		$races = $this->Squad->Races->find('list');
 		$types = $this->Squad->Type->find('list');
-		$this->set(compact('raceTypes', 'types'));
+		$this->set(compact('races', 'types'));
     }
 
 /**
@@ -110,6 +110,7 @@ class SquadsController extends AppController {
  * @return void
  */
     public function admin_view($id = null) {
+        //$this->Squad->recursive = 1;
         $this->Squad->id = $id;
         if (!$this->Squad->exists()) {
             throw new NotFoundException(__('Invalid squad'));
@@ -131,9 +132,11 @@ class SquadsController extends AppController {
                 $this->flashMessage(__('The squad could not be saved. Please, try again.'), 'alert-error');
             }
         }
-		$raceTypes = $this->Squad->RaceTypes->find('list');
-		$types = $this->Squad->Types->find('list');
-		$this->set(compact('raceTypes', 'types'));
+		$races = $this->Squad->Races->find('list');
+        $types = $this->Squad->Types->find('list');
+        $units = $this->Squad->Unit->find('list');
+        $specialRules = $this->Squad->SpecialRule->find('list');
+        $this->set(compact('races', 'types', 'units', 'specialRules'));
     }
 
 /**
@@ -156,9 +159,11 @@ class SquadsController extends AppController {
         } else {
             $this->request->data = $this->Squad->read(null, $id);
         }
-		$raceTypes = $this->Squad->RaceType->find('list');
-		$types = $this->Squad->Type->find('list');
-		$this->set(compact('raceTypes', 'types'));
+		$races = $this->Squad->Races->find('list');
+		$types = $this->Squad->Types->find('list');
+        $units = $this->Squad->Unit->find('list');
+        $specialRules = $this->Squad->SpecialRule->find('list');
+		$this->set(compact('races', 'types', 'units', 'specialRules'));
     }
 
 /**
