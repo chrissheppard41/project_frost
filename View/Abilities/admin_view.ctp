@@ -26,11 +26,11 @@
 		</div>
 		<div class='row'>
 			<span class='col-md-3'><?php echo __('Created'); ?></span>
-			<span class='col-md-9'><?php echo h($ability['Ability']['created']); ?></span>
+			<span class='col-md-9'><?php echo h($this->Time->timeAgoInWords($ability['Ability']['created'])); ?></span>
 		</div>
 		<div class='row'>
 			<span class='col-md-3'><?php echo __('Modified'); ?></span>
-			<span class='col-md-9'><?php echo h($ability['Ability']['modified']); ?></span>
+			<span class='col-md-9'><?php echo h($this->Time->timeAgoInWords($ability['Ability']['modified'])); ?></span>
 		</div>
 
   	</div>

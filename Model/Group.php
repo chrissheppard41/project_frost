@@ -1,19 +1,18 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Squad Model
+ * Group Model
  *
- * @property RaceTypes $RaceTypes
- * @property Types $Types
+ * @property Races $Races
  */
-class Squad extends AppModel {
+class Group extends AppModel {
 
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'name';
 
 /**
  * Validation rules
@@ -31,17 +30,7 @@ class Squad extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'sarg_count' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'unit_count' => array(
+		'races_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -67,13 +56,27 @@ class Squad extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		),
-		'Types' => array(
-			'className' => 'Types',
-			'foreignKey' => 'types_id',
+		)
+	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Options' => array(
+			'className' => 'Options',
+			'foreignKey' => 'groups_id',
+			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
-			'order' => ''
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
 		)
 	);
 
@@ -83,41 +86,11 @@ class Squad extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Unit' => array(
-			'className' => 'Unit',
-			'joinTable' => 'squad_units',
-			'foreignKey' => 'squads_id',
-			'associationForeignKey' => 'units_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
-		'SpecialRule' => array(
-			'className' => 'SpecialRule',
-			'joinTable' => 'special_squad_rules',
-			'foreignKey' => 'squads_id',
-			'associationForeignKey' => 'special_rules_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
-		'Groups' => array(
-			'className' => 'Groups',
+		'Squad' => array(
+			'className' => 'Squad',
 			'joinTable' => 'squad_options',
-			'foreignKey' => 'squads_id',
-			'associationForeignKey' => 'groups_id',
+			'foreignKey' => 'groups_id',
+			'associationForeignKey' => 'squads_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

@@ -29,6 +29,16 @@
 		<a class="navbar-brand" href="/"><?php echo Configure::read('Company.name');?></a>
 
 		<div class="nav-collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav">
+				<li class="<?php echo $this->Html->highlight('/^\/admin$/'); ?>">
+					<?php echo $this->Html->link('Home', array('plugin' => 'users', 'controller' => 'users', 'action' => 'dashboard', 'admin' => true), array('class' => 'icon icon-home')); ?>
+				</li>
+				<li class="<?php echo $this->Html->highlight('/^\/admin\/users/'); ?>">
+					<?php echo $this->Html->link('Users', array('plugin' => 'users', 'controller' => 'users', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt')); ?>
+				</li>
+			</ul>
+
+
 			<?php if ($this->Session->check('Auth.User.id')) { ?>
 			<ul class="nav navbar-nav pull-right">
 				<li class="dropdown">
@@ -55,12 +65,6 @@
 			echo $this->Session->flash('auth');
 		?>
 		<ul class="nav nav-tabs">
-			<li class="<?php echo $this->Html->highlight('/^\/admin$/'); ?>">
-				<?php echo $this->Html->link('Home', array('plugin' => 'users', 'controller' => 'users', 'action' => 'dashboard', 'admin' => true), array('class' => 'icon icon-home')); ?>
-			</li>
-			<li class="<?php echo $this->Html->highlight('/^\/admin\/users/'); ?>">
-				<?php echo $this->Html->link('Users', array('plugin' => 'users', 'controller' => 'users', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt')); ?>
-			</li>
 			<li class="<?php echo $this->Html->highlight('/^\/admin\/ArmyLists/'); ?>">
 				<?php echo $this->Html->link('Army Lists', array('plugin' => false, 'controller' => 'ArmyLists', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
 			</li>
@@ -75,6 +79,12 @@
 			</li>
 			<li class="<?php echo $this->Html->highlight('/^\/admin\/specialRules/'); ?>">
 				<?php echo $this->Html->link('Special Rules', array('plugin' => false, 'controller' => 'specialRules', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/groups/'); ?>">
+				<?php echo $this->Html->link('Groups', array('plugin' => false, 'controller' => 'groups', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
+			</li>
+			<li class="<?php echo $this->Html->highlight('/^\/admin\/options/'); ?>">
+				<?php echo $this->Html->link('Options', array('plugin' => false, 'controller' => 'options', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
 			</li>
 			<li class="<?php echo $this->Html->highlight('/^\/admin\/squads/'); ?>">
 				<?php echo $this->Html->link('Squads', array('plugin' => false, 'controller' => 'squads', 'action' => 'index', 'admin' => true), array('class' => 'icon icon-users-alt1')); ?>
