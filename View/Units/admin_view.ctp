@@ -20,8 +20,8 @@
   			<span class="col-md-9"><?php echo h($unit['Unit']['name']); ?></span>
   		</div>
   		<div class="row">
-  			<span class="col-md-3"><?php echo __('Sargeant'); ?></span>
-  			<span class="col-md-9"><?php echo h($unit['Unit']['sargeant']); ?></span>
+  			<span class="col-md-3"><?php echo __('Leader'); ?></span>
+  			<span class="col-md-9"><span class="glyphicon glyphicon-<?php echo (($unit['Unit']['sargeant'])?'ok':'remove'); ?>"></span></span>
   		</div>
   		<div class="row">
   			<span class="col-md-3"><?php echo __('Ballistic skill'); ?></span>
@@ -89,7 +89,6 @@
   <table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'squads', 'action' => 'save_order')); ?>">
     <thead>
       <tr>
-        <th><?php echo __('id');?></th>
         <th><?php echo __('name');?></th>
         <th><?php echo __('created');?></th>
         <th><?php echo __('modified');?></th>
@@ -99,7 +98,6 @@
     <tbody>
       <?php foreach ($unit['Squad'] as $squad){ ?>
       <tr id="squads-<?php echo $squad['id']; ?>" data-id="<?php echo $squad['id']; ?>">
-        <td><?php echo h($squad['id']); ?></td>
         <td><?php echo h($squad['name']); ?></td>
         <td><?php echo h($this->Time->timeAgoInWords($squad['created'])); ?></td>
         <td><?php echo h($this->Time->timeAgoInWords($squad['modified'])); ?></td>
@@ -115,62 +113,30 @@
     <?php } ?>
 
 <div class="page-header">
-  <h2><?php  echo __('Related Weapons');?></h2>
+  <h2><?php  echo __('Related Options');?></h2>
 </div>
-<?php if(!empty($unit['Weapons'])) { ?>
+<?php if(!empty($unit['Option'])) { ?>
   <table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'squads', 'action' => 'save_order')); ?>">
     <thead>
       <tr>
-        <th><?php echo __('ID');?></th>
         <th><?php echo __('Name');?></th>
+        <th><?php echo __('Pts');?></th>
         <th><?php echo __('Created');?></th>
         <th><?php echo __('Modified');?></th>
         <th class="actions"><?php echo __('Actions');?></th>
       </tr>
     </thead>
     <tbody>
-      <?php foreach ($unit['Weapons'] as $weapon){ ?>
-      <tr id="weapons-<?php echo $weapon['id']; ?>" data-id="<?php echo $weapon['id']; ?>">
-        <td><?php echo h($weapon['id']); ?></td>
-        <td><?php echo h($weapon['name']); ?></td>
-        <td><?php echo h($this->Time->timeAgoInWords($weapon['created'])); ?></td>
-        <td><?php echo h($this->Time->timeAgoInWords($weapon['modified'])); ?></td>
+      <?php foreach ($unit['Option'] as $options){ ?>
+      <tr id="weapons-<?php echo $options['id']; ?>" data-id="<?php echo $options['id']; ?>">
+        <td><?php echo h($options['name']); ?></td>
+        <td><?php echo h($options['pts']); ?></td>
+        <td><?php echo h($this->Time->timeAgoInWords($options['created'])); ?></td>
+        <td><?php echo h($this->Time->timeAgoInWords($options['modified'])); ?></td>
         <td class="actions">
-          <?php echo $this->Html->link(__('View'), array('controller' => 'weapons', 'action' => 'view', $weapon['id']), array('class' => 'btn-sm btn-primary')); ?>
-          <?php echo $this->Html->link(__('Edit'), array('controller' => 'weapons', 'action' => 'edit', $weapon['id']), array('class' => 'btn-sm btn-warning')); ?>
-          <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'weapons', 'action' => 'delete', $weapon['id']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>
-        </td>
-      </tr>
-      <?php } ?>
-    </tbody>
-  </table>
-    <?php } ?>
-
-<div class="page-header">
-  <h2><?php  echo __('Related Abilities');?></h2>
-</div>
-<?php if(!empty($unit['Abilities'])) { ?>
-  <table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'squads', 'action' => 'save_order')); ?>">
-    <thead>
-      <tr>
-        <th><?php echo __('ID');?></th>
-        <th><?php echo __('Name');?></th>
-        <th><?php echo __('Created');?></th>
-        <th><?php echo __('Modified');?></th>
-        <th class="actions"><?php echo __('Actions');?></th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php foreach ($unit['Abilities'] as $weapon){ ?>
-      <tr id="weapons-<?php echo $weapon['id']; ?>" data-id="<?php echo $weapon['id']; ?>">
-        <td><?php echo h($weapon['id']); ?></td>
-        <td><?php echo h($weapon['name']); ?></td>
-        <td><?php echo h($this->Time->timeAgoInWords($weapon['created'])); ?></td>
-        <td><?php echo h($this->Time->timeAgoInWords($weapon['modified'])); ?></td>
-        <td class="actions">
-          <?php echo $this->Html->link(__('View'), array('controller' => 'weapons', 'action' => 'view', $weapon['id']), array('class' => 'btn-sm btn-primary')); ?>
-          <?php echo $this->Html->link(__('Edit'), array('controller' => 'weapons', 'action' => 'edit', $weapon['id']), array('class' => 'btn-sm btn-warning')); ?>
-          <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'weapons', 'action' => 'delete', $weapon['id']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>
+          <?php echo $this->Html->link(__('View'), array('controller' => 'options', 'action' => 'view', $options['id']), array('class' => 'btn-sm btn-primary')); ?>
+          <?php echo $this->Html->link(__('Edit'), array('controller' => 'options', 'action' => 'edit', $options['id']), array('class' => 'btn-sm btn-warning')); ?>
+          <?php echo $this->Form->postLink(__('Delete'), array('controller' => 'options', 'action' => 'delete', $options['id']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>
         </td>
       </tr>
       <?php } ?>

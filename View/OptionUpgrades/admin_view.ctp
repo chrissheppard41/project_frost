@@ -18,7 +18,7 @@
 		</div>
 		<div class='row'>
 			<span class='col-md-3'><?php echo __('Enhances'); ?></span>
-			<span class='col-md-9'><?php echo h($optionUpgrade['OptionUpgrade']['enhances']); ?></span>
+			<span class='col-md-9'><?php echo $this->Html->link($optionUpgrade['Enhancements']['name'], array('controller' => 'enhancements', 'action' => 'view', $optionUpgrade['Enhancements']['id'])); ?></span>
 		</div>
 		<div class='row'>
 			<span class='col-md-3'><?php echo __('By'); ?></span>

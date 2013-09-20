@@ -30,7 +30,7 @@ class SpecialRule extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'races_id' => array(
+		'race_types_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -53,6 +53,13 @@ class SpecialRule extends AppModel {
 		'Races' => array(
 			'className' => 'Races',
 			'foreignKey' => 'races_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'RaceTypes' => array(
+			'className' => 'RaceTypes',
+			'foreignKey' => 'race_types_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

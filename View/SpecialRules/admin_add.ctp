@@ -6,7 +6,8 @@
 	<?php
 	echo $this->Form->create('SpecialRule');
 		echo $this->Form->input('name');
-		echo $this->Form->input('races_id');
+		echo $this->Form->input('races_id', array('empty' => true));
+		echo $this->Form->input('race_types_id');
 		echo $this->Form->submit(__('Save'));
 		echo $this->Form->end();
 	?>

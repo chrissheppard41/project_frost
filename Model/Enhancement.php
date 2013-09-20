@@ -1,12 +1,11 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Weapon Model
+ * Enhancement Model
  *
- * @property RaceType $RaceType
- * @property Unit $Unit
+ * @property OptionUpgrades $OptionUpgrades
  */
-class Weapon extends AppModel {
+class Enhancement extends AppModel {
 
 /**
  * Display field
@@ -36,41 +35,17 @@ class Weapon extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
- * belongsTo associations
+ * hasMany associations
  *
  * @var array
  */
-	public $belongsTo = array(
-		'Races' => array(
-			'className' => 'Races',
-			'foreignKey' => 'races_id',
+	public $hasMany = array(
+		'OptionUpgrades' => array(
+			'className' => 'OptionUpgrades',
+			'foreignKey' => 'enhancements_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		)
 	);
-
-/**
- * hasAndBelongsToMany associations
- *
- * @var array
- */
-	public $hasAndBelongsToMany = array(
-		'Unit' => array(
-			'className' => 'Unit',
-			'joinTable' => 'unit_weapons',
-			'foreignKey' => 'weapons_id',
-			'associationForeignKey' => 'units_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		)
-	);
-
 }

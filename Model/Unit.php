@@ -237,11 +237,11 @@ class Unit extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Weapons' => array(
-			'className' => 'Weapons',
-			'joinTable' => 'unit_weapons',
+		'Option' => array(
+			'className' => 'Option',
+			'joinTable' => 'unit_options',
 			'foreignKey' => 'units_id',
-			'associationForeignKey' => 'weapons_id',
+			'associationForeignKey' => 'options_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
@@ -267,21 +267,6 @@ class Unit extends AppModel {
 			'deleteQuery' => '',
 			'insertQuery' => ''
 		),
-		'Abilities' => array(
-			'className' => 'Abilities',
-			'joinTable' => 'unit_abilities',
-			'foreignKey' => 'units_id',
-			'associationForeignKey' => 'abilities_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		)
 	);
 
 /**

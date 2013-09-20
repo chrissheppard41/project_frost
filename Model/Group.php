@@ -86,11 +86,11 @@ class Group extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Squad' => array(
-			'className' => 'Squad',
+		'SquadUnit' => array(
+			'className' => 'SquadUnit',
 			'joinTable' => 'squad_options',
 			'foreignKey' => 'groups_id',
-			'associationForeignKey' => 'squads_id',
+			'associationForeignKey' => 'squad_units_id',
 			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',

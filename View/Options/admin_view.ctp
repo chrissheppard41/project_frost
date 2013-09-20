@@ -43,10 +43,8 @@
 <div class="related">
 	<h3><?php echo __('Related Option Upgrades');?></h3>
 	<?php if (!empty($option['OptionUpgrades'])){ ?>
-	<table class="striped-table bordered-table">
+	<table class="table table-striped table-bordered table-listings">
 	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Enhances'); ?></th>
 		<th><?php echo __('By'); ?></th>
 		<th><?php echo __('Addition'); ?></th>
 		<th><?php echo __('Options Id'); ?></th>
@@ -57,17 +55,15 @@
 	<?php
 		foreach ($option['OptionUpgrades'] as $optionUpgrades){ ?>
 		<tr>
-			<td><?php echo $optionUpgrades['id'];?></td>
-			<td><?php echo $optionUpgrades['enhances'];?></td>
 			<td><?php echo $optionUpgrades['by'];?></td>
 			<td><?php echo $optionUpgrades['addition'];?></td>
 			<td><?php echo $optionUpgrades['options_id'];?></td>
 			<td><?php echo $optionUpgrades['created'];?></td>
 			<td><?php echo $optionUpgrades['modified'];?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'option_upgrades', 'action' => 'view', $optionUpgrades['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'option_upgrades', 'action' => 'edit', $optionUpgrades['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'option_upgrades', 'action' => 'delete', $optionUpgrades['id']), null, __('Are you sure you want to delete # %s?', $optionUpgrades['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('controller' => 'option_upgrades', 'action' => 'view', $optionUpgrades['id']), array('class' => 'btn-sm btn-primary')); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'option_upgrades', 'action' => 'edit', $optionUpgrades['id']), array('class' => 'btn-sm btn-warning')); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'option_upgrades', 'action' => 'delete', $optionUpgrades['id']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete # %s?', $optionUpgrades['id'])); ?>
 			</td>
 		</tr>
 	<?php } ?>

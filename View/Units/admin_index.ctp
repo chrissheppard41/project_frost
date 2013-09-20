@@ -11,7 +11,7 @@
 			<tr>
 				<th><?php echo $this->Paginator->sort('id');?></th>
 				<th><?php echo $this->Paginator->sort('name');?></th>
-				<th><?php echo $this->Paginator->sort('sargeant');?></th>
+				<th><?php echo $this->Paginator->sort('sargeant', 'Leader');?></th>
 				<th><?php echo $this->Paginator->sort('weapon_skill', 'WS');?></th>
 				<th><?php echo $this->Paginator->sort('ballistic_skill', 'BS');?></th>
 				<th><?php echo $this->Paginator->sort('strength', 'S');?></th>

@@ -1,18 +1,19 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Ability Model
+ * SquadOption Model
  *
- * @property RaceTypes $RaceTypes
+ * @property Groups $Groups
+ * @property SquadUnits $SquadUnits
  */
-class Ability extends AppModel {
+class SquadOption extends AppModel {
 
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'id';
 
 /**
  * Validation rules
@@ -20,9 +21,9 @@ class Ability extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'name' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
+		'groups_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -30,7 +31,7 @@ class Ability extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'race_types_id' => array(
+		'squad_units_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -50,35 +51,19 @@ class Ability extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Races' => array(
-			'className' => 'Races',
-			'foreignKey' => 'races_id',
+		'Groups' => array(
+			'className' => 'Groups',
+			'foreignKey' => 'groups_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
-	);
-
-/**
- * hasAndBelongsToMany associations
- *
- * @var array
- */
-	public $hasAndBelongsToMany = array(
-		'Unit' => array(
-			'className' => 'Unit',
-			'joinTable' => 'unit_abilities',
-			'foreignKey' => 'abilities_id',
-			'associationForeignKey' => 'units_id',
-			'unique' => 'keepExisting',
+		),
+		'SquadUnits' => array(
+			'className' => 'SquadUnits',
+			'foreignKey' => 'squad_units_id',
 			'conditions' => '',
 			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
+			'order' => ''
 		)
 	);
 }

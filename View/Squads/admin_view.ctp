@@ -59,6 +59,7 @@
 				<td><?php echo h($unit['SquadUnit']['min_count']); ?></td>
 				<td><?php echo h($unit['SquadUnit']['max_count']); ?></td>
 				<td class="actions">
+					<?php echo $this->Html->link(__('View'), array('controller' => 'squad_units', 'action' => 'view', $unit['SquadUnit']['id']), array('class' => 'btn-sm btn-primary')); ?>
 					<?php echo $this->Html->link(__('Edit'), array('controller' => 'squad_units', 'action' => 'edit', $unit['SquadUnit']['id'], $squad['Squad']['id']), array('class' => 'btn-sm btn-warning')); ?>
 				</td>
 			</tr>
@@ -66,7 +67,6 @@
 		</tbody>
 	</table>
 	<?php } ?>
-
 </div>
 
 <div class="page-header">
@@ -76,7 +76,6 @@
 	<table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'units', 'action' => 'save_order')); ?>">
 		<thead>
 			<tr>
-				<th><?php echo __('Id');?></th>
 				<th><?php echo __('Name');?></th>
 				<th><?php echo __('Sargeant');?></th>
 				<th><?php echo __('WS');?></th>
@@ -98,7 +97,6 @@
 		<tbody>
 			<?php foreach ($squad['Unit'] as $unit){ ?>
 			<tr id="units-<?php echo $unit['id']; ?>" data-id="<?php echo $unit['id']; ?>">
-				<td><?php echo h($unit['id']); ?></td>
 				<td><?php echo h($unit['name']); ?></td>
 				<td><span class="glyphicon glyphicon-<?php echo (($unit['sargeant'])?'ok':'remove'); ?>"></span></td>
 				<td><?php echo h($unit['weapon_skill']); ?></td>
@@ -132,7 +130,6 @@
 	<table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'units', 'action' => 'save_order')); ?>">
 		<thead>
 			<tr>
-				<th><?php echo __('ID');?></th>
 				<th><?php echo __('Name');?></th>
 				<th><?php echo __('Created');?></th>
 				<th><?php echo __('Modified');?></th>
@@ -142,7 +139,6 @@
 		<tbody>
 			<?php foreach ($squad['SpecialRule'] as $specialRule){ ?>
 			<tr id="units-<?php echo $specialRule['id']; ?>" data-id="<?php echo $specialRule['id']; ?>">
-				<td><?php echo h($specialRule['id']); ?></td>
 				<td><?php echo h($specialRule['name']); ?></td>
 				<td><?php echo h($this->Time->timeAgoInWords($specialRule['created'])); ?></td>
 				<td><?php echo h($this->Time->timeAgoInWords($specialRule['modified'])); ?></td>
@@ -156,14 +152,3 @@
 		</tbody>
 	</table>
 <?php } ?>
-<div class="panel panel-default">
-  	<div class="panel-heading">
-  		Squad default Wargear
-	</div>
-</div>
-
-<div class="panel panel-default">
-  	<div class="panel-heading">
-  		Squad optional Wargear
-	</div>
-</div>

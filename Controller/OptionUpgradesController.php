@@ -129,8 +129,9 @@ class OptionUpgradesController extends AppController {
                 $this->flashMessage(__('The option upgrade could not be saved. Please, try again.'), 'alert-error');
             }
         }
-		$options = $this->OptionUpgrade->Option->find('list');
-		$this->set(compact('options'));
+        $options = $this->OptionUpgrade->Options->find('list');
+        $enhancements = $this->OptionUpgrade->Enhancements->find('list');
+		$this->set(compact('options', 'enhancements'));
     }
 
 /**
@@ -153,8 +154,9 @@ class OptionUpgradesController extends AppController {
         } else {
             $this->request->data = $this->OptionUpgrade->read(null, $id);
         }
-		$options = $this->OptionUpgrade->Option->find('list');
-		$this->set(compact('options'));
+		$options = $this->OptionUpgrade->Options->find('list');
+        $enhancements = $this->OptionUpgrade->Enhancements->find('list');
+        $this->set(compact('options', 'enhancements'));
     }
 
 /**

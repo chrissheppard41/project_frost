@@ -36,3 +36,34 @@
   	</div>
 </div>
 
+<div class="page-header">
+	<h2><?php echo __('Related Options'); ?></h2>
+</div>
+<?php if(!empty($group['Options'])) { ?>
+	<table class="table table-striped table-bordered table-listings" data-sort-url="<?php echo Router::url(array('controller' => 'options', 'action' => 'save_order')); ?>">
+		<thead>
+			<tr>
+				<th><?php echo __('Name');?></th>
+				<th><?php echo __('Pts');?></th>
+				<th><?php echo __('Created');?></th>
+				<th><?php echo __('Modified');?></th>
+				<th class="actions"><?php echo __('Actions');?></th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php foreach ($group['Options'] as $option){ ?>
+			<tr id="options-<?php echo $option['id']; ?>" data-id="<?php echo $option['id']; ?>">
+				<td><?php echo h($option['name']); ?></td>
+				<td><?php echo h($option['pts']); ?></td>
+				<td><?php echo h($this->Time->timeAgoInWords($option['created'])); ?></td>
+				<td><?php echo h($this->Time->timeAgoInWords($option['modified'])); ?></td>
+				<td class="actions">
+					<?php echo $this->Html->link(__('View'), array('controller' => 'options', 'action' => 'view', $option['id']), array('class' => 'btn-sm btn-primary')); ?>
+					<?php echo $this->Html->link(__('Edit'), array('controller' => 'options', 'action' => 'edit', $option['id']), array('class' => 'btn-sm btn-warning')); ?>
+					<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'options', 'action' => 'delete', $option['id']), array('class' => 'btn-sm btn-danger'), __('Are you sure you want to delete this record?')); ?>
+				</td>
+			</tr>
+			<?php } ?>
+		</tbody>
+	</table>
+<?php } ?>

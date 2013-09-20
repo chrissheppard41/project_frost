@@ -46,6 +46,13 @@ class OptionUpgrade extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'Enhancements' => array(
+			'className' => 'Enhancements',
+			'foreignKey' => 'enhancements_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 }

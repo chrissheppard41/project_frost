@@ -131,7 +131,8 @@ class UnitsController extends AppController {
         }
         $races = $this->Unit->Races->find('list');
         $unitTypes = $this->Unit->UnitTypes->find('list');
-		$this->set(compact('races', 'unitTypes'));
+        $options = $this->Unit->Option->find('list');
+		$this->set(compact('races', 'unitTypes', 'options'));
     }
 
 /**
@@ -156,7 +157,8 @@ class UnitsController extends AppController {
         }
 		$races = $this->Unit->Races->find('list');
         $unitTypes = $this->Unit->UnitTypes->find('list');
-        $this->set(compact('races', 'unitTypes'));
+        $options = $this->Unit->Option->find('list');
+        $this->set(compact('races', 'unitTypes', 'options'));
     }
 
 /**

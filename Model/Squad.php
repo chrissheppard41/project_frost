@@ -113,20 +113,5 @@ class Squad extends AppModel {
 			'deleteQuery' => '',
 			'insertQuery' => ''
 		),
-		'Groups' => array(
-			'className' => 'Groups',
-			'joinTable' => 'squad_options',
-			'foreignKey' => 'squads_id',
-			'associationForeignKey' => 'groups_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		)
 	);
 }

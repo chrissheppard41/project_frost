@@ -23,7 +23,7 @@
 			<?php foreach ($optionUpgrades as $optionUpgrade){ ?>
 			<tr id="optionUpgrades-<?php echo $optionUpgrade['OptionUpgrade']['id']; ?>" data-id="<?php echo $optionUpgrade['OptionUpgrade']['id']; ?>">
 								<td><?php echo h($optionUpgrade['OptionUpgrade']['id']); ?></td>
-								<td><?php echo h($optionUpgrade['OptionUpgrade']['enhances']); ?></td>
+								<td><?php echo $this->Html->link($optionUpgrade['Enhancements']['name'], array('controller' => 'enhancements', 'action' => 'view', $optionUpgrade['Enhancements']['id'])); ?></td>
 								<td><?php echo h($optionUpgrade['OptionUpgrade']['by']); ?></td>
 								<td><?php echo h($optionUpgrade['OptionUpgrade']['addition']); ?></td>
 								<td><?php echo $this->Html->link($optionUpgrade['Options']['name'], array('controller' => 'options', 'action' => 'view', $optionUpgrade['Options']['id'])); ?></td>

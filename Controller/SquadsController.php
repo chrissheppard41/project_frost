@@ -110,7 +110,7 @@ class SquadsController extends AppController {
  * @return void
  */
     public function admin_view($id = null) {
-        //$this->Squad->recursive = 1;
+        $this->Squad->recursive = 1;
         $this->Squad->id = $id;
         if (!$this->Squad->exists()) {
             throw new NotFoundException(__('Invalid squad'));
@@ -136,7 +136,7 @@ class SquadsController extends AppController {
         $types = $this->Squad->Types->find('list');
         $units = $this->Squad->Unit->find('list');
         $specialRules = $this->Squad->SpecialRule->find('list');
-        $this->set(compact('races', 'types', 'units', 'specialRules'));
+        $this->set(compact('races', 'types', 'units', 'groups', 'specialRules'));
     }
 
 /**
@@ -163,7 +163,7 @@ class SquadsController extends AppController {
 		$types = $this->Squad->Types->find('list');
         $units = $this->Squad->Unit->find('list');
         $specialRules = $this->Squad->SpecialRule->find('list');
-		$this->set(compact('races', 'types', 'units', 'specialRules'));
+		$this->set(compact('races', 'types', 'units', 'groups', 'specialRules'));
     }
 
 /**

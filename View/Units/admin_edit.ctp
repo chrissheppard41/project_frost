@@ -21,6 +21,7 @@
 		echo $this->Form->input('pts', array('label' => 'Points'));
 		echo $this->Form->input('races_id', array('label' => 'Race'));
 		echo $this->Form->input('unit_types_id', array('label' => 'Type'));
+		echo $this->Form->input('Option');
 		echo $this->Form->submit(__('Save'));
 		echo $this->Form->end();
 	?>

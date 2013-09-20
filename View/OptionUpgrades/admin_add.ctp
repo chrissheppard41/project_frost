@@ -5,7 +5,7 @@
 <div class="optionUpgrades form">
 	<?php
 	echo $this->Form->create('OptionUpgrade');
-		echo $this->Form->input('enhances');
+		echo $this->Form->input('enhancements_id');
 		echo $this->Form->input('by');
 		echo $this->Form->input('addition');
 		echo $this->Form->input('options_id');

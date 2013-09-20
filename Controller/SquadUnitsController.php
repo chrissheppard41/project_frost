@@ -8,6 +8,20 @@ App::uses('AppController', 'Controller');
 class SquadUnitsController extends AppController {
 
 /**
+ * admin_view method
+ *
+ * @param string $id
+ * @return void
+ */
+    public function admin_view($id = null) {
+        $this->SquadUnit->recursive = 1;
+        $this->SquadUnit->id = $id;
+        if (!$this->SquadUnit->exists()) {
+            throw new NotFoundException(__('Invalid squad_unit'));
+        }
+        $this->set('squadUnit', $this->SquadUnit->read(null, $id));
+    }
+/**
  * admin_edit method
  *
  * @param string $id
@@ -30,7 +44,8 @@ class SquadUnitsController extends AppController {
         }
 		$squads = $this->SquadUnit->Squads->find('list');
 		$units = $this->SquadUnit->Units->find('list');
-		$this->set(compact('squads', 'units', 'parent_id'));
+        $groups = $this->SquadUnit->Group->find('list');
+		$this->set(compact('squads', 'units', 'groups', 'parent_id'));
     }
 
 /**

@@ -11,6 +11,7 @@
 			<tr>
 				<th><?php echo $this->Paginator->sort('id');?></th>
 				<th><?php echo $this->Paginator->sort('name');?></th>
+				<th><?php echo $this->Paginator->sort('race_types_id');?></th>
 				<th><?php echo $this->Paginator->sort('races_id');?></th>
 				<th><?php echo $this->Paginator->sort('created');?></th>
 				<th><?php echo $this->Paginator->sort('modified');?></th>
@@ -22,6 +23,7 @@
 			<tr id="specialRules-<?php echo $specialRule['SpecialRule']['id']; ?>" data-id="<?php echo $specialRule['SpecialRule']['id']; ?>">
 				<td><?php echo h($specialRule['SpecialRule']['id']); ?></td>
 				<td><?php echo h($specialRule['SpecialRule']['name']); ?></td>
+				<td><?php echo $this->Html->link($specialRule['RaceTypes']['name'], array('controller' => 'raceTypes', 'action' => 'view', $specialRule['RaceTypes']['id'])); ?></td>
 				<td><?php echo $this->Html->link($specialRule['Races']['name'], array('controller' => 'races', 'action' => 'view', $specialRule['Races']['id'])); ?></td>
 				<td><?php echo h($this->Time->timeAgoInWords($specialRule['SpecialRule']['created'])); ?></td>
 				<td><?php echo h($this->Time->timeAgoInWords($specialRule['SpecialRule']['modified'])); ?></td>

@@ -132,8 +132,9 @@ class SpecialRulesController extends AppController {
             }
         }
         $races = $this->SpecialRule->Races->find('list');
+        $raceTypes = $this->SpecialRule->RaceTypes->find('list');
 		//$squads = $this->SpecialRule->Squad->find('list');
-		$this->set(compact('races', 'squads'));
+		$this->set(compact('races', 'squads', 'raceTypes'));
     }
 
 /**
@@ -157,8 +158,9 @@ class SpecialRulesController extends AppController {
             $this->request->data = $this->SpecialRule->read(null, $id);
         }
 		$races = $this->SpecialRule->Races->find('list');
-		//$squads = $this->SpecialRule->Squad->find('list');
-		$this->set(compact('races', 'squads'));
+        $raceTypes = $this->SpecialRule->RaceTypes->find('list');
+        //$squads = $this->SpecialRule->Squad->find('list');
+        $this->set(compact('races', 'squads', 'raceTypes'));
     }
 
 /**
