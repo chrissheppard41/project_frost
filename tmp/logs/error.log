@@ -36129,3 +36129,73 @@ Stack Trace:
 #6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
 #7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2013-09-23 17:02:10 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/cake/lib/Cake/View/View.php(835): HelperCollection->__isset('Auth')
+#2 /var/www/frost/View/Pages/home.ctp(9): View->__get('Auth')
+#3 /var/www/cake/lib/Cake/View/View.php(947): include('/var/www/frost/...')
+#4 /var/www/cake/lib/Cake/View/View.php(909): View->_evaluate('/var/www/frost/...', Array)
+#5 /var/www/cake/lib/Cake/View/View.php(471): View->_render('/var/www/frost/...')
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render('home', NULL)
+#7 /var/www/frost/Controller/PagesController.php(32): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-09-23 17:21:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/scripts.js?url=%2Fjs%2Fscripts.js
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 17:34:04 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /races.json?url=%2Fraces.json
+Stack Trace:
+#0 /var/www/frost/Controller/RacesController.php(108): CakeRequest->onlyAllow('post')
+#1 [internal function]: RacesController->races()
+#2 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(RacesController), Array)
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RacesController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-23 17:35:24 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /races.json?url=%2Fraces.json
+Stack Trace:
+#0 /var/www/frost/Controller/RacesController.php(108): CakeRequest->onlyAllow('post')
+#1 [internal function]: RacesController->races()
+#2 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(RacesController), Array)
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RacesController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-09-23 17:36:04 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/frost/Controller/RacesController.php, line 110]
+2013-09-23 17:36:04 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /races.json?url=%2Fraces.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 110)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 110, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 110, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 17:36:17 Error: Fatal Error (1): Call to a member function response() on a non-object in [/var/www/frost/Controller/RacesController.php, line 114]
+2013-09-23 17:36:17 Error: [FatalErrorException] Call to a member function response() on a non-object
+Request URL: /races.json?url=%2Fraces.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 114)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 114, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 114, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

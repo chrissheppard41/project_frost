@@ -10,6 +10,10 @@
 	Router::connect('/social/connect_login_cb/:id', array('controller' => 'social', 'action' => 'login_cb'), array('pass' => array('id')));
 	Router::connect('/logout', array('controller' => 'social', 'action' => 'logout'), array('pass' => array('id')));
 
+
+	//API endpoints
+	Router::connect('/races', array('controller' => 'races', 'action' => 'races'));
+
 	/* Loads CakePHP plugin routes. */
 	CakePlugin::routes();
 

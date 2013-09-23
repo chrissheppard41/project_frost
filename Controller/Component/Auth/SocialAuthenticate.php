@@ -160,7 +160,7 @@ class SocialAuthenticate extends BaseAuthenticate{
                 try {
                     $user = $this->getFacebookUser();
                 } catch (FacebookApiException $e) {
-                    echo "error: ".$e;
+                    CakeLog::write(LOG_ERROR, "Error: ".$e);
                 }
             break;
         }

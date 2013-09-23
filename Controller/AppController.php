@@ -47,6 +47,7 @@ class AppController extends Controller {
 			$this->Auth->allow();
 		}
 
+		$this->set('loggedIn', $this->Auth->loggedIn());
 		/* Allows auto-login from cookies. */
 		//$this->restoreLoginFromCookie();
 	}
