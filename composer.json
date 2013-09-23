@@ -5,7 +5,9 @@
         "vendor-dir": "Vendor"
     },
     "require": {
-        "cakephp/debug_kit": "dev-master"
+        "cakephp/debug_kit": "dev-master",
+        "facebook/php-sdk": "dev-master",
+        "aws/aws-sdk-php": "2.*"
     },
     "authors": [
         {

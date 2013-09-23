@@ -33,6 +33,34 @@ class PagesController extends AppController {
 	}
 
 	/**
+	 * Default home landing page.
+	 *
+	 * @return void
+	 */
+	public function home() {
+		// Execute the data aggregator.
+		$data = array();
+
+		// Meta data for the homepage.
+		$metaData = array(
+			"title" => "",
+			"metaTags" => array(
+				"description" => "",
+				"keywords" => "",
+				"og:url" => "",//Configure::read('siteRoot') . Configure::read('appDirectory') . $this->params->here,
+				"og:title" => "",
+				"og:type" => "",
+				"og:description" => "",
+				"og:image" => ""//$socialImagePath
+			)
+		);
+
+		$title_for_layout = $metaData['title'];
+		$this->set(compact('title_for_layout', 'data', 'metaData'));
+	}
+
+
+	/**
 	 *	Clears each of the specified folders found inside tmp/cache.
 	 *	Will redirect the user to the dashboard with appropriate method.
 	 *

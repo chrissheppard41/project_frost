@@ -35438,3 +35438,694 @@ Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
 Stack Trace:
 #0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-23 09:57:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:02:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:03:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:03:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:03:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:07:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:08:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:09:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:09:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:09:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:10:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:10:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:11:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:11:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:12:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:12:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:13:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:14:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 10:14:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 12:25:31 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:25:31 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:26:25 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:26:25 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:28:20 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:28:20 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:30:55 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:30:55 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:32:19 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:32:19 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:32:19 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:32:19 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:32:20 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:32:20 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:32:20 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:32:20 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:32:20 Error: Fatal Error (1): Class 'Facebook' not found in [/var/www/frost/Controller/SocialController.php, line 15]
+2013-09-23 12:32:20 Error: [FatalErrorException] Class 'Facebook' not found
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 12:51:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 12:58:52 Error: [MissingControllerException] Controller class ApiController could not be found.
+Exception Attributes: array (
+  'class' => 'ApiController',
+  'plugin' => NULL,
+)
+Request URL: /api/facebook/connect_login?url=%2Fapi%2Ffacebook%2Fconnect_login
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 12:59:00 Error: [MissingActionException] Action SocialController::connect_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'SocialController',
+  'action' => 'connect_login',
+)
+Request URL: /social/connect_login?url=%2Fsocial%2Fconnect_login
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-23 14:36:51 Error: [NotFoundException] Social media connection failed
+Request URL: /social/connect_login/facebook?url=%2Fsocial%2Fconnect_login%2Ffacebook
+Stack Trace:
+#0 [internal function]: SocialController->login()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SocialController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-23 14:55:49 Error: [NotFoundException] Social media connection failed
+Request URL: /social/connect_login/facebok?url=%2Fsocial%2Fconnect_login%2Ffacebok
+Stack Trace:
+#0 [internal function]: SocialController->login('facebok')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SocialController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-23 15:03:12 Error: Fatal Error (1): Call to undefined method SocialController::_responseMethod() in [/var/www/frost/Controller/SocialController.php, line 23]
+2013-09-23 15:03:12 Error: [FatalErrorException] Call to undefined method SocialController::_responseMethod()
+Request URL: /logout?url=%2Flogout
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/frost/...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/frost/...', 23, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/frost/...', 23, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:24:50 Error: [InternalErrorException] You need configure file config/google.php properly.
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): GoogleAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(622): AuthComponent->constructAuthenticate()
+#2 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(320): AuthComponent->_getUser()
+#3 [internal function]: AuthComponent->startup(Object(PagesController))
+#4 /var/www/cake/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#5 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#6 /var/www/cake/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-23 15:26:01 Error: [InternalErrorException] You need configure file config/google.php properly.
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): GoogleAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(622): AuthComponent->constructAuthenticate()
+#2 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(320): AuthComponent->_getUser()
+#3 [internal function]: AuthComponent->startup(Object(PagesController))
+#4 /var/www/cake/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#5 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#6 /var/www/cake/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-23 15:26:01 Error: [InternalErrorException] You need configure file config/google.php properly.
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): GoogleAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(622): AuthComponent->constructAuthenticate()
+#2 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(320): AuthComponent->_getUser()
+#3 [internal function]: AuthComponent->startup(Object(PagesController))
+#4 /var/www/cake/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#5 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#6 /var/www/cake/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-23 15:26:26 Error: Fatal Error (1): Class 'Google_Oauth2Service' not found in [/var/www/frost/Controller/Component/Auth/GoogleAuthenticate.php, line 71]
+2013-09-23 15:26:26 Error: [FatalErrorException] Class 'Google_Oauth2Service' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Google_O...', '/var/www/frost/...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:26:52 Error: Fatal Error (1): Class 'Google_Oauth2Service' not found in [/var/www/frost/Controller/Component/Auth/GoogleAuthenticate.php, line 71]
+2013-09-23 15:26:52 Error: [FatalErrorException] Class 'Google_Oauth2Service' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Google_O...', '/var/www/frost/...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:33:57 Error: Fatal Error (1): Class 'Google_Oauth2Service' not found in [/var/www/frost/Controller/Component/Auth/GoogleAuthenticate.php, line 71]
+2013-09-23 15:33:57 Error: [FatalErrorException] Class 'Google_Oauth2Service' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Google_O...', '/var/www/frost/...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:33:58 Error: Fatal Error (1): Class 'Google_Oauth2Service' not found in [/var/www/frost/Controller/Component/Auth/GoogleAuthenticate.php, line 71]
+2013-09-23 15:33:58 Error: [FatalErrorException] Class 'Google_Oauth2Service' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Google_O...', '/var/www/frost/...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:34:16 Error: Fatal Error (1): Class 'Google_Oauth2Service' not found in [/var/www/frost/Controller/Component/Auth/GoogleAuthenticate.php, line 71]
+2013-09-23 15:34:16 Error: [FatalErrorException] Class 'Google_Oauth2Service' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Google_O...', '/var/www/frost/...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:34:24 Error: Fatal Error (1): Class 'Google_Oauth2Service' not found in [/var/www/frost/Controller/Component/Auth/GoogleAuthenticate.php, line 71]
+2013-09-23 15:34:24 Error: [FatalErrorException] Class 'Google_Oauth2Service' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Google_O...', '/var/www/frost/...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:35:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-23 15:41:13 Error: [InternalErrorException] You need configure file config/facebook.php properly.
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): FacebookAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(622): AuthComponent->constructAuthenticate()
+#2 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(320): AuthComponent->_getUser()
+#3 [internal function]: AuthComponent->startup(Object(PagesController))
+#4 /var/www/cake/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#5 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#6 /var/www/cake/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-23 15:42:28 Error: [InternalErrorException] You need configure file config/facebook.php properly.
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): FacebookAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(622): AuthComponent->constructAuthenticate()
+#2 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(320): AuthComponent->_getUser()
+#3 [internal function]: AuthComponent->startup(Object(PagesController))
+#4 /var/www/cake/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#5 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#6 /var/www/cake/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-23 15:42:49 Error: [InternalErrorException] You need configure file config/facebook.php properly.
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): FacebookAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(622): AuthComponent->constructAuthenticate()
+#2 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(320): AuthComponent->_getUser()
+#3 [internal function]: AuthComponent->startup(Object(PagesController))
+#4 /var/www/cake/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#5 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#6 /var/www/cake/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-23 15:42:57 Error: [InternalErrorException] You need configure file config/facebook.php properly.
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): FacebookAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(622): AuthComponent->constructAuthenticate()
+#2 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(320): AuthComponent->_getUser()
+#3 [internal function]: AuthComponent->startup(Object(PagesController))
+#4 /var/www/cake/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#5 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#6 /var/www/cake/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-23 15:48:36 Error: Fatal Error (1): Call to a member function getSignedRequest() on a non-object in [/var/www/frost/Controller/AppController.php, line 62]
+2013-09-23 15:48:36 Error: [FatalErrorException] Call to a member function getSignedRequest() on a non-object
+Request URL: /users/login?url=%2Fusers%2Flogin
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 62, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 62, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:53:40 Error: Fatal Error (1): Call to a member function getSignedRequest() on a non-object in [/var/www/frost/Controller/AppController.php, line 66]
+2013-09-23 15:53:40 Error: [FatalErrorException] Call to a member function getSignedRequest() on a non-object
+Request URL: /users/login?url=%2Fusers%2Flogin
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 66, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 66, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:53:44 Error: Fatal Error (1): Call to a member function getSignedRequest() on a non-object in [/var/www/frost/Controller/AppController.php, line 66]
+2013-09-23 15:53:44 Error: [FatalErrorException] Call to a member function getSignedRequest() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 66, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 66, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 15:58:58 Error: Fatal Error (1): Class 'Google_Oauth2Service' not found in [/var/www/frost/Controller/Component/Auth/GoogleAuthenticate.php, line 71]
+2013-09-23 15:58:58 Error: [FatalErrorException] Class 'Google_Oauth2Service' not found
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQDXqA0BnDh6kUrNW7ibmvmI3aAJGFpgVAQjfyFvvKmxF1WKbAClA1q0tHvRrIy38GRlx0t2CUfmVAQdXeIOfzLRmHDozYZV405i1TTaXddi64Av7EDatoaPKPUDZuG4j1C58x0AlwWbAlXZyIQYOjN4M47xIQ1lzINnNb-ymBUUFk1icQoGkym9v3bDrK8IWA5qv35qK3Now6AU7tvT4hM5n50zuRg4-cyXjjy4bPdnjrdGoHvegkNDdXlNvM97kDw9B-cWyTCM1l7Vp-y3qs2_5xqtwkyIH_P-x0iKovCA3vn_rHART-fPBlv8vnjQDx8&state=5b3837d0da64d98dcdafb89bd8d5ffe9
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Google_O...', '/var/www/frost/...', 71)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Google_O...', '/var/www/frost/...', 71, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-23 16:00:29 Error: [CakeException] Authentication adapter "Facebook" was not found.
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQDXqA0BnDh6kUrNW7ibmvmI3aAJGFpgVAQjfyFvvKmxF1WKbAClA1q0tHvRrIy38GRlx0t2CUfmVAQdXeIOfzLRmHDozYZV405i1TTaXddi64Av7EDatoaPKPUDZuG4j1C58x0AlwWbAlXZyIQYOjN4M47xIQ1lzINnNb-ymBUUFk1icQoGkym9v3bDrK8IWA5qv35qK3Now6AU7tvT4hM5n50zuRg4-cyXjjy4bPdnjrdGoHvegkNDdXlNvM97kDw9B-cWyTCM1l7Vp-y3qs2_5xqtwkyIH_P-x0iKovCA3vn_rHART-fPBlv8vnjQDx8&state=5b3837d0da64d98dcdafb89bd8d5ffe9
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(692): AuthComponent->constructAuthenticate()
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(547): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/frost/Controller/SocialController.php(77): AuthComponent->login()
+#3 [internal function]: SocialController->login_cb('facebook')
+#4 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SocialController), Array)
+#5 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-23 16:47:36 Error: [InternalErrorException] You need configure file config/SocialMedia.php properly.
+Request URL: /logout?url=%2Flogout
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): SocialAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(572): AuthComponent->constructAuthenticate()
+#2 /var/www/frost/Controller/SocialController.php(23): AuthComponent->logout()
+#3 [internal function]: SocialController->logout()
+#4 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SocialController), Array)
+#5 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-23 16:48:49 Error: [InternalErrorException] You need configure file config/SocialMedia.php properly.
+Request URL: /logout?url=%2Flogout
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): SocialAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(572): AuthComponent->constructAuthenticate()
+#2 /var/www/frost/Controller/SocialController.php(23): AuthComponent->logout()
+#3 [internal function]: SocialController->logout()
+#4 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SocialController), Array)
+#5 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-23 16:49:00 Error: [InternalErrorException] You need configure file config/SocialMedia.php properly.
+Request URL: /logout?url=%2Flogout
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): SocialAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(572): AuthComponent->constructAuthenticate()
+#2 /var/www/frost/Controller/SocialController.php(23): AuthComponent->logout()
+#3 [internal function]: SocialController->logout()
+#4 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SocialController), Array)
+#5 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-23 16:50:16 Error: [InternalErrorException] You need configure file config/SocialMedia.php properly.
+Request URL: /logout?url=%2Flogout
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(731): SocialAuthenticate->__construct(Object(ComponentCollection), Array)
+#1 /var/www/cake/lib/Cake/Controller/Component/AuthComponent.php(572): AuthComponent->constructAuthenticate()
+#2 /var/www/frost/Controller/SocialController.php(23): AuthComponent->logout()
+#3 [internal function]: SocialController->logout()
+#4 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SocialController), Array)
+#5 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

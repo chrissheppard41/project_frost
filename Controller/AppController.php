@@ -5,7 +5,19 @@ class AppController extends Controller {
 
 	public $helpers = array('Html', 'Form', 'Js', 'Paginator', 'Session');
 
-	public $components = array('Auth' => array('authenticate' => 'BcryptForm'), 'Paginator', 'RequestHandler', 'Session', 'DebugKit.Toolbar');
+	public $components = array(
+		'Auth' => array(
+			'authenticate' => array(
+				'BcryptForm',
+				'Social'
+			),
+			'authorize' => array('Controller')
+		),
+		'Paginator',
+		'RequestHandler',
+		'Session',
+		'DebugKit.Toolbar'
+	);
 
 	public function beforeFilter() {
 		parent::beforeFilter();
