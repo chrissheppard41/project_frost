@@ -6,94 +6,7 @@ App::uses('AppController', 'Controller');
  * @property Squad $Squad
  */
 class SquadsController extends AppController {
-
 /**
- * index method
- *
- * @return void
- */
-    public function index() {
-        $this->Squad->recursive = 0;
-        $this->set('squads', $this->paginate());
-    }
-
-/**
- * view method
- *
- * @param string $id
- * @return void
- */
-    public function view($id = null) {
-        $this->Squad->id = $id;
-        if (!$this->Squad->exists()) {
-            throw new NotFoundException(__('Invalid squad'));
-        }
-        $this->set('squad', $this->Squad->read(null, $id));
-    }
-
-/**
- * add method
- *
- * @return void
- */
-    public function add() {
-        if ($this->request->is('post')) {
-            $this->Squad->create();
-            if ($this->Squad->save($this->request->data)) {
-                $this->flashMessage(__('The squad has been saved'), 'alert-success', array('action' => 'index'));
-            } else {
-                $this->flashMessage(__('The squad could not be saved. Please, try again.'), 'alert-error');
-            }
-        }
-		$races = $this->Squad->Races->find('list');
-		$types = $this->Squad->Type->find('list');
-		$this->set(compact('races', 'types'));
-    }
-
-/**
- * edit method
- *
- * @param string $id
- * @return void
- */
-    public function edit($id = null) {
-        $this->Squad->id = $id;
-        if (!$this->Squad->exists()) {
-            throw new NotFoundException(__('Invalid squad'));
-        }
-        if ($this->request->is('post') || $this->request->is('put')) {
-            if ($this->Squad->save($this->request->data)) {
-                $this->flashMessage(__('The squad has been saved'), 'alert-success', array('action' => 'index'));
-            } else {
-                $this->flashMessage(__('The squad could not be saved. Please, try again.'), 'alert-error');
-            }
-        } else {
-            $this->request->data = $this->Squad->read(null, $id);
-        }
-		$races = $this->Squad->Races->find('list');
-		$types = $this->Squad->Type->find('list');
-		$this->set(compact('races', 'types'));
-    }
-
-/**
- * delete method
- *
- * @param string $id
- * @return void
- */
-    public function delete($id = null) {
-        if (!$this->request->is('post')) {
-            throw new MethodNotAllowedException();
-        }
-        $this->Squad->id = $id;
-        if (!$this->Squad->exists()) {
-            throw new NotFoundException(__('Invalid squad'));
-        }
-        if ($this->Squad->delete()) {
-            $this->flashMessage(__('Squad deleted'), 'alert-success', $this->referer());
-        }
-        $this->flashMessage(__('Squad was not deleted'), 'alert-error', $this->referer());
-    }/**
  * admin_index method
  *
  * @return void
@@ -127,6 +40,10 @@ class SquadsController extends AppController {
         if ($this->request->is('post')) {
             $this->Squad->create();
             if ($this->Squad->save($this->request->data)) {
+                $data = Cache::read('squads_all', 'interface');
+                if($data){
+                    Cache::delete('squads_all', 'interface');
+                }
                 $this->flashMessage(__('The squad has been saved'), 'alert-success', array('action' => 'index'));
             } else {
                 $this->flashMessage(__('The squad could not be saved. Please, try again.'), 'alert-error');
@@ -152,6 +69,10 @@ class SquadsController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Squad->save($this->request->data)) {
+                $data = Cache::read('squads_all', 'interface');
+                if($data){
+                    Cache::delete('squads_all', 'interface');
+                }
                 $this->flashMessage(__('The squad has been saved'), 'alert-success', array('action' => 'index'));
             } else {
                 $this->flashMessage(__('The squad could not be saved. Please, try again.'), 'alert-error');
@@ -181,6 +102,10 @@ class SquadsController extends AppController {
             throw new NotFoundException(__('Invalid squad'));
         }
         if ($this->Squad->delete()) {
+            $data = Cache::read('squads_all', 'interface');
+            if($data){
+                Cache::delete('squads_all', 'interface');
+            }
             $this->flashMessage(__('Squad deleted'), 'alert-success', $this->referer());
         }
         $this->flashMessage(__('Squad was not deleted'), 'alert-error', $this->referer());

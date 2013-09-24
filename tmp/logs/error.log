@@ -36199,3 +36199,2264 @@ Stack Trace:
 #3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-09-24 10:58:01 Error: [MissingControllerException] Controller class ArmylistsController could not be found.
+Exception Attributes: array (
+  'class' => 'ArmylistsController',
+  'plugin' => NULL,
+)
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 10:58:58 Error: [MissingControllerException] Controller class ArmylistsController could not be found.
+Exception Attributes: array (
+  'class' => 'ArmylistsController',
+  'plugin' => NULL,
+)
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 10:59:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 10:59:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:15:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:16:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:18:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:19:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:25:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:26:30 Error: [MissingControllerException] Controller class ArmiesController could not be found.
+Exception Attributes: array (
+  'class' => 'ArmiesController',
+  'plugin' => NULL,
+)
+Request URL: /armies/100004051182031.json?url=%2Farmies%2F100004051182031.json
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:27:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json&s_id=100004051182031
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:28:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json&s_id=100004051182031
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:28:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+Request URL: /armies.json?url=%2Farmies.json&s_id=100004051182031
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `ArmyLis...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `ArmyLis...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1081): DboSource->fetchAll('SELECT `ArmyLis...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(ArmyList), Array)
+#5 /var/www/frost/Controller/ArmyListsController.php(206): Model->find('all', Array)
+#6 [internal function]: ArmyListsController->my_armies()
+#7 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-24 11:29:54 Error: Fatal Error (1): Call to a member function pre() on a non-object in [/var/www/frost/Controller/ArmyListsController.php, line 207]
+2013-09-24 11:29:54 Error: [FatalErrorException] Call to a member function pre() on a non-object
+Request URL: /armies.json?url=%2Farmies.json&s_id=100004051182031
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 207)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 207, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 207, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-24 11:31:23 Error: Fatal Error (1): Call to a member function pre() on a non-object in [/var/www/frost/Controller/ArmyListsController.php, line 207]
+2013-09-24 11:31:23 Error: [FatalErrorException] Call to a member function pre() on a non-object
+Request URL: /armies.json?url=%2Farmies.json&u_id=8
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 207)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 207, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 207, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-24 11:31:50 Error: Fatal Error (1): Call to a member function pre() on a non-object in [/var/www/frost/Controller/ArmyListsController.php, line 207]
+2013-09-24 11:31:50 Error: [FatalErrorException] Call to a member function pre() on a non-object
+Request URL: /armies.json?url=%2Farmies.json&u_id=8
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 207)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 207, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 207, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-24 11:32:28 Error: Fatal Error (1): Call to a member function response() on a non-object in [/var/www/frost/Controller/ArmyListsController.php, line 208]
+2013-09-24 11:32:28 Error: [FatalErrorException] Call to a member function response() on a non-object
+Request URL: /armies.json?url=%2Farmies.json&u_id=8
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 208)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 208, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 208, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-24 11:36:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:36:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:36:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:36:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:37:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:44:43 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQA_BHpR2AQZXt_g4dMfRA0v6tbIExjN9oH30BL2ges_bC8v_MwBYUDqqO-9XXWW_mMya8fc8H-9dh0CzPzhVPPrVAyH0Pt7gSJFImUi4tfyfDd4jE2S5RAMNxyYNo-oYWgopT8vQBPT-NyoEE2BYynqQLj6HjQNa0qIL_h_CDcYSSnDuLsF66W0ctiOCZecWAZ1NmdsJ9690SIv6AADgq739sc8-RBOZo-_zvZsJLxOItzoYpYmCoIvduAGH098TSbKdSCfWUV5h416aRphHPmP90yBoZTMchlrzAJNKpEj9eVSvughIGeDZEUJM0bzmP0&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:44:59 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQDCfNcSVKQDpRninzC5yBHYG5KiLuMJxNkeAOyN6_12mW8gIUcTvSinudScFtTt1fxhSj-O5LxQyJg89h4X3Oufd2t49f1P6YZevnyVRuRpwnUtVKIGslrVbBnBWxfWj2Bu3ZV9W9xggqB9yEnWY0DUhitAACSapALhckOEbFuab3HYsgxkVefqKBkMbu--PkKmSt1-6jvSACtylUDbDHYYg1kmqoeOMFRRRmoIKVK8igdsQseIMDKrlbV9cZQ30G6jNSKriy47KGLPnUDRqZNm_PraRwZIvbZMYJCQZfW_uBxxsIiD4UZLkArDvKqdO5s&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:45:10 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQBCR9eycXi1KmEeHdHUcIxKnaz9mcgLllwYGW8E2iCk2_r1LpIwhGVCQsafv1VSJUtrVyjv__bPlKf-BMTKLCKzajWiET_zb2xexWJ_BzQ9jtnmx5_Gas9xbMEIR22EIuYDm6he1nbjB-8d8fXcQ1zbZvPRfGyGKlgcD4J1ZNDwwC6loaTXAt2JYiRb2OzJBYybrgaWlg560mVQjxEUocDZlQJUO9mId3xqr7yH6AF5FxOO64tCZ7PXdgnXpLsYc6pahBhVw-JlS9JX-hFz631vp6hJTGMgK3G8DjuHKHC5hIyQ1igZ4HynGHGeUIhU_uE&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:45:26 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQANpJOuRtybdFlCgmfDWfB38LAR12-LwJfTdsrJeZ_lWhnrMQaVZuDoByPz2bei_ABuhVU5ttcQTJitY4rgkf_5l4JXqrKKiwdHTtbqqY5xepywu6qvJVYiWad4mHK0vkXiHUcOvEARaslKZBKajnwEI9Af7UYGzJFXV4QSNEOtW0NH9N_eKtjiKWqPu9KK0EJmA2Wpll4rnyFPJI1CjWQr3Q3Dg-7IGEQTT48c1T-4jNPPQNazgvCdVxnwgDa3VN0XWITcz83ysGSdng1LnBmGnJCEQ6ORTmihmT2a1Ls-5OdF6mHDgZXRbZkJ--GXt-8&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:45:50 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQCdlDfiGboB5MHa8bZGZToqrLCTuX8i_lN8DABn3jFn5sFpdc85bTh2RZBnJOwUAoUN37j6xl-6U2y-hU6HkQ04jUBPhwLIMTYVfqfqUVStf2mQ5jR2XbG1i97D-O5HTcYVxa7UY4FH0fWaMZncJ3FIUzBfpBx0o5ektSlk3ehBoGpsZY0FPs70P38xSxdGI8kSY4tcRhLaf83WReRmarJAFWJeHJki7QZNbNSbf5ZMvuIzvnjz-EcMnc9_sdUbAg3eZFZL8zrRWgVDnkq4UrA6uJY1DdhGWlYi6FbLM44pu3yMR6nzA-IFv4gCngdyEE8&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:45:53 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQAlCKgvnPvEve67MvHD4au0iu5gyz_wQ46R8dXV2GWCRIBmOtQMY7eMXMP65dVa2YB0m1osy1qwJgKn77X9KNN-gmvRfbD617Ah4bs8gQsch7lPXCBztb2lQCMwnDJBKd4_30I-PK09vKQpY3haSckTX1WBWwZwnRF8_gUlLeh62sBH7IU0y-clLetp3XxtYCX6o_f_5u2ileygazIiaFBPoDAPMzzcpYAqJRG2WJQkzyOip3IOEiyzXpUmI686-MzhYU7GJtBBAmYDiXyRU6wM7_bSv1_aZQL1SsmgVz7ZFY2RLeOhT1eEqcoTzgMezAY&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:45:53 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQAlCKgvnPvEve67MvHD4au0iu5gyz_wQ46R8dXV2GWCRIBmOtQMY7eMXMP65dVa2YB0m1osy1qwJgKn77X9KNN-gmvRfbD617Ah4bs8gQsch7lPXCBztb2lQCMwnDJBKd4_30I-PK09vKQpY3haSckTX1WBWwZwnRF8_gUlLeh62sBH7IU0y-clLetp3XxtYCX6o_f_5u2ileygazIiaFBPoDAPMzzcpYAqJRG2WJQkzyOip3IOEiyzXpUmI686-MzhYU7GJtBBAmYDiXyRU6wM7_bSv1_aZQL1SsmgVz7ZFY2RLeOhT1eEqcoTzgMezAY&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:45:54 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQAlCKgvnPvEve67MvHD4au0iu5gyz_wQ46R8dXV2GWCRIBmOtQMY7eMXMP65dVa2YB0m1osy1qwJgKn77X9KNN-gmvRfbD617Ah4bs8gQsch7lPXCBztb2lQCMwnDJBKd4_30I-PK09vKQpY3haSckTX1WBWwZwnRF8_gUlLeh62sBH7IU0y-clLetp3XxtYCX6o_f_5u2ileygazIiaFBPoDAPMzzcpYAqJRG2WJQkzyOip3IOEiyzXpUmI686-MzhYU7GJtBBAmYDiXyRU6wM7_bSv1_aZQL1SsmgVz7ZFY2RLeOhT1eEqcoTzgMezAY&state=828666fde7efe2c2dbd6becd7808ae47
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:46:04 Error: [MissingViewException] View file "/var/www/frost/View/Social/login_cb.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Social/login_cb.ctp',
+)
+Request URL: /social/connect_login_cb/facebook?url=%2Fsocial%2Fconnect_login_cb%2Ffacebook&code=AQBsLvCoPKbYelDCMLkl9Qm4inSAEm6qPsSv8L4q4h6JZwoUGnMZjB6yDI1ipWRIM987ww5ur6Ok46rAsU2KQIBaGmK30cb7acK7c98yKUxS_dtL4lifQ7GVhR5v5q6BIfyr1sbvrGEzUFlARPedSBhPiJ9SbhCF-AQv-cp0Z5IRDwzXbTLxvWymguRUMhWv9ITbndaC-x81JCy3sfATD5oh-_wCwCRSHzXaRl3QdR7fCNET23yEZXNU2iWAMqbHchuxc2rl5gLvwE44sQhbQpG0S9hrF1IFvvctxCt8cQ486peHr36xhx2ADlrjFfmH86o&state=410814491c032279663004efccaf9bac
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SocialController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-24 11:53:29 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/frost/View/Layouts/default.ctp, line 15]
+2013-09-24 11:53:29 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 15, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 15, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-24 11:53:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:53:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:58:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 11:58:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:02:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:02:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:02:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:02:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:04:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:04:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:08:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:08:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:17:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:17:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:18:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:18:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:18:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:18:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:19:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:19:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:23:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:23:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:23:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:23:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:25:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:25:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:26:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:26:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:26:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:26:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:27:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 12:27:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:33:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:13 Error: Fatal Error (1): Call to undefined function sha256() in [/var/www/frost/View/Pages/home.ctp, line 14]
+2013-09-24 14:34:13 Error: [FatalErrorException] Call to undefined function sha256()
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/frost/...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/frost/...', 14, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/frost/...', 14, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-24 14:34:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:34:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:35:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:35:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:40:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:40:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:41:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:41:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:41:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:41:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:41:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:41:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:43:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:43:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:44:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:44:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:45:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:45:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:47:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:47:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:53:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:53:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:53:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:54:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:55:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:56:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:56:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:57:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:57:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:58:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 14:58:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:00:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:00:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:00:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:00:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:00:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:00:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:01:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:01:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:02:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:02:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:02:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:02:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:02:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:02:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:06:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:06:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:07:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:07:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:07:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:07:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:11:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:12:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:12:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:12:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:12:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:12:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:12:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:13:43 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:15:04 Error: [MissingControllerException] Controller class PageController could not be found.
+Exception Attributes: array (
+  'class' => 'PageController',
+  'plugin' => NULL,
+)
+Request URL: /admin/page?url=%2Fadmin%2Fpage
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:34:30 Error: [CacheException] Cache engine interface is not properly configured.
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Cache/Cache.php(136): Cache::_buildEngine('interface')
+#1 /var/www/frost/Config/bootstrap.php(39): Cache::config('interface', Array)
+#2 /var/www/cake/lib/Cake/Core/Configure.php(93): include('/var/www/frost/...')
+#3 /var/www/cake/lib/Cake/bootstrap.php(170): Configure::bootstrap(true)
+#4 /var/www/frost/webroot/index.php(82): include('/var/www/cake/l...')
+#5 {main}
+2013-09-24 15:54:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:54:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:54:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:54:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:54:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:54:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:54:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:54:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:55:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:56:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:56:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:57:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:57:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:57:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:57:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:57:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:57:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:59:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:59:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:59:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 15:59:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 16:07:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 16:07:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 16:07:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-24 16:07:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

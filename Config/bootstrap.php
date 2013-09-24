@@ -28,6 +28,16 @@ App::import('Vendor', array('file' => 'autoload'));
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
 
+// set up cache stores
+Cache::config(
+	'interface', array(
+	    'engine' => 'File',
+	    'duration' => '+1 week',
+	    'path' => CACHE . 'interface' . DS,
+	    'prefix' => '_'
+	)
+);
+
 /**
  * You can attach event listeners to the request lifecyle as Dispatcher Filter . By Default CakePHP bundles two filters:
  *

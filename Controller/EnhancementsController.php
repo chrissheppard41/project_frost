@@ -40,6 +40,10 @@ class EnhancementsController extends AppController {
         if ($this->request->is('post')) {
             $this->Enhancement->create();
             if ($this->Enhancement->save($this->request->data)) {
+                $data = Cache::read('enhancements_all', 'interface');
+                if($data){
+                    Cache::delete('enhancements_all', 'interface');
+                }
                 $this->flashMessage(__('The enhancement has been saved'), 'alert-success', array('action' => 'index'));
             } else {
                 $this->flashMessage(__('The enhancement could not be saved. Please, try again.'), 'alert-error');
@@ -60,6 +64,10 @@ class EnhancementsController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Enhancement->save($this->request->data)) {
+                $data = Cache::read('enhancements_all', 'interface');
+                if($data){
+                    Cache::delete('enhancements_all', 'interface');
+                }
                 $this->flashMessage(__('The enhancement has been saved'), 'alert-success', array('action' => 'index'));
             } else {
                 $this->flashMessage(__('The enhancement could not be saved. Please, try again.'), 'alert-error');
@@ -84,6 +92,10 @@ class EnhancementsController extends AppController {
             throw new NotFoundException(__('Invalid enhancement'));
         }
         if ($this->Enhancement->delete()) {
+            $data = Cache::read('enhancements_all', 'interface');
+            if($data){
+                Cache::delete('enhancements_all', 'interface');
+            }
             $this->flashMessage(__('Enhancement deleted'), 'alert-success', $this->referer());
         }
         $this->flashMessage(__('Enhancement was not deleted'), 'alert-error', $this->referer());

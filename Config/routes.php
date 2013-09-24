@@ -13,6 +13,8 @@
 
 	//API endpoints
 	Router::connect('/races', array('controller' => 'races', 'action' => 'races'));
+	Router::connect('/armies', array('controller' => 'armyLists', 'action' => 'my_armies'));
+	Router::connect('/allarmies', array('controller' => 'armyLists', 'action' => 'all_armies'));
 
 	/* Loads CakePHP plugin routes. */
 	CakePlugin::routes();

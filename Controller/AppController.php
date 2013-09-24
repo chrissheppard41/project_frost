@@ -7,11 +7,11 @@ class AppController extends Controller {
 
 	public $components = array(
 		'Auth' => array(
+			//'authorize' => array('Controller'),
 			'authenticate' => array(
-				'BcryptForm',
-				'Social'
-			),
-			'authorize' => array('Controller')
+				'Social',
+				'BcryptForm'
+			)
 		),
 		'Paginator',
 		'RequestHandler',
@@ -47,9 +47,17 @@ class AppController extends Controller {
 			$this->Auth->allow();
 		}
 
+
 		$this->set('loggedIn', $this->Auth->loggedIn());
+		if($this->Auth->loggedIn()) {
+			$this->set('user', $this->Auth->user());
+		}
 		/* Allows auto-login from cookies. */
 		//$this->restoreLoginFromCookie();
+
+		if($this->request->is('admin') && $this->Auth->user('is_admin') === "0") {
+            $this->flashMessage(__('You do not have acces to this area'), 'alert-danger', '/');
+		}
 	}
 
 	/**
