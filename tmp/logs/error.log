@@ -38460,3 +38460,12 @@ Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
 Stack Trace:
 #0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-24 16:51:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

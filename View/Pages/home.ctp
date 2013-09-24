@@ -19,7 +19,7 @@ echo $salt . sha1($salt . $plainText . $id);
 
 <p>Want to display a list of armies using Angular server calling, then look at angular's templating</p>
 
-<div ng-app >
+<div ng-app="tool" >
 
 	<ul ng-controller="RacesCtrl">
 		<li ng-repeat="race in races">{{race.Race.name}} ({{race.RaceTypes.name}})</li>
@@ -48,7 +48,7 @@ echo $salt . sha1($salt . $plainText . $id);
 
 	<tr ng-repeat="army in my_armies" id="myarmy_{{army.ArmyList.id}}">
 		<td>{{army.ArmyList.name}}</td>
-		<td>{{army.ArmyList.descr}}</td>
+		<td>{{army.ArmyList.descr | truncate:50}}</td>
 		<td>{{army.ArmyList.point_limit}}</td>
 		<td>{{army.ArmyList.hide}}</td>
 		<td>{{army.ArmyList.created}}</td>
@@ -80,7 +80,7 @@ echo $salt . sha1($salt . $plainText . $id);
 
 	<tr ng-repeat="army in all_armies">
 		<td>{{army.ArmyList.name}}</td>
-		<td>{{army.ArmyList.descr}}</td>
+		<td>{{army.ArmyList.descr | truncate:50}}</td>
 		<td>{{army.ArmyList.point_limit}}</td>
 		<td>{{army.ArmyList.hide}}</td>
 		<td>{{army.ArmyList.created}}</td>
@@ -97,6 +97,7 @@ echo $this->Html->scriptBlock(
     'var $sid = '.$user['id'],
     array('inline' => false)
 );
+echo $this->Html->script('libs/angular/angular.module', array('inline' => false));
 echo $this->Html->script('libs/angular/angular.ctrl', array('inline' => false));
 ?>
 
