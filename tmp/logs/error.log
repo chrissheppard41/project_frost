@@ -39079,3 +39079,14 @@ Stack Trace:
 #6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2013-09-27 17:01:25 Error: [MissingActionException] Action ArmyListsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArmyListsController',
+  'action' => 'index',
+)
+Request URL: /army_lists/?url=%2Farmy_lists%2F
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

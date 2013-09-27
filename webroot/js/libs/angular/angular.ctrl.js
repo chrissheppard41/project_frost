@@ -64,6 +64,7 @@ function DisplayCtrl($scope, $http, list) {
 				}
 			});
 		}
+		return false;
 	};
 
 	$scope.displayFormmessages = function(response) {
@@ -95,6 +96,8 @@ function DisplayCtrl($scope, $http, list) {
 		$scope.step_2_view = true;
 		$scope.step_3_view = true;
 		$scope.step_4_view = true;
+
+		$scope.sec_add_army = false;
 	};
 
 	var promise_my = list.getAsync('GET', '/armies.json', {u_id: $scope.user_id});

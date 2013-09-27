@@ -3,10 +3,7 @@
 	<a href="#" ng-click="sec_add_army = ! sec_add_army" class="btn btn-danger">Close</a>
 	<div class="error">{{formMessage}}<div>
 
-<?php
-	echo $this->Form->create('ArmyList', array('ng-submit' => 'submit_add()',  'class' => 'form-horizontal'));
-?>
-
+	<form ng-submit="submit_add()" class="form-horizontal" name="add_army_list" id="ArmyList#Form" method="POST" accept-charset="utf-8">
 		<p class="add_step_1">
 			<span class="form-group required">
 				<label for="name" class="col-lg-2 control-label text-right">Army</label>
@@ -37,7 +34,7 @@
 				<label for="name" class="col-lg-2 control-label text-right">Name<span class="error" ng-show="add_army_list.name.$error.required"> *</span></label>
 				<span class="col-lg-10 pull-right">
 					<input ng-model="name"
-				    	name="data[ArmyList][name]"
+				    	name="name"
 				    	maxlength="50"
 				    	ng-required=true
 				    	ng-minlength=5
@@ -53,7 +50,7 @@
 				<label for="descr" class="col-lg-2 control-label text-right">Description<span class="error" ng-show="add_army_list.descr.$error.required"> *</span></label>
 				<span class="col-lg-10 pull-right">
 					<textarea ng-model="descr"
-				       	name="data[ArmyList][descr]"
+				       	name="descr"
 				       	required
 				       	ng-required=true
 						class="form-control"
@@ -65,7 +62,7 @@
 				<label for="points_limit" class="col-lg-2 control-label text-right">Points Limit<span class="error" ng-show="add_army_list.points_limit.$error.required"> *</span></label>
 				<span class="col-lg-10 pull-right">
 					<input ng-model="points_limit"
-				    	name="data[ArmyList][points_limit]"
+				    	name="points_limit"
 				    	type="number"
 				    	maxlength="11"
 				  		ng-minlength=3
@@ -83,7 +80,7 @@
 				<span class="col-lg-1 pull-left">
 					<input type="checkbox"
 			       	ng-model="hide"
-			       	name="data[ArmyList][hide]"
+			       	name="hide"
 			       	ng-true-value="1"
 			       	ng-false-value="0"
 					class="form-control"
@@ -95,7 +92,5 @@
 					<input class="btn btn-primary" type="submit" value="Save"/>
 				</span>
 			</span>
-<?php
-		echo $this->Form->end();
-?>
+	</form>
 </section>
