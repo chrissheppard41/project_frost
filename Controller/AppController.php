@@ -201,4 +201,13 @@ class AppController extends Controller {
 		return ($email->send()) ? true : false;
 	}
 
+	/**
+	 * check that required params have been supplied and generate response for an invalid request
+	 *
+	 * @return bool
+	 */
+	protected function _hasRequiredParams($suppliedParams, $requiredParams) {
+		$diff = array_diff_key($suppliedParams, $requiredParams);
+		return !empty($diff);
+	}
 }

@@ -7,6 +7,12 @@ App::uses('AppController', 'Controller');
  */
 class SquadsController extends AppController {
 /**
+ * Components
+ * @var array
+ */
+    public $components = array('Rest');
+
+/**
  * admin_index method
  *
  * @return void
@@ -67,11 +73,20 @@ class SquadsController extends AppController {
         if (!$this->Squad->exists()) {
             throw new NotFoundException(__('Invalid squad'));
         }
+
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Squad->save($this->request->data)) {
                 $data = Cache::read('squads_all', 'interface');
                 if($data){
                     Cache::delete('squads_all', 'interface');
+                }
+                $data = Cache::read('squads_'.$id, 'interface');
+                if($data){
+                    Cache::delete('squads_'.$id, 'interface');
+                }
+                $data = Cache::read('squads_raceid_'.$this->request->data['Squad']['races_id'], 'interface');
+                if($data){
+                    Cache::delete('squads_raceid_'.$this->request->data['Squad']['races_id'], 'interface');
                 }
                 $this->flashMessage(__('The squad has been saved'), 'alert-success', array('action' => 'index'));
             } else {
@@ -109,5 +124,45 @@ class SquadsController extends AppController {
             $this->flashMessage(__('Squad deleted'), 'alert-success', $this->referer());
         }
         $this->flashMessage(__('Squad was not deleted'), 'alert-error', $this->referer());
+    }
+
+
+    /**
+     * API endpoints
+     */
+
+     /**
+     * API squads to return a list of squads related to race
+     *
+     * @return void
+     */
+
+    public function squads() {
+        $this->request->onlyAllow('get');
+        unset($this->request->query['url']);
+
+        $requiredParams = array(
+            'races_id'
+        );
+
+        // check that all required params have been supplied
+        if (!$this->_hasRequiredParams($this->request->query, $requiredParams)) {
+            throw new BadRequestException(__('Incorrect parameters supplied'));
+        }
+
+        $data = Cache::read('squads_raceid_'.$this->request->query['races_id'], 'interface');
+        if(!$data) {
+            $data = $this->Squad->find(
+                'all',
+                array(
+                    'conditions' => array(
+                        'Races.id' => $this->request->query['races_id']
+                    )
+                )
+            );
+            Cache::write('squads_raceid_'.$this->request->query['races_id'], $data, 'interface');
+        }
+
+        return $this->Rest->response(200, __('squads'), array('data' => $data));
     }
 }

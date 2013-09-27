@@ -1,40 +1,115 @@
-function RacesCtrl($scope, $http) {
-	$http.get('races.json').success(function(data) {
-		$scope.races = data.response.data;
-	});
-}
-
-
-
-function MyArmiesCtrl($scope, $http) {
+function DisplayCtrl($scope, $http, list) {
 	$scope.user_id = $sid;
-	$http({method: 'GET', url: '/armies.json', params: {u_id:$scope.user_id}}).
-		success(function(data, status, headers, config) {
-			// this callback will be called asynchronously
-			// when the response is available
 
-			$scope.my_armies = data.response.data;
-		}).
-		error(function(data, status, headers, config) {
-			// called asynchronously if an error occurs
-			// or server returns response with an error status.
-			console.log("error");
-		});
-}
+	$scope.step_2_view = true;
+	$scope.step_3_view = true;
+	$scope.step_4_view = true;
+
+	$scope.sec_add_army = false;
 
 
+	var promise_types = list.getAsync('GET', '/armytypes.json', {u_id: $scope.user_id});
+	$scope.my_armies = {};
 
-function AllArmiesCtrl($scope, $http) {
-	$http({method: 'GET', url: '/allarmies.json'}).
-		success(function(data, status, headers, config) {
-			// this callback will be called asynchronously
-			// when the response is available
+	promise_types.then(function( data ){
+		$scope.armytypes = list.data;
+	});
 
-			$scope.all_armies = data.response.data;
-		}).
-		error(function(data, status, headers, config) {
-			// called asynchronously if an error occurs
-			// or server returns response with an error status.
-			console.log("error");
-		});
+
+	$scope.dis_races = function() {
+		$scope.races = $scope.armytypes[$scope.army].Races;
+		$scope.step_2_view = false;
+	};
+
+	$scope.dis_squads = function() {
+		$http({method: 'GET', url: '/squads.json', params: {races_id:$scope.race}}).
+			success(function(data, status, headers, config) {
+				$scope.squads = data.response.data;
+				$scope.step_3_view = false;
+			}).
+			error(function(data, status, headers, config) {
+				console.log("RacesCtrl: /squads.json error");
+			});
+	};
+
+	$scope.submit_add = function() {
+		if ($scope.add_army_list.$invalid) {
+			$scope.formMessage = "Form contains errors";
+		} else {
+			$scope.formMessage = "";
+
+			var promise_post = list.getAsync('POST', '/save.json', {'races_id':this.race, 'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
+
+			promise_post.then(function( data ){
+				if(list.data.code == 200) {
+
+					$scope.add_resets();
+
+					var promise_my = list.getAsync('GET', '/armies.json', {u_id: $scope.user_id});
+					$scope.my_armies = {};
+
+					promise_my.then(function( data ){
+						$scope.my_armies = list.data;
+					});
+
+
+					var promise_all = list.getAsync('GET', '/allarmies.json', {});
+					$scope.all_armies = {};
+
+					promise_all.then(function( data ){
+						$scope.all_armies = list.data;
+					});
+				} else {
+					$scope.displayFormmessages(list);
+				}
+			});
+		}
+	};
+
+	$scope.displayFormmessages = function(response) {
+
+		$scope.formMessage = "";
+		if(response.data.code == 500) {
+			$scope.formMessage = response.data.error;
+		} else {
+			$scope.formMessage = "Internal server error: '"+response.name+"'. Please try again later.";
+		}
+
+	};
+
+	$scope.add_resets = function() {
+		$scope.add_army_list.$dirty = false;
+        $scope.add_army_list.$pristine = true;
+
+		//resets for this forum
+		$scope.army = {};
+		$scope.race = {};
+		$scope.races_id = '';
+		$scope.name = '';
+		$scope.descr = '';
+		$scope.points_limit = '';
+		$scope.hide = '';
+		$scope.users_id = '';
+
+		//resets for view
+		$scope.step_2_view = true;
+		$scope.step_3_view = true;
+		$scope.step_4_view = true;
+	};
+
+	var promise_my = list.getAsync('GET', '/armies.json', {u_id: $scope.user_id});
+	$scope.my_armies = {};
+
+	promise_my.then(function( data ){
+		$scope.my_armies = list.data;
+	});
+
+
+
+	var promise_all = list.getAsync('GET', '/allarmies.json', {});
+	$scope.all_armies = {};
+
+	promise_all.then(function( data ){
+		$scope.all_armies = list.data;
+	});
 }

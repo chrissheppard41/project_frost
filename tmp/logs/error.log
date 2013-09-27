@@ -38469,3 +38469,613 @@ Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstra
 Stack Trace:
 #0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-25 09:43:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 10:34:48 Error: [MissingTableException] Table weapons for model Weapons was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'weapons',
+  'class' => 'Weapons',
+  'ds' => 'default',
+)
+Request URL: /armytypes.json?url=%2Farmytypes.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Model.php(3243): Model->setSource('weapons')
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1067): Model->getDataSource()
+#2 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(RaceType), Array)
+#3 /var/www/frost/Controller/RaceTypesController.php(122): Model->find('all')
+#4 [internal function]: RaceTypesController->racetypes()
+#5 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(RaceTypesController), Array)
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RaceTypesController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-09-25 10:37:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Units.race_types_id' in 'field list'
+Request URL: /armytypes.json?url=%2Farmytypes.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Units`....', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Units`....', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1343): DboSource->fetchAll('SELECT `Units`....', false)
+#4 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAssociated(Object(RaceType), 'SELECT `Units`....', Array)
+#5 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1116): DboSource->queryAssociation(Object(RaceType), Object(AppModel), 'hasMany', 'Units', Array, Array, true, Array, 0, Array)
+#6 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(RaceType), Array)
+#7 /var/www/frost/Controller/RaceTypesController.php(122): Model->find('all')
+#8 [internal function]: RaceTypesController->racetypes()
+#9 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(RaceTypesController), Array)
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RaceTypesController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-09-25 10:37:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Units.race_types_id' in 'field list'
+Request URL: /armytypes.json?url=%2Farmytypes.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Units`....', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Units`....', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1343): DboSource->fetchAll('SELECT `Units`....', false)
+#4 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAssociated(Object(RaceType), 'SELECT `Units`....', Array)
+#5 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1116): DboSource->queryAssociation(Object(RaceType), Object(AppModel), 'hasMany', 'Units', Array, Array, true, Array, 0, Array)
+#6 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(RaceType), Array)
+#7 /var/www/frost/Controller/RaceTypesController.php(122): Model->find('all')
+#8 [internal function]: RaceTypesController->racetypes()
+#9 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(RaceTypesController), Array)
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RaceTypesController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-09-25 10:37:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Units.race_types_id' in 'field list'
+Request URL: /armytypes.json?url=%2Farmytypes.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Units`....', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(670): DboSource->execute('SELECT `Units`....', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1343): DboSource->fetchAll('SELECT `Units`....', false)
+#4 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1205): DboSource->fetchAssociated(Object(RaceType), 'SELECT `Units`....', Array)
+#5 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1116): DboSource->queryAssociation(Object(RaceType), Object(AppModel), 'hasMany', 'Units', Array, Array, true, Array, 0, Array)
+#6 /var/www/cake/lib/Cake/Model/Model.php(2696): DboSource->read(Object(RaceType), Array)
+#7 /var/www/frost/Controller/RaceTypesController.php(122): Model->find('all')
+#8 [internal function]: RaceTypesController->racetypes()
+#9 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(RaceTypesController), Array)
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(RaceTypesController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-09-25 10:38:09 Error: Fatal Error (1): Call to a member function response() on a non-object in [/var/www/frost/Controller/RaceTypesController.php, line 126]
+2013-09-25 10:38:09 Error: [FatalErrorException] Call to a member function response() on a non-object
+Request URL: /armytypes.json?url=%2Farmytypes.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 126)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 126, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 126, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-25 11:41:05 Error: [NotFoundException] Invalid race_id
+Request URL: /squads.json?url=%2Fsquads.json
+Stack Trace:
+#0 [internal function]: SquadsController->squads()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-25 11:41:59 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /squads.json?url=%2Fsquads.json
+Stack Trace:
+#0 [internal function]: SquadsController->squads()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-25 11:42:11 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /squads.json?url=%2Fsquads.json
+Stack Trace:
+#0 [internal function]: SquadsController->squads()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-25 11:42:13 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /squads.json?url=%2Fsquads.json&races_id=1
+Stack Trace:
+#0 [internal function]: SquadsController->squads()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-25 11:45:35 Error: Fatal Error (1): Call to a member function response() on a non-object in [/var/www/frost/Controller/SquadsController.php, line 149]
+2013-09-25 11:45:35 Error: [FatalErrorException] Call to a member function response() on a non-object
+Request URL: /squads.json?races_id=1
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 149)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 149, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 149, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-25 11:46:18 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /squads.json
+Stack Trace:
+#0 [internal function]: SquadsController->squads()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-25 12:03:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:04:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:04:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:04:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:04:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:04:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:04:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:05:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 12:05:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 15:17:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 15:17:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 15:17:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 15:17:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 15:17:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 15:17:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-25 15:17:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-26 09:12:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 10:36:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`army_builder`.`army_list`, CONSTRAINT `fk_army_list_1` FOREIGN KEY (`races_id`) REFERENCES `races` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /save.json?url=%2Fsave.json&descr=werewr&name=ewrerw&point_limit=234&races_id=3&users_id=8
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `ar...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1008): DboSource->execute('INSERT INTO `ar...')
+#3 /var/www/cake/lib/Cake/Model/Model.php(1744): DboSource->create(Object(ArmyList), Array, Array)
+#4 /var/www/frost/Controller/ArmyListsController.php(205): Model->save(Array)
+#5 [internal function]: ArmyListsController->save_army()
+#6 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#7 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-27 10:37:47 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json&descr=tetrette&name=reterte&point_limit=234&races_id=3&users_id=8
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 12:37:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:37:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:37:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:43:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:43:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:43:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:43:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:43:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 12:43:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-27 15:15:04 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 15:15:23 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 15:27:19 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 15:28:09 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 16:06:40 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 16:06:42 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 16:06:42 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 16:06:43 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 16:07:03 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 16:07:08 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /save.json?url=%2Fsave.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->save_army()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-27 16:09:17 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 10]
+2013-09-27 16:09:17 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:09:19 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 10]
+2013-09-27 16:09:19 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:09:42 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 10]
+2013-09-27 16:09:42 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:09:55 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 10]
+2013-09-27 16:09:55 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:26:53 Error: Fatal Error (4): syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 10]
+2013-09-27 16:26:53 Error: [FatalErrorException] syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:26:55 Error: Fatal Error (4): syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 10]
+2013-09-27 16:26:55 Error: [FatalErrorException] syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:33:38 Error: Fatal Error (4): syntax error, unexpected ''ng-false-value'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 87]
+2013-09-27 16:33:38 Error: [FatalErrorException] syntax error, unexpected ''ng-false-value'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 87, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 87, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:33:39 Error: Fatal Error (4): syntax error, unexpected ''ng-false-value'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 87]
+2013-09-27 16:33:39 Error: [FatalErrorException] syntax error, unexpected ''ng-false-value'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 87)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 87, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 87, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:40:25 Error: Fatal Error (4): syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/frost/View/Elements/add_army.ctp, line 10]
+2013-09-27 16:40:25 Error: [FatalErrorException] syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 10, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-27 16:47:34 Error: [MissingViewException] View file "/var/www/frost/View/Pages/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Pages/add.ctp',
+)
+Request URL: /pages/add?url=%2Fpages%2Fadd
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName('add')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render('add', NULL)
+#2 /var/www/frost/Controller/PagesController.php(32): Controller->render('add')
+#3 [internal function]: PagesController->display('add')
+#4 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-27 16:47:52 Error: [MissingViewException] View file "/var/www/frost/View/Pages/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/frost/View/Pages/add.ctp',
+)
+Request URL: /pages/add?url=%2Fpages%2Fadd
+Stack Trace:
+#0 /var/www/cake/lib/Cake/View/View.php(468): View->_getViewFileName('add')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(948): View->render('add', NULL)
+#2 /var/www/frost/Controller/PagesController.php(32): Controller->render('add')
+#3 [internal function]: PagesController->display('add')
+#4 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

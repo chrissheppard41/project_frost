@@ -118,7 +118,7 @@ class RacesController extends AppController {
      */
 
      /**
-     * API hotspotsXML to return a Zoomify-formatted XML file of can hotspots
+     * API races to return a list of army races to choose from
      *
      * @return void
      */

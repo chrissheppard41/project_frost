@@ -53,6 +53,10 @@ class ArmyList extends AppModel {
 				'rule' => array('notempty'),
 				'message' => 'Please supply a name'
 			),
+            'between' => array(
+                'rule'    => array('between', 5, 50),
+                'message' => 'Between 5 to 50 characters'
+            )
 		),
 		'descr' => array(
 			'notempty' => array(
@@ -68,7 +72,11 @@ class ArmyList extends AppModel {
 			'numeric' => array(
 				'rule'    => 'numeric',
 	        	'message' => 'Please supply the number of points.'
-        	)
+        	),
+            'between' => array(
+                'rule'    => array('between', 3, 11),
+                'message' => 'Between 3 to 11 characters'
+            )
 		),
 	);
 

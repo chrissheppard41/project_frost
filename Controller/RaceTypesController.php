@@ -7,6 +7,12 @@ App::uses('AppController', 'Controller');
  */
 class RaceTypesController extends AppController {
 /**
+ * Components
+ * @var array
+ */
+    public $components = array('Rest');
+
+/**
  * admin_index method
  *
  * @return void
@@ -99,5 +105,30 @@ class RaceTypesController extends AppController {
             $this->flashMessage(__('Race type deleted'), 'alert-success', $this->referer());
         }
         $this->flashMessage(__('Race type was not deleted'), 'alert-error', $this->referer());
+    }
+
+
+    /**
+     * API endpoints
+     */
+
+     /**
+     * API racetypes to return a list of army types to choose from
+     *
+     * @return void
+     */
+
+    public function racetypes() {
+        $this->request->onlyAllow('get');
+
+        $data = Cache::read('race_types_all', 'interface');
+        if(!$data) {
+            $data = $this->RaceType->find(
+                'all'
+            );
+            Cache::write('race_types_all', $data, 'interface');
+        }
+
+        return $this->Rest->response(200, __('raceTypes'), array('data' => $data));
     }
 }
