@@ -116,10 +116,14 @@ class SocialAuthenticate extends BaseAuthenticate{
                 )
             );
 
+            $appUserModel->id = $data[$model]['id'];
             if($data[$model]['access_token'] != $ac) {
-                $appUserModel->id = $data[$model]['id'];
-                $appUserModel->saveField('access_token', $ac);
+                $appUserModel->saveField('social_access_token', $ac);
             }
+
+
+            $appUserModel->saveField('access_token', '');
+
 
             if(empty($data)) {
                 $data = array(

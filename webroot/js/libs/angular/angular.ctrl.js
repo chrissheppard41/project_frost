@@ -1,12 +1,31 @@
 function DisplayCtrl($scope, $http, list) {
 	$scope.user_id = $sid;
 
+	var promise_my = list.getAsync('GET', '/armies.json', {u_id: $scope.user_id});
+	$scope.my_armies = {};
+
+	promise_my.then(function( data ){
+		$scope.my_armies = list.data;
+	});
+
+	var promise_all = list.getAsync('GET', '/allarmies.json', {});
+	$scope.all_armies = {};
+
+	promise_all.then(function( data ){
+		$scope.all_armies = list.data;
+	});
+}
+
+
+
+function AddCtrl($scope, $routeParams, $location, list) {
+	$scope.user_id = $sid;
+
+	console.log("Add");
+
 	$scope.step_2_view = true;
 	$scope.step_3_view = true;
 	$scope.step_4_view = true;
-
-	$scope.sec_add_army = false;
-
 
 	var promise_types = list.getAsync('GET', '/armytypes.json', {u_id: $scope.user_id});
 	$scope.my_armies = {};
@@ -22,49 +41,13 @@ function DisplayCtrl($scope, $http, list) {
 	};
 
 	$scope.dis_squads = function() {
-		$http({method: 'GET', url: '/squads.json', params: {races_id:$scope.race}}).
-			success(function(data, status, headers, config) {
-				$scope.squads = data.response.data;
-				$scope.step_3_view = false;
-			}).
-			error(function(data, status, headers, config) {
-				console.log("RacesCtrl: /squads.json error");
-			});
-	};
+		var promise_squads = list.getAsync('GET', '/squads.json', {races_id:$scope.race});
+		$scope.squads = {};
 
-	$scope.submit_add = function() {
-		if ($scope.add_army_list.$invalid) {
-			$scope.formMessage = "Form contains errors";
-		} else {
-			$scope.formMessage = "";
-
-			var promise_post = list.getAsync('POST', '/save.json', {'races_id':this.race, 'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
-
-			promise_post.then(function( data ){
-				if(list.data.code == 200) {
-
-					$scope.add_resets();
-
-					var promise_my = list.getAsync('GET', '/armies.json', {u_id: $scope.user_id});
-					$scope.my_armies = {};
-
-					promise_my.then(function( data ){
-						$scope.my_armies = list.data;
-					});
-
-
-					var promise_all = list.getAsync('GET', '/allarmies.json', {});
-					$scope.all_armies = {};
-
-					promise_all.then(function( data ){
-						$scope.all_armies = list.data;
-					});
-				} else {
-					$scope.displayFormmessages(list);
-				}
-			});
-		}
-		return false;
+		promise_squads.then(function( data ){
+			$scope.squads = data;
+			$scope.step_3_view = false;
+		});
 	};
 
 	$scope.displayFormmessages = function(response) {
@@ -99,20 +82,30 @@ function DisplayCtrl($scope, $http, list) {
 
 		$scope.sec_add_army = false;
 	};
+	$scope.submit_add = function() {
+		if ($scope.add_army_list.$invalid) {
+			$scope.formMessage = "Form contains errors";
+		} else {
+			$scope.formMessage = "";
 
-	var promise_my = list.getAsync('GET', '/armies.json', {u_id: $scope.user_id});
-	$scope.my_armies = {};
+			var promise_post = list.getAsync('POST', '/save.json', {'races_id':this.race, 'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
 
-	promise_my.then(function( data ){
-		$scope.my_armies = list.data;
-	});
+			promise_post.then(function( data ){
+				if(list.data.code == 200) {
 
+					$scope.add_resets();
 
+					$location.path('#/');
+				} else {
+					$scope.displayFormmessages(list);
+				}
+			});
+		}
+		return false;
+	};
+}
 
-	var promise_all = list.getAsync('GET', '/allarmies.json', {});
-	$scope.all_armies = {};
-
-	promise_all.then(function( data ){
-		$scope.all_armies = list.data;
-	});
+function EditCtrl($scope, $routeParams, list) {
+	$scope.$routeParams = $routeParams;
+	console.log("Edit");
 }

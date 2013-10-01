@@ -19,6 +19,11 @@
 	Router::connect('/squads', array('controller' => 'squads', 'action' => 'squads'));
 	Router::connect('/save', array('controller' => 'armyLists', 'action' => 'save_army'));
 
+
+	//Partials views routing
+	Router::connect('/add', array('controller' => 'pages', 'action' => 'home'));
+	Router::connect('/partials/:element', array('controller' => 'pages', 'action' => 'partials'), array('pass' => array('element')));
+
 	/* Loads CakePHP plugin routes. */
 	CakePlugin::routes();
 

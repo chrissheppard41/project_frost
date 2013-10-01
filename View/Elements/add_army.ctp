@@ -1,6 +1,6 @@
-<section class="clearfix" ng-show="sec_add_army">
+<section class="clearfix">
 	<h2>add</h2>
-	<a href="#" ng-click="sec_add_army = ! sec_add_army" class="btn btn-danger">Close</a>
+	<a href="#/" class="btn btn-danger">back</a>
 	<div class="error">{{formMessage}}<div>
 
 	<form ng-submit="submit_add()" class="form-horizontal" name="add_army_list" id="ArmyList#Form" method="POST" accept-charset="utf-8">

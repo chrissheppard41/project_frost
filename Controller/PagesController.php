@@ -59,6 +59,19 @@ class PagesController extends AppController {
 		$this->set(compact('title_for_layout', 'data', 'metaData'));
 	}
 
+	/**
+	 * Default partials retrival method.
+	 *
+	 * @return void
+	 */
+	public function partials($element = null) {
+		$this->layout = 'ajax';
+		if(!$element) {
+            throw new NotFoundException(__('Invalid element'));
+		}
+
+		$this->set(compact('element'));
+	}
 
 	/**
 	 *	Clears each of the specified folders found inside tmp/cache.
