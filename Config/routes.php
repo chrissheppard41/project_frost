@@ -12,12 +12,17 @@
 
 
 	//API endpoints
+	//Races
 	Router::connect('/races', array('controller' => 'races', 'action' => 'races'));
+	//Race types
 	Router::connect('/armytypes', array('controller' => 'raceTypes', 'action' => 'racetypes'));
+	//Army lists
 	Router::connect('/armies', array('controller' => 'armyLists', 'action' => 'my_armies'));
 	Router::connect('/allarmies', array('controller' => 'armyLists', 'action' => 'all_armies'));
-	Router::connect('/squads', array('controller' => 'squads', 'action' => 'squads'));
 	Router::connect('/save', array('controller' => 'armyLists', 'action' => 'save_army'));
+	Router::connect('/edit_army/:id', array('controller' => 'armyLists', 'action' => 'edit_armies'), array('pass' => array('id')));
+	//Squads
+	Router::connect('/squads', array('controller' => 'squads', 'action' => 'squads'));
 
 
 	//Partials views routing

@@ -1,7 +1,7 @@
 <section class="clearfix">
-	<h2>add</h2>
+	<h2>Add</h2>
 	<a href="#/" class="btn btn-danger">back</a>
-	<div class="error">{{formMessage}}<div>
+	<div class="error">{{formMessage}}</div>
 
 	<form ng-submit="submit_add()" class="form-horizontal" name="add_army_list" id="ArmyList#Form" method="POST" accept-charset="utf-8">
 		<p class="add_step_1">

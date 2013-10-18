@@ -1,34 +1,3 @@
-angular.module('tool', ['filters', 'listServices', 'route_helper']);
-
-angular.module('route_helper', []).
-  config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-      when('/', {templateUrl: 'partials/index', controller: DisplayCtrl}).
-      when('/add', {templateUrl: 'partials/add_army', controller: AddCtrl}).
-      when('/edit', {templateUrl: 'partials/edit_army', controller: EditCtrl}).
-      otherwise({redirectTo: '/'});
-}]);
-
-angular.module('filters', []).
-    filter('truncate', function () {
-        return function (text, length, end) {
-            if (isNaN(length))
-                length = 10;
-
-            if (end === undefined)
-                end = "...";
-
-            if (text.length <= length || text.length - end.length <= length) {
-                return text;
-            }
-            else {
-                return String(text).substring(0, length-end.length) + end;
-            }
-
-        };
-    });
-
-
 angular.module('listServices', []).
     factory('list', function($http, $q){
         var sharedService = {};

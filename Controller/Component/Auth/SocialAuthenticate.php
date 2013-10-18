@@ -95,7 +95,7 @@ class SocialAuthenticate extends BaseAuthenticate{
                         'id',
                         'social',
                         'social_id',
-                        'access_token',
+                        'social_access_token',
                         'username',
                         'name',
                         'slug',
@@ -117,12 +117,12 @@ class SocialAuthenticate extends BaseAuthenticate{
             );
 
             $appUserModel->id = $data[$model]['id'];
-            if($data[$model]['access_token'] != $ac) {
+            if($data[$model]['social_access_token'] != $ac) {
                 $appUserModel->saveField('social_access_token', $ac);
             }
 
 
-            $appUserModel->saveField('access_token', '');
+            //$appUserModel->saveField('social_access_token', '');
 
 
             if(empty($data)) {

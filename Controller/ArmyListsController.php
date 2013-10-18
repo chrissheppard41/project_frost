@@ -163,12 +163,12 @@ class ArmyListsController extends AppController {
 
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
     }
+
      /**
      * API all_armies to return a list of public army lists
      *
      * @return void
      */
-
     public function all_armies() {
         $this->request->onlyAllow('get');
 
@@ -232,5 +232,29 @@ class ArmyListsController extends AppController {
         } else {
             return $this->Rest->response(500, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));
         }
+    }
+
+    /**
+     * API edit_armies to return a army related to the input
+     * @param $id (int)
+     * @return void
+     */
+    public function edit_armies($id = null) {
+        $this->request->onlyAllow('get');
+
+        $data = Cache::read('army_list_'.$id, 'interface');
+        if(!$data){
+            $data = $this->ArmyList->find(
+                'first',
+                array(
+                    'conditions' => array(
+                        'ArmyList.id' => $id
+                    )
+                )
+            );
+            Cache::write('army_list_'.$id, $data, 'interface');
+        }
+
+        return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
     }
 }

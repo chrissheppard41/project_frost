@@ -11,15 +11,6 @@
 
 <div ng-app="tool">
 
-	<?php
-		echo $this->Html->scriptBlock(
-		    'var $sid = '.$user['id'],
-		    array('inline' => false)
-		);
-		echo $this->Html->script('libs/angular/angular.module', array('inline' => false));
-		echo $this->Html->script('libs/angular/angular.ctrl', array('inline' => false));
-	?>
-
 	<div ng-view></div>
 
 </div>
@@ -27,3 +18,17 @@
 <?php } ?>
 
 
+<?php
+	echo $this->Html->scriptBlock(
+	    'var $sid = '.$user['id'],
+	    array('inline' => false)
+	);
+	echo $this->Html->script('libs/angular/service/list.module', array('inline' => false));
+	echo $this->Html->script('libs/angular/service/filters.module', array('inline' => false));
+	echo $this->Html->script('libs/angular/service/listServices.module', array('inline' => false));
+	echo $this->Html->script('libs/angular/service/routeHelper.module', array('inline' => false));
+
+	echo $this->Html->script('libs/angular/controller/Add.ctrl', array('inline' => false));
+	echo $this->Html->script('libs/angular/controller/Display.ctrl', array('inline' => false));
+	echo $this->Html->script('libs/angular/controller/Edit.ctrl', array('inline' => false));
+?>

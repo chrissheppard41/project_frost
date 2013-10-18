@@ -1,6 +1,6 @@
 <?php
 /**
- * s3 App configurations
+ * Social media App configurations
  *
  * Environment is set in the server vhost configuration
  */
