@@ -24,7 +24,7 @@
 				<a href="#/view/{{army.ArmyList.id}}" class="btn-sm btn-primary">View</a>
 				<a href="#/edit/{{army.ArmyList.id}}" class="btn-sm btn-warning">Edit</a>
 
-				<form action="#{{army.ArmyList.code}}" name="post_524172b158eab" id="post_524172b158eab" style="display:none;" method="post" class="ng-pristine ng-valid">
+				<form action="#" name="post_524172b158eab" id="post_524172b158eab" style="display:none;" method="post" class="ng-pristine ng-valid">
 					<input type="hidden" name="_method" value="POST">
 				</form>
 				<a href="#{{army.ArmyList.code}}" class="btn-sm btn-danger" onclick="if (confirm('Are you sure you want to delete this record?')) { document.post_524172b158eab.submit(); } event.returnValue = false; return false;">Delete</a>

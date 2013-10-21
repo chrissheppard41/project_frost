@@ -18,7 +18,7 @@ function EditCtrl($scope, $routeParams, $location, list) {
 			$scope.formMessage = "Form contains errors";
 		} else {
 			$scope.formMessage = "";
-
+//+'/'+$scope.routeParams.hash
 			var promise_post = list.getAsync('POST', '/edit/save/'+$scope.routeParams.id+'.json', {'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
 
 			promise_post.then(function( data ){

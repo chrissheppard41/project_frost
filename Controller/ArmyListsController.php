@@ -235,7 +235,7 @@ class ArmyListsController extends AppController {
 
     /**
      * API edit_armies to return a army related to the input
-     * @param $id (int)
+     * @param $id (int), $hash (int)
      * @return void
      */
     public function edit_armies($id = null) {
@@ -246,13 +246,15 @@ class ArmyListsController extends AppController {
             throw new NotFoundException(__('Invalid army list'));
         }
 
+
         $data = Cache::read('_army_'.$id, 'army_lists');
         if(!$data){
             $data = $this->ArmyList->find(
                 'first',
                 array(
                     'conditions' => array(
-                        'ArmyList.id' => $id
+                        'ArmyList.id' => $id,
+                        'ArmyList.users_id' => $this->Auth->user('id')
                     )
                 )
             );

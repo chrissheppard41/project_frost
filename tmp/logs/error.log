@@ -1477,3 +1477,48 @@ Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
 Stack Trace:
 #0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-10-21 17:36:09 Error: [NotFoundException] Invalid army list
+Request URL: /edit_army/1.json?url=%2Fedit_army%2F1.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->edit_armies('1')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-21 17:37:17 Error: [NotFoundException] Invalid army list
+Request URL: /edit_army/1.json?url=%2Fedit_army%2F1.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->edit_armies('1')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-21 17:38:10 Error: [NotFoundException] Invalid army list
+Request URL: /edit_army/1.json?url=%2Fedit_army%2F1.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->edit_armies('1')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-21 17:42:12 Error: [NotFoundException] Invalid army list
+Request URL: /edit_army/1.json?url=%2Fedit_army%2F1.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->edit_armies('1')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-21 17:42:37 Error: [NotFoundException] Invalid army list
+Request URL: /edit_army/1.json?url=%2Fedit_army%2F1.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->edit_armies('1')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
