@@ -8,7 +8,7 @@ function DisplayCtrl($scope, $http, list) {
 		$scope.my_armies = list.data;
 	});
 
-	var promise_all = list.getAsync('GET', '/allarmies.json', {});
+	var promise_all = list.getAsync('GET', '/publicarmies.json', {});
 	$scope.all_armies = {};
 
 	promise_all.then(function( data ){

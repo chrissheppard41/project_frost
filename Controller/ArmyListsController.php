@@ -44,16 +44,16 @@ class ArmyListsController extends AppController {
  */
     public function admin_add() {
         if ($this->request->is('post')) {
+
+            $salt = substr(md5(uniqid(rand(), true)), 0, 9);
+            $this->request->data['code'] = $salt . sha1($salt . time() . $this->request->data['users_id']);
+
             $this->ArmyList->create();
             if ($this->ArmyList->save($this->request->data)) {
-                $data = Cache::read('army_lists_all', 'interface');
-                if($data){
-                    Cache::delete('army_lists_all', 'interface');
-                }
-                $data = Cache::read('army_lists_nohide', 'interface');
-                if($data){
-                    Cache::delete('army_lists_nohide', 'interface');
-                }
+
+                //cache killer
+                $this->_cacheController($this->request->data['ArmyList']);
+
                 $this->flashMessage(__('The army list has been saved'), 'alert-success', array('action' => 'index'));
             } else {
                 $this->flashMessage(__('The army list could not be saved. Please, try again.'), 'alert-error');
@@ -77,22 +77,10 @@ class ArmyListsController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->ArmyList->save($this->request->data)) {
-                $cache = Cache::read('army_list_'.$this->ArmyList->id, 'interface');
-                if($cache){
-                    Cache::delete('army_list_'.$this->ArmyList->id, 'interface');
-                }
-                $data = Cache::read('army_lists_'.$this->request->data['users_id'], 'interface');
-                if($data){
-                    Cache::delete('army_lists_'.$this->request->data['users_id'], 'interface');
-                }
-                $data = Cache::read('army_lists_all', 'interface');
-                if($data){
-                    Cache::delete('army_lists_all', 'interface');
-                }
-                $data = Cache::read('army_lists_nohide', 'interface');
-                if($data){
-                    Cache::delete('army_lists_nohide', 'interface');
-                }
+
+                //cache killer
+                $this->_cacheController($this->request->data['ArmyList']);
+
                 $this->flashMessage(__('The army list has been saved'), 'alert-success', array('action' => 'index'));
             } else {
                 $this->flashMessage(__('The army list could not be saved. Please, try again.'), 'alert-error');
@@ -119,19 +107,11 @@ class ArmyListsController extends AppController {
         if (!$this->ArmyList->exists()) {
             throw new NotFoundException(__('Invalid army list'));
         }
+        $data = $this->ArmyList->read(null, $id);
         if ($this->ArmyList->delete()) {
-            $data = Cache::read('army_list_'.$this->ArmyList->id, 'interface');
-            if($data){
-                Cache::delete('army_list_'.$this->ArmyList->id, 'interface');
-            }
-            $data = Cache::read('army_lists_all', 'interface');
-            if($data){
-                Cache::delete('army_lists_all', 'interface');
-            }
-            $data = Cache::read('army_lists_nohide', 'interface');
-            if($data){
-                Cache::delete('army_lists_nohide', 'interface');
-            }
+            //cache killer
+            $this->_cacheController($data['ArmyList']);
+
             $this->flashMessage(__('Army list deleted'), 'alert-success', $this->referer());
         }
         $this->flashMessage(__('Army list was not deleted'), 'alert-error', $this->referer());
@@ -152,7 +132,7 @@ class ArmyListsController extends AppController {
     public function my_armies() {
         $this->request->onlyAllow('get');
 
-        $data = Cache::read('army_lists_'.$this->request->query['u_id'], 'interface');
+        $data = Cache::read('_user_'.$this->request->query['u_id'], 'army_lists');
         if(!$data){
             $data = $this->ArmyList->find(
                 'all',
@@ -162,21 +142,44 @@ class ArmyListsController extends AppController {
                     )
                 )
             );
-            Cache::write('army_lists_'.$this->request->query['u_id'], $data, 'interface');
+            Cache::write('_user_'.$this->request->query['u_id'], $data, 'army_lists');
         }
 
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
     }
 
      /**
-     * API all_armies to return a list of public army lists
+     * API all_armies to return all armies
      *
      * @return void
      */
-    public function all_armies() {
+    public function all_armies($id = null) {
         $this->request->onlyAllow('get');
 
-        $data = Cache::read('army_lists_nohide', 'interface');
+        $data = null;
+
+        if($id == "f105ba99dd7a53287d7fd30fd9ebc691765dbc39557bd9d22") {
+            $data = Cache::read('all', 'army_lists');
+            if(!$data){
+                $data = $this->ArmyList->find(
+                    'all'
+                );
+                Cache::write('all', $data, 'army_lists');
+            }
+        }
+
+        return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
+    }
+
+     /**
+     * API public_armies to return a list of public army lists
+     *
+     * @return void
+     */
+    public function public_armies() {
+        $this->request->onlyAllow('get');
+
+        $data = Cache::read('notHidden', 'army_lists');
         if(!$data){
             $data = $this->ArmyList->find(
                 'all',
@@ -186,7 +189,7 @@ class ArmyListsController extends AppController {
                     )
                 )
             );
-            Cache::write('army_lists_nohide', $data, 'interface');
+            Cache::write('notHidden', $data, 'army_lists');
         }
 
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
@@ -219,19 +222,11 @@ class ArmyListsController extends AppController {
 
         $data = array('ArmyList' => $this->request->data);
         $this->ArmyList->create();
-        if ($this->ArmyList->save($data)) {
-            $cache = Cache::read('army_lists_'.$this->request->data['users_id'], 'interface');
-            if($cache){
-                Cache::delete('army_lists_'.$this->request->data['users_id'], 'interface');
-            }
-            $cache = Cache::read('army_lists_all', 'interface');
-            if($cache){
-                Cache::delete('army_lists_all', 'interface');
-            }
-            $cache = Cache::read('army_lists_nohide', 'interface');
-            if($cache){
-                Cache::delete('army_lists_nohide', 'interface');
-            }
+        if ($this->ArmyList->save($this->request->data)) {
+
+            //cache killer
+            $this->_cacheController($this->request->data);
+
             return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
         } else {
             return $this->Rest->response(500, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));
@@ -246,7 +241,12 @@ class ArmyListsController extends AppController {
     public function edit_armies($id = null) {
         $this->request->onlyAllow('get');
 
-        $data = Cache::read('army_list_'.$id, 'interface');
+        $this->ArmyList->id = $id;
+        if (!$this->ArmyList->exists()) {
+            throw new NotFoundException(__('Invalid army list'));
+        }
+
+        $data = Cache::read('_army_'.$id, 'army_lists');
         if(!$data){
             $data = $this->ArmyList->find(
                 'first',
@@ -256,7 +256,7 @@ class ArmyListsController extends AppController {
                     )
                 )
             );
-            Cache::write('army_list_'.$id, $data, 'interface');
+            Cache::write('_army_'.$id, $data, 'army_lists');
         }
 
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
@@ -290,22 +290,10 @@ class ArmyListsController extends AppController {
 
         $data = array('ArmyList' => $this->request->data);
         if ($this->ArmyList->save($data)) {
-            $cache = Cache::read('army_list_'.$this->ArmyList->id, 'interface');
-            if($cache){
-                Cache::delete('army_list_'.$this->ArmyList->id, 'interface');
-            }
-            $cache = Cache::read('army_lists_'.$this->request->data['users_id'], 'interface');
-            if($cache){
-                Cache::delete('army_lists_'.$this->request->data['users_id'], 'interface');
-            }
-            $cache = Cache::read('army_lists_all', 'interface');
-            if($cache){
-                Cache::delete('army_lists_all', 'interface');
-            }
-            $cache = Cache::read('army_lists_nohide', 'interface');
-            if($cache){
-                Cache::delete('army_lists_nohide', 'interface');
-            }
+            $this->request->data['id'] = $id;
+            //cache killer
+            $this->_cacheController($this->request->data);
+
             return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
         } else {
             return $this->Rest->response(500, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));

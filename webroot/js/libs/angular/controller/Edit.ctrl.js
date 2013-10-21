@@ -1,10 +1,10 @@
 function EditCtrl($scope, $routeParams, $location, list) {
 	$scope.user_id = $sid;
 
-	$scope.$routeParams = $routeParams;
-	console.log("Edit");
+	$scope.routeParams = $routeParams;
+	console.log("Edit", $scope.routeParams.id);
 
-	var promise_types = list.getAsync('GET', '/edit_army/1.json', {});
+	var promise_types = list.getAsync('GET', '/edit_army/'+$scope.routeParams.id+'.json', {});
 
 	promise_types.then(function( data ){
 		$scope.name = list.data.ArmyList.name;
@@ -19,7 +19,7 @@ function EditCtrl($scope, $routeParams, $location, list) {
 		} else {
 			$scope.formMessage = "";
 
-			var promise_post = list.getAsync('POST', '/edit/save/1.json', {'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
+			var promise_post = list.getAsync('POST', '/edit/save/'+$scope.routeParams.id+'.json', {'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
 
 			promise_post.then(function( data ){
 				if(list.data.code == 200) {
