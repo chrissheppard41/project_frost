@@ -18,6 +18,8 @@ function EditCtrl($scope, $routeParams, list) {
 			$scope.formMessage = "Form contains errors";
 		} else {
 			$scope.formMessage = "";
+
+
 		}
 	};
 }
