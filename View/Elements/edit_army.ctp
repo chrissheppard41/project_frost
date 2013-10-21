@@ -49,6 +49,7 @@
 		       	/>
 		       	<span class="error" ng-show="edit_army_list.points_limit.$error.minlength">Your name must be longer than 3 characters</span>
 		       	<span class="error" ng-show="edit_army_list.points_limit.$error.maxlength">Your name cannot be longer than 11 characters</span>
+		       	<span class="error" ng-show="edit_army_list.points_limit.$error.number">Must contain numbers</span>
 			</span>
 		</span>
 		<span class="form-group">

@@ -77,6 +77,10 @@ class ArmyListsController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->ArmyList->save($this->request->data)) {
+                $cache = Cache::read('army_list_'.$this->ArmyList->id, 'interface');
+                if($cache){
+                    Cache::delete('army_list_'.$this->ArmyList->id, 'interface');
+                }
                 $data = Cache::read('army_lists_'.$this->request->data['users_id'], 'interface');
                 if($data){
                     Cache::delete('army_lists_'.$this->request->data['users_id'], 'interface');
@@ -116,9 +120,9 @@ class ArmyListsController extends AppController {
             throw new NotFoundException(__('Invalid army list'));
         }
         if ($this->ArmyList->delete()) {
-            $data = Cache::read('army_lists_'.$this->ArmyList->id, 'interface');
+            $data = Cache::read('army_list_'.$this->ArmyList->id, 'interface');
             if($data){
-                Cache::delete('army_lists_'.$this->ArmyList->id, 'interface');
+                Cache::delete('army_list_'.$this->ArmyList->id, 'interface');
             }
             $data = Cache::read('army_lists_all', 'interface');
             if($data){
@@ -256,5 +260,55 @@ class ArmyListsController extends AppController {
         }
 
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
+    }
+
+    /**
+     * API save_army to saves a submitted army
+     *
+     * @return void
+     */
+
+    public function edit_save_army($id = null) {
+        $this->request->onlyAllow('post');
+
+        $this->ArmyList->id = $id;
+        if (!$this->ArmyList->exists()) {
+            throw new NotFoundException(__('Invalid army list'));
+        }
+
+        $requiredParams = array(
+            'name' => null,
+            'descr' => null,
+            'point_limit' => null,
+            'users_id' => null
+        );
+
+        // check that all required params have been supplied
+        if ($this->_hasRequiredParams($requiredParams, $this->request->data)) {
+            throw new BadRequestException(__('Incorrect parameters supplied'));
+        }
+
+        $data = array('ArmyList' => $this->request->data);
+        if ($this->ArmyList->save($data)) {
+            $cache = Cache::read('army_list_'.$this->ArmyList->id, 'interface');
+            if($cache){
+                Cache::delete('army_list_'.$this->ArmyList->id, 'interface');
+            }
+            $cache = Cache::read('army_lists_'.$this->request->data['users_id'], 'interface');
+            if($cache){
+                Cache::delete('army_lists_'.$this->request->data['users_id'], 'interface');
+            }
+            $cache = Cache::read('army_lists_all', 'interface');
+            if($cache){
+                Cache::delete('army_lists_all', 'interface');
+            }
+            $cache = Cache::read('army_lists_nohide', 'interface');
+            if($cache){
+                Cache::delete('army_lists_nohide', 'interface');
+            }
+            return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
+        } else {
+            return $this->Rest->response(500, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));
+        }
     }
 }

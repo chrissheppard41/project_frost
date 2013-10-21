@@ -554,3 +554,12 @@ Request URL: /edit_army/1.json?url=%2Fedit_army%2F1.json
 Stack Trace:
 #0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-10-21 14:58:35 Error: [BadRequestException] Incorrect parameters supplied
+Request URL: /edit/save/1.json?url=%2Fedit%2Fsave%2F1.json
+Stack Trace:
+#0 [internal function]: ArmyListsController->edit_save_army('1')
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ArmyListsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ArmyListsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
