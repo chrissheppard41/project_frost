@@ -12,6 +12,8 @@ function EditCtrl($scope, $routeParams, list) {
 	});
 
 	$scope.submit_edit = function() {
+		//not a number apparently
+		console.log($scope.edit_army_list.points_limit.$error);
 		if ($scope.edit_army_list.$invalid) {
 			$scope.formMessage = "Form contains errors";
 		} else {

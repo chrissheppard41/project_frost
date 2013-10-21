@@ -67,7 +67,7 @@ class PagesController extends AppController {
 	public function partials($element = null) {
 		$this->layout = 'ajax';
 		if(!$element) {
-            throw new NotFoundException(__('Invalid element'));
+			throw new NotFoundException(__('Invalid element'));
 		}
 
 		$this->set(compact('element'));
