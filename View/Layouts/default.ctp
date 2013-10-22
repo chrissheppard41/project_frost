@@ -35,6 +35,9 @@
 	<?php
 		/* Including scripts. Also outputting any inline script files and any inline buffered code. */
 		//echo $this->Html->script(array('example/script.js'));
+		echo $this->Html->script(array(
+			'libs/moment.js'
+			));
 		echo $this->fetch('script');
 		echo $this->Js->writeBuffer(array('onDomReady' => true));
 	?>

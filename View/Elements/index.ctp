@@ -18,8 +18,8 @@
 			<td>{{army.ArmyList.descr | truncate:50}}</td>
 			<td>{{army.ArmyList.point_limit}}</td>
 			<td>{{army.ArmyList.hide}}</td>
-			<td>{{army.ArmyList.created}}</td>
-			<td>{{army.ArmyList.modified}}</td>
+			<td>{{dateMomment(army.ArmyList.created)}}</td>
+			<td>{{dateMomment(army.ArmyList.modified)}}</td>
 			<td class="actions">
 				<a href="#/view/{{army.ArmyList.id}}" class="btn-sm btn-primary">View</a>
 				<a href="#/edit/{{army.ArmyList.id}}" class="btn-sm btn-warning">Edit</a>
@@ -49,8 +49,8 @@
 			<td>{{army.ArmyList.descr | truncate:50}}</td>
 			<td>{{army.ArmyList.point_limit}}</td>
 			<td>{{army.ArmyList.hide}}</td>
-			<td>{{army.ArmyList.created}}</td>
-			<td>{{army.ArmyList.modified}}</td>
+			<td>{{dateMomment(army.ArmyList.created)}}</td>
+			<td>{{dateMomment(army.ArmyList.modified)}}</td>
 			<td class="actions">
 				<a href="#{{army.ArmyList.code}}" class="btn-sm btn-primary">View</a>
 			</td>

@@ -14,4 +14,8 @@ function DisplayCtrl($scope, $http, list) {
 	promise_all.then(function( data ){
 		$scope.all_armies = list.data;
 	});
+
+	$scope.dateMomment = function(value) {
+		return moment(value, 'YYYY-MM-DD HH:mm:ss').fromNow();
+	};
 }
