@@ -45,8 +45,7 @@ class ArmyListsController extends AppController {
     public function admin_add() {
         if ($this->request->is('post')) {
 
-            $salt = substr(md5(uniqid(rand(), true)), 0, 9);
-            $this->request->data['code'] = $salt . sha1($salt . time() . $this->request->data['users_id']);
+            $this->request->data['ArmyList']['code'] = $this->ArmyList->_generateCode($this->request->data['users_id']);
 
             $this->ArmyList->create();
             if ($this->ArmyList->save($this->request->data)) {
