@@ -8,10 +8,14 @@ function DisplayCtrl($scope, $http, list) {
 		$scope.my_armies = list.data;
 	});
 
-	var promise_all = list.getAsync('GET', '/allarmies.json', {});
+	var promise_all = list.getAsync('GET', '/publicarmies.json', {});
 	$scope.all_armies = {};
 
 	promise_all.then(function( data ){
 		$scope.all_armies = list.data;
 	});
+
+	$scope.dateMomment = function(value) {
+		return moment(value, 'YYYY-MM-DD HH:mm:ss').fromNow();
+	};
 }

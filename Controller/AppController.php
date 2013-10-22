@@ -58,7 +58,7 @@ class AppController extends Controller {
 		//$this->restoreLoginFromCookie();
 
 		if($this->request->is('admin') && $this->Auth->user('is_admin') === "0") {
-            $this->flashMessage(__('You do not have acces to this area'), 'alert-danger', '/');
+			$this->flashMessage(__('You do not have acces to this area'), 'alert-danger', '/');
 		}
 	}
 
@@ -102,9 +102,9 @@ class AppController extends Controller {
 	 */
 	public function admin_save_order($id) {
 		if (!$this->request->is('post') ||
-		    !$this->request->is('ajax') ||
-		    !is_numeric($id) ||
-		    !isset($this->request->data['order'])
+			!$this->request->is('ajax') ||
+			!is_numeric($id) ||
+			!isset($this->request->data['order'])
 		) {
 			$responseData = array(
 				'success' => 0,
@@ -192,9 +192,9 @@ class AppController extends Controller {
 
 		/* Generating the email headers. */
 		$email->template($template, $layout)
-		      ->emailFormat('both')
-		      ->to($recipient)
-		      ->subject($subject);
+			  ->emailFormat('both')
+			  ->to($recipient)
+			  ->subject($subject);
 
 		/* Selecting which helpers should be available in the template. */
 		$email->helpers(array('Html', 'Text'));
@@ -211,5 +211,39 @@ class AppController extends Controller {
 	protected function _hasRequiredParams($suppliedParams, $requiredParams) {
 		$diff = array_diff_key($suppliedParams, $requiredParams);
 		return !empty($diff);
+	}
+
+	/**
+	 * controls cache handler
+	 *
+	 * @return bool
+	 */
+	protected function _cacheController($data) {
+
+		$cache = Cache::read('all', 'army_lists');
+		if($cache){
+			Cache::delete('all', 'army_lists');
+		}
+
+		if(isset($data['hide'])) {
+			$cache = Cache::read('notHidden', 'army_lists');
+			if($cache){
+				Cache::delete('notHidden', 'army_lists');
+			}
+		}
+
+		if(!empty($data['users_id'])) {
+			$cache = Cache::read('_user_'.$data['users_id'], 'army_lists');
+			if($cache){
+				Cache::delete('_user_'.$data['users_id'], 'army_lists');
+			}
+		}
+
+		if(!empty($data['id'])) {
+			$cache = Cache::read('_army_'.$data['id'], 'army_lists');
+			if($cache){
+				Cache::delete('_army_'.$data['id'], 'army_lists');
+			}
+		}
 	}
 }

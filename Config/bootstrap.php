@@ -30,10 +30,10 @@ Cache::config('default', array('engine' => 'File'));
 
 // set up cache stores
 Cache::config(
-	'interface', array(
+	'army_lists', array(
 	    'engine' => 'File',
 	    'duration' => '+1 week',
-	    'path' => CACHE . 'interface' . DS,
+	    'path' => CACHE . 'army_lists' . DS,
 	    'prefix' => '_'
 	)
 );

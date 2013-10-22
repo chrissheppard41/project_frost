@@ -18,9 +18,11 @@
 	Router::connect('/armytypes', array('controller' => 'raceTypes', 'action' => 'racetypes'));
 	//Army lists
 	Router::connect('/armies', array('controller' => 'armyLists', 'action' => 'my_armies'));
-	Router::connect('/allarmies', array('controller' => 'armyLists', 'action' => 'all_armies'));
-	Router::connect('/save', array('controller' => 'armyLists', 'action' => 'save_army'));
+	Router::connect('/allarmies/:id', array('controller' => 'armyLists', 'action' => 'all_armies'), array('pass' => array('id')));
+	Router::connect('/publicarmies', array('controller' => 'armyLists', 'action' => 'public_armies'));
+	Router::connect('/add/save', array('controller' => 'armyLists', 'action' => 'save_army'));
 	Router::connect('/edit_army/:id', array('controller' => 'armyLists', 'action' => 'edit_armies'), array('pass' => array('id')));
+	Router::connect('/edit/save/:id', array('controller' => 'armyLists', 'action' => 'edit_save_army'), array('pass' => array('id')));
 	//Squads
 	Router::connect('/squads', array('controller' => 'squads', 'action' => 'squads'));
 
