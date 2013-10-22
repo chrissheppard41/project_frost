@@ -28,7 +28,7 @@
 				<td><?php echo h($armyList['ArmyList']['point_limit']); ?></td>
 				<td><?php echo h(($armyList['ArmyList']['hide'])?"Private":"Public"); ?></td>
 				<td><?php echo $this->Html->link($armyList['Races']['name'], array('controller' => 'races', 'action' => 'view', $armyList['Races']['id'])); ?></td>
-				<td><?php echo $this->Html->link($armyList['Users']['name'], array('controller' => 'users', 'action' => 'view', $armyList['Users']['id'])); ?></td>
+				<td><?php echo $this->Html->link((($armyList['Users']['username'])?$armyList['Users']['username']:$armyList['Users']['email']), array('controller' => 'users', 'action' => 'view', $armyList['Users']['id'])); ?></td>
 				<td><?php echo h($this->Time->timeAgoInWords($armyList['ArmyList']['created'])); ?></td>
 				<td><?php echo h($this->Time->timeAgoInWords($armyList['ArmyList']['modified'])); ?></td>
 				<td class="actions">
