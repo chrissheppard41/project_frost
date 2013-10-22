@@ -103,4 +103,16 @@ class ArmyList extends AppModel {
 			'order' => ''
 		)
 	);
+
+
+/**
+ * _generateCode to saves a submitted army
+ *
+ * @return hash (string)
+ */
+
+    public function _generateCode($id) {
+        $salt = substr(md5(uniqid(rand(), true)), 0, 9);
+        return $salt . sha1($salt . time() . $id);
+    }
 }

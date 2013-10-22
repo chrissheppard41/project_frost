@@ -45,8 +45,7 @@ class ArmyListsController extends AppController {
     public function admin_add() {
         if ($this->request->is('post')) {
 
-            $salt = substr(md5(uniqid(rand(), true)), 0, 9);
-            $this->request->data['code'] = $salt . sha1($salt . time() . $this->request->data['users_id']);
+            $this->request->data['ArmyList']['code'] = $this->ArmyList->_generateCode($this->request->data['users_id']);
 
             $this->ArmyList->create();
             if ($this->ArmyList->save($this->request->data)) {
@@ -132,17 +131,21 @@ class ArmyListsController extends AppController {
     public function my_armies() {
         $this->request->onlyAllow('get');
 
-        $data = Cache::read('_user_'.$this->request->query['u_id'], 'army_lists');
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden'));
+        }
+
+        $data = Cache::read('_user_'.$this->Auth->user('id'), 'army_lists');
         if(!$data){
             $data = $this->ArmyList->find(
                 'all',
                 array(
                     'conditions' => array(
-                        'users_id' => $this->request->query['u_id']
+                        'users_id' => $this->Auth->user('id')
                     )
                 )
             );
-            Cache::write('_user_'.$this->request->query['u_id'], $data, 'army_lists');
+            Cache::write('_user_'.$this->Auth->user('id'), $data, 'army_lists');
         }
 
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
@@ -156,17 +159,24 @@ class ArmyListsController extends AppController {
     public function all_armies($id = null) {
         $this->request->onlyAllow('get');
 
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden'));
+        }
+
         $data = null;
 
-        if($id == "f105ba99dd7a53287d7fd30fd9ebc691765dbc39557bd9d22") {
-            $data = Cache::read('all', 'army_lists');
-            if(!$data){
-                $data = $this->ArmyList->find(
-                    'all'
-                );
-                Cache::write('all', $data, 'army_lists');
-            }
+        if($id != "f105ba99dd7a53287d7fd30fd9ebc691765dbc39557bd9d22") {
+            throw new ForbiddenException(__('Unauthorized access'));
         }
+
+        $data = Cache::read('all', 'army_lists');
+        if(!$data){
+            $data = $this->ArmyList->find(
+                'all'
+            );
+            Cache::write('all', $data, 'army_lists');
+        }
+
 
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
     }
@@ -195,7 +205,7 @@ class ArmyListsController extends AppController {
         return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
     }
 
-     /**
+    /**
      * API save_army to saves a submitted army
      *
      * @return void
@@ -208,17 +218,18 @@ class ArmyListsController extends AppController {
             'races_id' => null,
             'name' => null,
             'descr' => null,
-            'point_limit' => null,
-            'users_id' => null
+            'point_limit' => null
         );
 
         // check that all required params have been supplied
         if ($this->_hasRequiredParams($requiredParams, $this->request->data)) {
             throw new BadRequestException(__('Incorrect parameters supplied'));
         }
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden'));
+        }
 
-        $salt = substr(md5(uniqid(rand(), true)), 0, 9);
-        $this->request->data['code'] = $salt . sha1($salt . time() . $this->request->data['users_id']);
+        $this->request->data['code'] = $this->ArmyList->_generateCode($this->Auth->user('id'));
 
         $data = array('ArmyList' => $this->request->data);
         $this->ArmyList->create();
@@ -229,7 +240,7 @@ class ArmyListsController extends AppController {
 
             return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
         } else {
-            return $this->Rest->response(500, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));
+            return $this->Rest->response(400, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));
         }
     }
 
@@ -245,7 +256,9 @@ class ArmyListsController extends AppController {
         if (!$this->ArmyList->exists()) {
             throw new NotFoundException(__('Invalid army list'));
         }
-
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden'));
+        }
 
         $data = Cache::read('_army_'.$id, 'army_lists');
         if(!$data){
@@ -277,12 +290,14 @@ class ArmyListsController extends AppController {
         if (!$this->ArmyList->exists()) {
             throw new NotFoundException(__('Invalid army list'));
         }
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden'));
+        }
 
         $requiredParams = array(
             'name' => null,
             'descr' => null,
-            'point_limit' => null,
-            'users_id' => null
+            'point_limit' => null
         );
 
         // check that all required params have been supplied
@@ -290,6 +305,13 @@ class ArmyListsController extends AppController {
             throw new BadRequestException(__('Incorrect parameters supplied'));
         }
 
+        $query = $this->ArmyList->read(null, $id);
+
+        if((int)$query['ArmyList']['users_id'] !== $this->Auth->user('id')) {
+            throw new ForbiddenException(__('Forbidden'));
+        }
+
+        $this->request->data['users_id'] = $this->Auth->user('id');
         $data = array('ArmyList' => $this->request->data);
         if ($this->ArmyList->save($data)) {
             $this->request->data['id'] = $id;
@@ -298,7 +320,7 @@ class ArmyListsController extends AppController {
 
             return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
         } else {
-            return $this->Rest->response(500, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));
+            return $this->Rest->response(400, __('Army Lists'), array('error' => $this->ArmyList->validationErrors));
         }
     }
 }

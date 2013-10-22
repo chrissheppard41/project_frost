@@ -24,7 +24,7 @@
 	Router::connect('/edit_army/:id', array('controller' => 'armyLists', 'action' => 'edit_armies'), array('pass' => array('id')));
 	Router::connect('/edit/save/:id', array('controller' => 'armyLists', 'action' => 'edit_save_army'), array('pass' => array('id')));
 	//Squads
-	Router::connect('/squads', array('controller' => 'squads', 'action' => 'squads'));
+	Router::connect('/squads/:id', array('controller' => 'squads', 'action' => 'squads'), array('pass' => array('id')));
 
 
 	//Partials views routing

@@ -19,7 +19,7 @@ function EditCtrl($scope, $routeParams, $location, list) {
 		} else {
 			$scope.formMessage = "";
 //+'/'+$scope.routeParams.hash
-			var promise_post = list.getAsync('POST', '/edit/save/'+$scope.routeParams.id+'.json', {'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
+			var promise_post = list.getAsync('POST', '/edit/save/'+$scope.routeParams.id+'.json', {'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide});
 
 			promise_post.then(function( data ){
 				if(list.data.code == 200) {

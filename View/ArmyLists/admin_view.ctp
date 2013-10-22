@@ -38,7 +38,7 @@
 	  		</div>
 	  		<div class="row">
 	  			<span class="col-md-3"><?php echo __('User'); ?></span>
-	  			<span class="col-md-9"><?php echo $this->Html->link($armyList['Users']['name'], array('controller' => 'users', 'action' => 'view', $armyList['Users']['id'])); ?></span>
+	  			<span class="col-md-9"><?php echo $this->Html->link((($armyList['Users']['username'])?$armyList['Users']['username']:$armyList['Users']['email']), array('controller' => 'users', 'action' => 'view', $armyList['Users']['id'])); ?></span>
 	  		</div>
 	  		<div class="row">
 	  			<span class="col-md-3"><?php echo __('Created'); ?></span>
