@@ -37,6 +37,22 @@ Cache::config(
 	    'prefix' => '_'
 	)
 );
+Cache::config(
+	'races', array(
+	    'engine' => 'File',
+	    'duration' => '+1 week',
+	    'path' => CACHE . 'races' . DS,
+	    'prefix' => '_'
+	)
+);
+Cache::config(
+	'squads', array(
+	    'engine' => 'File',
+	    'duration' => '+1 week',
+	    'path' => CACHE . 'squads' . DS,
+	    'prefix' => '_'
+	)
+);
 
 /**
  * You can attach event listeners to the request lifecyle as Dispatcher Filter . By Default CakePHP bundles two filters:

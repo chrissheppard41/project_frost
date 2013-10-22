@@ -7,7 +7,7 @@ function AddCtrl($scope, $routeParams, $location, list) {
 	$scope.step_3_view = true;
 	$scope.step_4_view = true;
 
-	var promise_types = list.getAsync('GET', '/armytypes.json', {u_id: $scope.user_id});
+	var promise_types = list.getAsync('GET', '/armytypes.json', {});
 	$scope.my_armies = {};
 
 	promise_types.then(function( data ){
@@ -21,7 +21,7 @@ function AddCtrl($scope, $routeParams, $location, list) {
 	};
 
 	$scope.dis_squads = function() {
-		var promise_squads = list.getAsync('GET', '/squads.json', {races_id:$scope.race});
+		var promise_squads = list.getAsync('GET', '/squad/'+$scope.race+'.json', {});
 		$scope.squads = {};
 
 		promise_squads.then(function( data ){
@@ -68,7 +68,7 @@ function AddCtrl($scope, $routeParams, $location, list) {
 		} else {
 			$scope.formMessage = "";
 
-			var promise_post = list.getAsync('POST', '/add/save.json', {'races_id':this.race, 'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide, 'users_id':$scope.user_id});
+			var promise_post = list.getAsync('POST', '/add/save.json', {'races_id':this.race, 'name':this.name, 'descr':this.descr, 'point_limit':this.points_limit, 'hide':this.hide});
 
 			promise_post.then(function( data ){
 				if(list.data.code == 200) {

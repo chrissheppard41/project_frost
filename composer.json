@@ -9,6 +9,9 @@
         "facebook/php-sdk": "dev-master",
         "aws/aws-sdk-php": "2.*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
     "authors": [
         {
             "name": "Chris Sheppard",

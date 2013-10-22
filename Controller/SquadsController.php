@@ -137,32 +137,31 @@ class SquadsController extends AppController {
      * @return void
      */
 
-    public function squads() {
+    public function squads($id = null) {
         $this->request->onlyAllow('get');
         unset($this->request->query['url']);
 
-        $requiredParams = array(
-            'races_id'
-        );
-
-        // check that all required params have been supplied
-        if (!$this->_hasRequiredParams($this->request->query, $requiredParams)) {
-            throw new BadRequestException(__('Incorrect parameters supplied'));
+        $this->Squad->id = $id;
+        if (!$this->Squad->exists()) {
+            throw new NotFoundException(__('Invalid squad'));
+        }
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden'));
         }
 
-        $data = Cache::read('squads_raceid_'.$this->request->query['races_id'], 'interface');
+        $data = Cache::read('_squad_'.$this->Squad->id, 'squads');
         if(!$data) {
             $data = $this->Squad->find(
                 'all',
                 array(
                     'conditions' => array(
-                        'Races.id' => $this->request->query['races_id']
+                        'Races.id' => $this->Squad->id
                     )
                 )
             );
-            Cache::write('squads_raceid_'.$this->request->query['races_id'], $data, 'interface');
+            Cache::write('_squad_'.$this->Squad->id, $data, 'squads');
         }
 
-        return $this->Rest->response(200, __('squads'), array('data' => $data));
+        return $this->Rest->response(200, __('Squads'), array('data' => $data));
     }
 }

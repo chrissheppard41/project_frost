@@ -44,9 +44,9 @@ class RacesController extends AppController {
         if ($this->request->is('post')) {
             $this->Race->create();
             if ($this->Race->save($this->request->data)) {
-                $data = Cache::read('races_all', 'interface');
+                $data = Cache::read('all', 'races');
                 if($data){
-                    Cache::delete('races_all', 'interface');
+                    Cache::delete('all', 'races');
                 }
 
                 $this->flashMessage(__('The race has been saved'), 'alert-success', array('action' => 'index'));
@@ -71,9 +71,9 @@ class RacesController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->Race->save($this->request->data)) {
-                $data = Cache::read('races_all', 'interface');
+                $data = Cache::read('all', 'races');
                 if($data){
-                    Cache::delete('races_all', 'interface');
+                    Cache::delete('all', 'races');
                 }
 
                 $this->flashMessage(__('The race has been saved'), 'alert-success', array('action' => 'index'));
@@ -102,9 +102,9 @@ class RacesController extends AppController {
             throw new NotFoundException(__('Invalid race'));
         }
         if ($this->Race->delete()) {
-            $data = Cache::read('races_all', 'interface');
+            $data = Cache::read('all', 'races');
             if($data){
-                Cache::delete('races_all', 'interface');
+                Cache::delete('all', 'races');
             }
             $this->flashMessage(__('Race deleted'), 'alert-success', $this->referer());
         }
@@ -126,12 +126,12 @@ class RacesController extends AppController {
     public function races() {
         $this->request->onlyAllow('get');
 
-        $data = Cache::read('races_all', 'interface');
+        $data = Cache::read('all', 'races');
         if(!$data) {
             $data = $this->Race->find(
                 'all'
             );
-            Cache::write('races_all', $data, 'interface');
+            Cache::write('all', $data, 'races');
         }
         //$this->Race->pre($data);
         return $this->Rest->response(200, __('races'), array('data' => $data));
