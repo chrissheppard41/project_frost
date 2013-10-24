@@ -1,1 +1,1 @@
-angular.module('tool', ['filters', 'listServices', 'route_helper']);
+angular.module('tool', ['filters', 'listServices', 'route_helper', 'dialog']);

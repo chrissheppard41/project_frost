@@ -1,7 +1,7 @@
-function DisplayCtrl($scope, $http, list) {
+function DisplayCtrl($scope, $http, list, $rootScope) {
 	$scope.user_id = $sid;
 
-	var promise_my = list.getAsync('GET', '/armies.json', {u_id: $scope.user_id});
+	var promise_my = list.getAsync('GET', '/armies.json', {});
 	$scope.my_armies = {};
 
 	promise_my.then(function( data ){
@@ -18,4 +18,38 @@ function DisplayCtrl($scope, $http, list) {
 	$scope.dateMomment = function(value) {
 		return moment(value, 'YYYY-MM-DD HH:mm:ss').fromNow();
 	};
+
+	$scope.submit_delete = function(id) {
+
+		var promise_delete = list.getAsync('DELETE', '/delete_army/'+id+'.json', {});
+
+		promise_delete.then(function( data ){
+
+			if(list.data.code == 200) {
+				var promise_my = list.getAsync('GET', '/armies.json', {});
+				$scope.my_armies = {};
+
+				promise_my.then(function( data ){console.log(data);
+					$scope.my_armies = list.data;
+				});
+			} else {
+				//error here
+				//$scope.message = list.errors;
+			}
+		});
+
+		return false;
+	};
+
+
+
+
+	//test
+	/*var promise_my = list.getSecure('GET', '/squads/4.json', {});
+	$scope.my_armies = {};
+
+	promise_my.then(function( data ){
+		console.log("-->", list.data);
+	});*/
+
 }

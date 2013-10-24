@@ -39,4 +39,27 @@ class AppModel extends Model {
 
 		return true;
 	}
+
+
+	/**
+	 *	method to tackle bad requests by checking the presented access tokens and time stamps
+	 *
+	 *	@return array
+	 */
+	public function auth_check($token, $session_data = array()) {
+
+		if(empty($session_data)) {
+			return false;
+		}
+
+		if($token != $session_data['access']) {
+			return false;
+		}
+
+		if((time()+1) < $session_data['time']) {
+			return false;
+		}
+
+		return true;
+	}
 }
