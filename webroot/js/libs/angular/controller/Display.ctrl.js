@@ -40,4 +40,16 @@ function DisplayCtrl($scope, $http, list, $rootScope) {
 
 		return false;
 	};
+
+
+
+
+	//test
+	/*var promise_my = list.getSecure('GET', '/squads/4.json', {});
+	$scope.my_armies = {};
+
+	promise_my.then(function( data ){
+		console.log("-->", list.data);
+	});*/
+
 }

@@ -10,6 +10,12 @@ App::import('Vendor', array('file' => 'Facebook'));
 */
 class SocialController extends AppController {
 
+/**
+ * Components
+ * @var array
+ */
+    public $components = array('Rest');
+
 	public function init_basic() {
 		$this->autoRender = false;
 		$this->facebook = new Facebook(array(
@@ -64,5 +70,28 @@ class SocialController extends AppController {
         $this->Auth->login();
 
         $this->redirect("/");
+    }
+
+    /**
+     * generate creates an access token for the user when making API requests
+    **/
+    public function generate() {
+        $this->request->onlyAllow('get');
+
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden: Not logged in'));
+        }
+
+        $time = time();
+        $nonce = time() . rand(1000, 9999);
+
+        $salt = substr(md5(uniqid(rand(), true)), 0, 9);
+        $access = $salt . sha1($salt . time() . $nonce);
+
+
+        $this->Session->write('Token.time', $time);
+        $this->Session->write('Token.access', $access);
+
+        return $this->Rest->response(200, __('Token'), array('data' => $access));
     }
 }

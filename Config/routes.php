@@ -27,6 +27,8 @@
 	Router::connect('/view_army/:id', array('controller' => 'armyLists', 'action' => 'view_army'), array('pass' => array('id')));
 	//Squads
 	Router::connect('/squads/:id', array('controller' => 'squads', 'action' => 'squads'), array('pass' => array('id')));
+	//access generations
+	Router::connect('/access', array('controller' => 'social', 'action' => 'generate'));
 
 
 	//Partials views routing

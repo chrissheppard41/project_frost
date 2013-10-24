@@ -21,7 +21,8 @@ function AddCtrl($scope, $routeParams, $location, list) {
 	};
 
 	$scope.dis_squads = function() {
-		var promise_squads = list.getAsync('GET', '/squads/'+$scope.race+'.json', {});
+		//var promise_squads = list.getAsync('GET', '/squads/'+$scope.race+'.json', {});
+		var promise_squads = list.getSecure('GET', '/squads/'+$scope.race+'.json', {});
 		$scope.squads = {};
 
 		promise_squads.then(function( data ){

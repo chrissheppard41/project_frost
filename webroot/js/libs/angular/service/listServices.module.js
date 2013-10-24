@@ -41,6 +41,28 @@ angular.module('listServices', []).
 
             return deferred.promise;
         };
+        sharedService.getSecure = function ($method, $url, $params) {
+            var self = this;
+
+            var deferred = $q.defer();
+
+            var promise_access = this.getAsync('GET', '/access.json', {});
+
+            promise_access.then(function( data ){
+                $params = $.extend({}, $params, {'access': data});
+
+                var promise_results = self.getAsync($method, $url, $params);
+
+                promise_results.then(function( innerdata ){
+                    self.data = innerdata;
+
+                    deferred.resolve(self.data);
+                });
+
+            });
+
+            return deferred.promise;
+        };
 
         return sharedService;
 

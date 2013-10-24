@@ -76,19 +76,24 @@ class SquadsControllerTest extends ControllerTestCase {
 	public function testSquads() {
 		$Squads = $this->generate('Squads', array(
 			'components' => array(
-				'Auth' => array('user')
+				'Auth' => array('user'),
+				'Session'
 			)
 		));
 		$Squads->Auth->staticExpects($this->any())
 			->method('user')
 			->with()
 			->will($this->returnValue(true));
+		$Squads->Session->expects($this->any())
+			->method('read')
+			->with()
+			->will($this->returnValue(array('access' => 'testing_purposes_only', 'time' => time())));
 
 
         @Cache::delete('_race_1', 'squads');
 		$this->testAction(
 			'/squads/1',
-			array('method' => 'get')
+			array('data' => array('access' => 'testing_purposes_only'), 'method' => 'get')
 		);
 
 		$expected = array(
@@ -183,17 +188,74 @@ class SquadsControllerTest extends ControllerTestCase {
 	public function testSquadsForbiddenException() {
 		$Squads = $this->generate('Squads', array(
 			'components' => array(
-				'Auth' => array('user')
+				'Auth' => array('user'),
+				'Session'
 			)
 		));
 		$Squads->Auth->staticExpects($this->any())
 			->method('user')
 			->with()
 			->will($this->returnValue(false));
+		$Squads->Session->expects($this->any())
+			->method('read')
+			->with()
+			->will($this->returnValue(array('access' => 'testing_purposes_only', 'time' => time())));
 
 		$this->testAction(
 			'/squads/1',
+			array('data' => array('access' => 'testing_purposes_only'), 'method' => 'get')
+		);
+	}
+
+/**
+ * testSquadsBadRequestException method exception
+ * @expectedException BadRequestException
+ *
+ * @return void
+ */
+	public function testSquadsBadRequestException() {
+		/*$Squads = $this->generate('Squads', array(
+			'components' => array(
+				'Auth' => array('user'),
+				'Session'
+			)
+		));
+		$Squads->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(false));
+		$Squads->Session->expects($this->any())
+			->method('read')
+			->with()
+			->will($this->returnValue(array('access' => 'testing_purposes_only', 'time' => time())));
+*/
+		$this->testAction(
+			'/squads/1',
 			array('method' => 'get')
+		);
+	}
+
+/**
+ * testSquadsBadAccessBadRequestException method exception
+ * @expectedException BadRequestException
+ *
+ * @return void
+ */
+	public function testSquadsBadAccessBadRequestException() {
+		$Squads = $this->generate('Squads', array(
+			'components' => array(
+				'Auth' => array('user'),
+				'Session'
+			)
+		));
+		$Squads->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(true));
+
+		$this->testAction(
+			'/squads/1',
+			array('data' => array('access' => 'testing_purposes_only'), 'method' => 'get')
 		);
 	}
 }
