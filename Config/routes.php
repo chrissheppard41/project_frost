@@ -24,6 +24,7 @@
 	Router::connect('/edit_army/:id', array('controller' => 'armyLists', 'action' => 'edit_armies'), array('pass' => array('id')));
 	Router::connect('/edit/save/:id', array('controller' => 'armyLists', 'action' => 'edit_save_army'), array('pass' => array('id')));
 	Router::connect('/delete_army/:id', array('controller' => 'armyLists', 'action' => 'delete_army'), array('pass' => array('id')));
+	Router::connect('/view_army/:id', array('controller' => 'armyLists', 'action' => 'view_army'), array('pass' => array('id')));
 	//Squads
 	Router::connect('/squads/:id', array('controller' => 'squads', 'action' => 'squads'), array('pass' => array('id')));
 

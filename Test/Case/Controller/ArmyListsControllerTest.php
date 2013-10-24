@@ -1124,4 +1124,131 @@ class ArmyListsControllerTest extends ControllerTestCase {
 			array('method' => 'delete')
 		);
 	}
+
+
+/**
+ * testViewArmy method
+ *
+ * @return void
+ */
+	public function testViewArmy() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(1));
+
+		@Cache::delete('_army_1', 'army_lists');
+		$this->testAction(
+			'/view_army/1',
+			array('method' => 'get')
+		);
+
+		$expected = array(
+			'status' => 'OK',
+			'code' => (int) 200,
+			'message' => 'Army Lists',
+			'data' => array(
+				'ArmyList' => array(
+					'id' => '1',
+					'name' => 'Lorem ipsum dolor sit amet',
+					'descr' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+					'point_limit' => '1',
+					'hide' => '1',
+					'code' => 'Lorem ipsum dolor sit amet',
+					'rate' => '1',
+					'races_id' => '1',
+					'users_id' => '1',
+					'created' => '2013-10-22 09:19:23',
+					'modified' => '2013-10-22 09:19:23'
+				),
+				'Races' => array(
+					'id' => '1',
+					'race_types_id' => '1',
+					'name' => 'Lorem ipsum dolor sit amet',
+					'created' => '2013-10-22 09:20:23',
+					'modified' => '2013-10-22 09:20:23'
+				),
+				'Users' => array(
+					'password' => 'Lorem ipsum dolor sit amet',
+					'id' => '1',
+					'social' => 'Lorem ipsum dolor ',
+					'social_id' => 'Lorem ipsum dolor sit amet',
+					'social_access_token' => 'Lorem ipsum dolor sit amet',
+					'username' => 'Lorem ipsum dolor sit amet',
+					'name' => 'Lorem ipsum dolor sit amet',
+					'slug' => 'Lorem ipsum dolor sit amet',
+					'password_token' => 'Lorem ipsum dolor sit amet',
+					'email' => 'Lorem ipsum dolor sit amet',
+					'email_verified' => '1',
+					'email_token' => 'Lorem ipsum dolor sit amet',
+					'email_token_expires' => '2013-10-22 09:20:02',
+					'active' => '1',
+					'last_login' => '2013-10-22 09:20:02',
+					'last_action' => '2013-10-22 09:20:02',
+					'is_admin' => '1',
+					'role' => 'Lorem ipsum dolor sit amet',
+					'lang' => 'Lorem ip',
+					'created' => '2013-10-22 09:20:02',
+					'modified' => '2013-10-22 09:20:02'
+				)
+			),
+			'errors' => null
+		);
+
+		$this->assertEquals($expected, $this->vars['response']);
+		@Cache::delete('_army_1', 'army_lists');
+	}
+
+
+
+/**
+ * testViewArmyNoUserForbiddenException method
+ * @expectedException ForbiddenException
+ */
+	public function testViewArmyNoUserForbiddenException() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(false));
+
+		$this->testAction(
+			'/view_army/1',
+			array('method' => 'get')
+		);
+	}
+
+
+/**
+ * testViewArmyNotFoundNotFoundException method
+ * @expectedException NotFoundException
+ */
+	public function testViewArmyNotFoundNotFoundException() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(1));
+
+		$this->testAction(
+			'/view_army/0',
+			array('method' => 'get')
+		);
+	}
+
+
+
 }

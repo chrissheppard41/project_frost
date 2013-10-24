@@ -1,4 +1,4 @@
-function DisplayCtrl($scope, $http, list) {
+function DisplayCtrl($scope, $http, list, $rootScope) {
 	$scope.user_id = $sid;
 
 	var promise_my = list.getAsync('GET', '/armies.json', {});

@@ -229,8 +229,8 @@ class ArmyListsController extends AppController {
 			throw new ForbiddenException(__('Forbidden: Not logged in'));
 		}
 
-        $this->request->data['code'] = $this->ArmyList->_generateCode($this->Auth->user('id'));
-        $this->request->data['users_id'] = $this->Auth->user('id');
+		$this->request->data['code'] = $this->ArmyList->_generateCode($this->Auth->user('id'));
+		$this->request->data['users_id'] = $this->Auth->user('id');
 
 		$data = array('ArmyList' => $this->request->data);
 		$this->ArmyList->create();
@@ -324,36 +324,72 @@ class ArmyListsController extends AppController {
 			return $this->Rest->response(400, __('Army Lists'), array('errors' => $this->ArmyList->validationErrors));
 		}
 	}
-    /**
-     * API delete_army to delete an existing army
-     *
-     * @return void
-     */
+	/**
+	 * API delete_army to delete an existing army
+	 *
+	 * @return void
+	 */
 
-    public function delete_army($id = null) {
-        $this->request->onlyAllow('delete');
+	public function delete_army($id = null) {
+		$this->request->onlyAllow('delete');
 
-        $this->ArmyList->id = $id;
-        if (!$this->ArmyList->exists()) {
-            throw new NotFoundException(__('Invalid army list'));
-        }
-        if(!$this->Auth->loggedIn()) {
-            throw new ForbiddenException(__('Forbidden: Not logged in'));
-        }
+		$this->ArmyList->id = $id;
+		if (!$this->ArmyList->exists()) {
+			throw new NotFoundException(__('Invalid army list'));
+		}
+		if(!$this->Auth->loggedIn()) {
+			throw new ForbiddenException(__('Forbidden: Not logged in'));
+		}
 
-        $query = $this->ArmyList->read(null, $id);
+		$query = $this->ArmyList->read(null, $id);
 
-        if((int)$query['ArmyList']['users_id'] !== (int)$this->Auth->user('id')) {
-            throw new ForbiddenException(__('Forbidden: Army does not belong to you'));
-        }
+		if((int)$query['ArmyList']['users_id'] !== (int)$this->Auth->user('id')) {
+			throw new ForbiddenException(__('Forbidden: Army does not belong to you'));
+		}
 
-        if ($this->ArmyList->delete()) {
-            //cache killer
-            $this->_cacheController($query['ArmyList']);
+		if ($this->ArmyList->delete()) {
+			//cache killer
+			$this->_cacheController($query['ArmyList']);
 
-            return $this->Rest->response(200, __('Army Lists'), array('data' => null));
-        }
+			return $this->Rest->response(200, __('Army Lists'), array('data' => null));
+		}
 
-        return $this->Rest->response(400, __('Army Lists'), array('errors' => array('Unable to delete army '.$id)));
-    }
+		return $this->Rest->response(400, __('Army Lists'), array('errors' => array('Unable to delete army '.$id)));
+	}
+
+	/**
+	 * API view_army to view an existing army
+	 *
+	 * @return void
+	 */
+
+	public function view_army($id = null) {
+		$this->request->onlyAllow('get');
+
+		$this->ArmyList->id = $id;
+		if (!$this->ArmyList->exists()) {
+			throw new NotFoundException(__('Invalid army list'));
+		}
+		if(!$this->Auth->loggedIn()) {
+			throw new ForbiddenException(__('Forbidden: Not logged in'));
+		}
+
+		$data = Cache::read('_army_'.$id, 'army_lists');
+		if(!$data){
+			$data = $this->ArmyList->find(
+				'first',
+				array(
+					'conditions' => array(
+						'ArmyList.id' => $id,
+						'users_id' => $this->Auth->user('id')
+					)
+				)
+			);
+			Cache::write('_army_'.$id, $data, 'army_lists');
+		}
+
+
+		return $this->Rest->response(200, __('Army Lists'), array('data' => $data));
+
+	}
 }
