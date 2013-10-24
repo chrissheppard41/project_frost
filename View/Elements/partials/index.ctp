@@ -49,7 +49,7 @@
 			<td>{{dateMomment(army.ArmyList.created)}}</td>
 			<td>{{dateMomment(army.ArmyList.modified)}}</td>
 			<td class="actions">
-				<a href="#{{army.ArmyList.code}}" class="btn-sm btn-primary">View</a>
+				<a href="#/view/{{army.ArmyList.code}}" class="btn-sm btn-primary">View</a>
 			</td>
 		</tr>
 	</table>

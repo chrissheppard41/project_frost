@@ -32,5 +32,6 @@
 	echo $this->Html->script('libs/angular/controller/Add.ctrl', array('inline' => false));
 	echo $this->Html->script('libs/angular/controller/Display.ctrl', array('inline' => false));
 	echo $this->Html->script('libs/angular/controller/Edit.ctrl', array('inline' => false));
+	echo $this->Html->script('libs/angular/controller/View.ctrl', array('inline' => false));
 
 ?>
