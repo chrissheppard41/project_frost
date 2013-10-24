@@ -85,7 +85,7 @@ class SquadsControllerTest extends ControllerTestCase {
 			->will($this->returnValue(true));
 
 
-        @Cache::delete('_squad_1', 'squads');
+        @Cache::delete('_race_1', 'squads');
 		$this->testAction(
 			'/squads/1',
 			array('method' => 'get')
@@ -171,20 +171,7 @@ class SquadsControllerTest extends ControllerTestCase {
 		);
 
 		$this->assertEquals($expected, $this->vars['response']);
-        @Cache::delete('_squad_1', 'squads');
-	}
-
-/**
- * testSquadsNotFoundException method exception
- * @expectedException NotFoundException
- *
- * @return void
- */
-	public function testSquadsNotFoundException() {
-		$this->testAction(
-			'/squads/0',
-			array('method' => 'get')
-		);
+        @Cache::delete('_race_1', 'squads');
 	}
 
 /**

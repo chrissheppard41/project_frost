@@ -970,8 +970,7 @@ class ArmyListsControllerTest extends ControllerTestCase {
 			'code' => (int) 400,
 			'message' => 'Army Lists',
 			'data' => null,
-			'errors' => null,
-			'error' => array(
+			'errors' => array(
 				'name' => array(
 					(int) 0 => 'Please supply a name'
 				),
@@ -984,5 +983,145 @@ class ArmyListsControllerTest extends ControllerTestCase {
 			)
 		);
 		$this->assertEquals($expected, $this->vars['response']);
+	}
+
+
+/**
+ * testDeleteArmy method
+ *
+ * @return void
+ */
+	public function testDeleteArmy() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(1));
+
+		$this->testAction(
+			'/delete_army/1',
+			array('method' => 'delete')
+		);
+
+		$expected = array(
+			'status' => 'OK',
+			'code' => (int) 200,
+			'message' => 'Army Lists',
+			'data' => null,
+			'errors' => null,
+		);
+
+		$this->assertEquals($expected, $this->vars['response']);
+
+	}
+
+/**
+ * testDeleteArmy method
+ *
+ * @return void
+ */
+	public function testDeleteArmyBadResponse() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			),
+			'models' => array(
+				'ArmyList' => array('delete')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(1));
+
+		$ArmyLists->ArmyList->expects($this->once())
+			->method('delete')
+			->with()
+			->will($this->returnValue(false));
+
+		$this->testAction(
+			'/delete_army/1',
+			array('method' => 'delete')
+		);
+
+		$expected = array(
+			'status' => 'Bad Request',
+			'code' => (int) 400,
+			'message' => 'Army Lists',
+			'data' => null,
+			'errors' => array('Unable to delete army 1'),
+		);
+
+		$this->assertEquals($expected, $this->vars['response']);
+
+	}
+
+/**
+ * testDeleteArmyNoUserForbiddenException method
+ * @expectedException ForbiddenException
+ */
+	public function testDeleteArmyNoUserForbiddenException() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(false));
+
+		$this->testAction(
+			'/delete_army/1',
+			array('method' => 'delete')
+		);
+	}
+
+
+/**
+ * testDeleteArmyNotMyArmyForbiddenException method
+ * @expectedException ForbiddenException
+ */
+	public function testDeleteArmyNotMyArmyForbiddenException() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(2));
+
+		$this->testAction(
+			'/delete_army/1',
+			array('method' => 'delete')
+		);
+	}
+
+
+/**
+ * testDeleteArmyNotFoundNotFoundException method
+ * @expectedException NotFoundException
+ */
+	public function testDeleteArmyNotFoundNotFoundException() {
+		$ArmyLists = $this->generate('ArmyLists', array(
+			'components' => array(
+				'Auth' => array('user')
+			)
+		));
+		$ArmyLists->Auth->staticExpects($this->any())
+			->method('user')
+			->with()
+			->will($this->returnValue(1));
+
+		$this->testAction(
+			'/delete_army/0',
+			array('method' => 'delete')
+		);
 	}
 }

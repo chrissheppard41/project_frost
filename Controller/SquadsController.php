@@ -141,25 +141,21 @@ class SquadsController extends AppController {
         $this->request->onlyAllow('get');
         unset($this->request->query['url']);
 
-        $this->Squad->id = $id;
-        if (!$this->Squad->exists()) {
-            throw new NotFoundException(__('Invalid squad'));
-        }
         if(!$this->Auth->loggedIn()) {
             throw new ForbiddenException(__('Forbidden'));
         }
 
-        $data = Cache::read('_squad_'.$this->Squad->id, 'squads');
+        $data = Cache::read('_race_'.$id, 'squads');
         if(!$data) {
             $data = $this->Squad->find(
                 'all',
                 array(
                     'conditions' => array(
-                        'Races.id' => $this->Squad->id
+                        'Races.id' => $id
                     )
                 )
             );
-            Cache::write('_squad_'.$this->Squad->id, $data, 'squads');
+            Cache::write('_race_'.$id, $data, 'squads');
         }
 
         return $this->Rest->response(200, __('Squads'), array('data' => $data));

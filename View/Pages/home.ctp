@@ -27,8 +27,10 @@
 	echo $this->Html->script('libs/angular/service/filters.module', array('inline' => false));
 	echo $this->Html->script('libs/angular/service/listServices.module', array('inline' => false));
 	echo $this->Html->script('libs/angular/service/routeHelper.module', array('inline' => false));
+	echo $this->Html->script('libs/angular/service/ngConfirmClick.directive', array('inline' => false));
 
 	echo $this->Html->script('libs/angular/controller/Add.ctrl', array('inline' => false));
 	echo $this->Html->script('libs/angular/controller/Display.ctrl', array('inline' => false));
 	echo $this->Html->script('libs/angular/controller/Edit.ctrl', array('inline' => false));
+
 ?>
