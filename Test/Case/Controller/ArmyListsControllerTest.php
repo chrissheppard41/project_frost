@@ -1230,7 +1230,7 @@ class ArmyListsControllerTest extends ControllerTestCase {
 
 /**
  * testViewArmyNotFoundNotFoundException method
- * @expectedException NotFoundException
+ *
  */
 	public function testViewArmyNotFoundNotFoundException() {
 		$ArmyLists = $this->generate('ArmyLists', array(
@@ -1247,6 +1247,16 @@ class ArmyListsControllerTest extends ControllerTestCase {
 			'/view_army/0',
 			array('method' => 'get')
 		);
+		$expected = array(
+			'status' => 'OK',
+			'code' => (int) 200,
+			'message' => 'Army Lists',
+			'data' => array(),
+			'errors' => null
+		);
+
+		$this->assertEquals($expected, $this->vars['response']);
+
 	}
 
 

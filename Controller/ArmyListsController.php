@@ -366,10 +366,6 @@ class ArmyListsController extends AppController {
 	public function view_army($id = null) {
 		$this->request->onlyAllow('get');
 
-		$this->ArmyList->id = $id;
-		if (!$this->ArmyList->exists()) {
-			throw new NotFoundException(__('Invalid army list'));
-		}
 		if(!$this->Auth->loggedIn()) {
 			throw new ForbiddenException(__('Forbidden: Not logged in'));
 		}
@@ -380,12 +376,19 @@ class ArmyListsController extends AppController {
 				'first',
 				array(
 					'conditions' => array(
-						'ArmyList.id' => $id,
-						'users_id' => $this->Auth->user('id')
+                        'or' => array(
+                            'and' => array(
+                                'ArmyList.id' => $id,
+                                'users_id' => $this->Auth->user('id')
+                            ),
+                            'code' => $id
+                        )
 					)
 				)
 			);
-			Cache::write('_army_'.$id, $data, 'army_lists');
+            if(!empty($data)) {
+                Cache::write('_army_'.$id, $data, 'army_lists');
+            }
 		}
 
 
