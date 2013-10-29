@@ -23,7 +23,7 @@ function DisplayCtrl($scope, $http, list, $rootScope) {
 
 		var promise_delete = list.getAsync('DELETE', '/delete_army/'+id+'.json', {});
 
-		promise_delete.then(function( data ){
+		promise_delete.then(function( data ) {
 
 			if(list.data.code == 200) {
 				var promise_my = list.getAsync('GET', '/armies.json', {});
@@ -41,15 +41,5 @@ function DisplayCtrl($scope, $http, list, $rootScope) {
 		return false;
 	};
 
-
-
-
-	//test
-	/*var promise_my = list.getSecure('GET', '/squads/4.json', {});
-	$scope.my_armies = {};
-
-	promise_my.then(function( data ){
-		console.log("-->", list.data);
-	});*/
 
 }

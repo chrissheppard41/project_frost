@@ -826,3 +826,181 @@ Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
 Stack Trace:
 #0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-10-29 11:01:51 Error: [UnexpectedValueException] Referenced fixture class Races (Test/Fixture/RacesFixture.php) not found
+Stack Trace:
+#0 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(79): CakeFixtureManager->_loadFixtures(Array)
+#1 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(UnitTypesControllerTest))
+#2 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#4 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#5 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#6 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#7 {main}
+2013-10-29 11:02:16 Error: [UnexpectedValueException] Referenced fixture class Races (Test/Fixture/RacesFixture.php) not found
+Stack Trace:
+#0 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(79): CakeFixtureManager->_loadFixtures(Array)
+#1 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(UnitTypesControllerTest))
+#2 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#4 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#5 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#6 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#7 {main}
+2013-10-29 11:02:19 Error: [UnexpectedValueException] Referenced fixture class Races (Test/Fixture/RacesFixture.php) not found
+Stack Trace:
+#0 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(79): CakeFixtureManager->_loadFixtures(Array)
+#1 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(UnitTypesControllerTest))
+#2 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#4 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#5 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#6 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#7 {main}
+2013-10-29 11:02:32 Error: [UnexpectedValueException] Referenced fixture class Types (Test/Fixture/TypesFixture.php) not found
+Stack Trace:
+#0 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(79): CakeFixtureManager->_loadFixtures(Array)
+#1 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(UnitTypesControllerTest))
+#2 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#4 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#5 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#6 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#7 {main}
+2013-10-29 11:02:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(2923): PDOStatement->execute()
+#1 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(284): DboSource->insertMulti('unit_types', Array, Array)
+#2 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(214): CakeTestFixture->insert(Object(Mysql))
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestCase.php(82): CakeFixtureManager->load(Object(UnitTypesControllerTest))
+#4 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/Framework/TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/Framework/TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(UnitTypesControllerTest), Object(PHPUnit_Framework_TestResult))
+#6 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/TextUI/TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(62): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#10 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#11 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#12 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2013-10-29 11:04:11 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(2923): PDOStatement->execute()
+#1 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(284): DboSource->insertMulti('unit_types', Array, Array)
+#2 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(214): CakeTestFixture->insert(Object(Mysql))
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestCase.php(82): CakeFixtureManager->load(Object(UnitTypesControllerTest))
+#4 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/Framework/TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/Framework/TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(UnitTypesControllerTest), Object(PHPUnit_Framework_TestResult))
+#6 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/TextUI/TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(62): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#10 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#11 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#12 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2013-10-29 11:04:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(2923): PDOStatement->execute()
+#1 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeTestFixture.php(284): DboSource->insertMulti('unit_types', Array, Array)
+#2 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(214): CakeTestFixture->insert(Object(Mysql))
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestCase.php(82): CakeFixtureManager->load(Object(UnitTypesControllerTest))
+#4 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/Framework/TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/Framework/TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(UnitTypesControllerTest), Object(PHPUnit_Framework_TestResult))
+#6 /var/www/frost/Vendor/phpunit/phpunit/PHPUnit/TextUI/TestRunner.php(349): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#7 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(62): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#10 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#11 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#12 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#13 {main}
+2013-10-29 11:05:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:05:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:06:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:06:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:07:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:09:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:09:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.icon.png?url=%2Fimg%2Fcake.icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:09:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:09:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 11:10:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

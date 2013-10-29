@@ -12,7 +12,7 @@
 		if (strripos(str_replace('www.', '', env('HTTP_HOST')), '.rehabstudio.com')) {
 			echo $this->Html->meta(array('name' => 'robots', 'content' => 'noindex, nofollow'));
 		}
-		echo $this->Html->css(array('libs/bootstrap.min.css', 'libs/bootstrap.css'));
+		echo $this->Html->css(array('libs/bootstrap.min.css', 'libs/bootstrap.css', 'main.css'));
 
 		/* Including CSS and favicon. Also outputting blocks of inline meta and CSS. */
 		//echo $this->Html->css(array('example/styles.css'));
@@ -30,6 +30,7 @@
 	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="/js/libs/jquery-ui-1.10.2.min.js"></script>
 	<script src="/js/libs/angular/angular.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 	<?php

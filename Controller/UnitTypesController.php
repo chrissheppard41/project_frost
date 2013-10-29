@@ -7,6 +7,12 @@ App::uses('AppController', 'Controller');
  */
 class UnitTypesController extends AppController {
 /**
+ * Components
+ * @var array
+ */
+    public $components = array('Rest');
+
+/**
  * admin_index method
  *
  * @return void
@@ -98,5 +104,36 @@ class UnitTypesController extends AppController {
             $this->flashMessage(__('Unit type deleted'), 'alert-success', $this->referer());
         }
         $this->flashMessage(__('Unit type was not deleted'), 'alert-error', $this->referer());
+    }
+
+
+    /**
+     * API endpoints
+     */
+
+     /**
+     * API unit_types to return all unit types
+     *
+     * @return void
+     */
+    public function unit_types() {
+        $this->request->onlyAllow('get');
+
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden: Not logged in'));
+        }
+
+        $data = Cache::read('all', 'unit_types');
+        if(!$data){
+            $data = $this->UnitType->find(
+                'all',
+                array(
+                    'recursive' => -1
+                )
+            );
+            Cache::write('all', $data, 'unit_types');
+        }
+
+        return $this->Rest->response(200, __('Unit Types'), array('data' => $data));
     }
 }

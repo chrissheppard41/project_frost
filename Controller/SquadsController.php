@@ -84,9 +84,9 @@ class SquadsController extends AppController {
 				if($data){
 					Cache::delete('squads_'.$id, 'interface');
 				}
-				$data = Cache::read('squads_raceid_'.$this->request->data['Squad']['races_id'], 'interface');
+				$data = Cache::read('_race_'.$this->request->data['Squad']['races_id'], 'squads');
 				if($data){
-					Cache::delete('squads_raceid_'.$this->request->data['Squad']['races_id'], 'interface');
+					Cache::delete('_race_'.$this->request->data['Squad']['races_id'], 'squads');
 				}
 				$this->flashMessage(__('The squad has been saved'), 'alert-success', array('action' => 'index'));
 			} else {
