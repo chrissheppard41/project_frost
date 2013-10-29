@@ -26,9 +26,14 @@
 	Router::connect('/delete_army/:id', array('controller' => 'armyLists', 'action' => 'delete_army'), array('pass' => array('id')));
 	Router::connect('/view_army/:id', array('controller' => 'armyLists', 'action' => 'view_army'), array('pass' => array('id')));
 	//Squads
-	Router::connect('/squads/:id', array('controller' => 'squads', 'action' => 'squads'), array('pass' => array('id')));
+	Router::connect('/squads/:id', array('controller' => 'squads', 'action' => 'squads_race'), array('pass' => array('id')));
+	Router::connect('/squads_unit/:id', array('controller' => 'squads', 'action' => 'squads_unit'), array('pass' => array('id')));
 	//access generations
 	Router::connect('/access', array('controller' => 'social', 'action' => 'generate'));
+	//Unit types
+	Router::connect('/unit_types', array('controller' => 'unitTypes', 'action' => 'unit_types'));
+	//Unit
+	Router::connect('/unit/:id', array('controller' => 'units', 'action' => 'unit'), array('pass' => array('id')));
 
 
 	//Partials views routing

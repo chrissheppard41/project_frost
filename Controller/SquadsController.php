@@ -84,9 +84,9 @@ class SquadsController extends AppController {
 				if($data){
 					Cache::delete('squads_'.$id, 'interface');
 				}
-				$data = Cache::read('squads_raceid_'.$this->request->data['Squad']['races_id'], 'interface');
+				$data = Cache::read('_race_'.$this->request->data['Squad']['races_id'], 'squads');
 				if($data){
-					Cache::delete('squads_raceid_'.$this->request->data['Squad']['races_id'], 'interface');
+					Cache::delete('_race_'.$this->request->data['Squad']['races_id'], 'squads');
 				}
 				$this->flashMessage(__('The squad has been saved'), 'alert-success', array('action' => 'index'));
 			} else {
@@ -132,12 +132,12 @@ class SquadsController extends AppController {
 	 */
 
 	 /**
-	 * API squads to return a list of squads related to race
+	 * API squads_race to return a list of squads related to race
 	 *
 	 * @return void
 	 */
 
-	public function squads($id = null) {
+	public function squads_race($id = null) {
 		$this->request->onlyAllow('get');
 
 		$requiredParams = array(
@@ -168,6 +168,47 @@ class SquadsController extends AppController {
 				)
 			);
 			Cache::write('_race_'.$id, $data, 'squads');
+		}
+
+		return $this->Rest->response(200, __('Squads'), array('data' => $data));
+	}
+
+	 /**
+	 * API squads_unit to return a list of squads related to race
+	 *
+	 * @return void
+	 */
+
+	public function squads_unit($id = null) {
+		$this->request->onlyAllow('get');
+
+		$requiredParams = array(
+			'access' => null
+		);
+
+		// check that all required params have been supplied
+		if ($this->_hasRequiredParams($requiredParams, $this->request->query)) {
+			throw new BadRequestException(__('Incorrect parameters supplied'));
+		}
+
+		if(!$this->Squad->auth_check($this->request->query['access'], $this->Session->read('Token'))) {
+			throw new BadRequestException(__('Forbidden: Bad request'));
+		}
+
+		if(!$this->Auth->loggedIn()) {
+			throw new ForbiddenException(__('Forbidden: Not logged in'));
+		}
+
+		$data = Cache::read('_squad_unit_'.$id, 'squads');
+		if(!$data) {
+
+			$this->SquadOption = ClassRegistry::init('SquadOption');
+			$this->Option = ClassRegistry::init('Option');
+
+			$data = $this->Squad->squad_data($id, $this->SquadOption, $this->Option);
+
+
+			Cache::write('_squad_unit_'.$id, $data, 'squads');
 		}
 
 		return $this->Rest->response(200, __('Squads'), array('data' => $data));

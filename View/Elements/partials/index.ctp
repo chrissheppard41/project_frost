@@ -23,6 +23,7 @@
 			<td class="actions">
 				<a href="#/view/{{army.ArmyList.id}}" class="btn-sm btn-primary">View</a>
 				<a href="#/edit/{{army.ArmyList.id}}" class="btn-sm btn-warning">Edit</a>
+				<a href="#/setup/{{army.ArmyList.id}}" class="btn-sm btn-info">Setup</a>
 
 				<a href="#/" class="btn-sm btn-danger" ng-confirm-click="Are you sure you want to delete this army?" ng-click="submit_delete(army.ArmyList.id)">Delete</a>
 			</td>

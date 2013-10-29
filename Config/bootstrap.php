@@ -53,6 +53,22 @@ Cache::config(
 	    'prefix' => '_'
 	)
 );
+Cache::config(
+	'units', array(
+	    'engine' => 'File',
+	    'duration' => '+1 week',
+	    'path' => CACHE . 'units' . DS,
+	    'prefix' => '_'
+	)
+);
+Cache::config(
+	'options', array(
+	    'engine' => 'File',
+	    'duration' => '+1 week',
+	    'path' => CACHE . 'options' . DS,
+	    'prefix' => '_'
+	)
+);
 
 /**
  * You can attach event listeners to the request lifecyle as Dispatcher Filter . By Default CakePHP bundles two filters:
