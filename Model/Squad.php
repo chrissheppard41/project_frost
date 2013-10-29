@@ -114,4 +114,79 @@ class Squad extends AppModel {
 			'insertQuery' => ''
 		),
 	);
+
+
+
+	public function squad_data($id, $SquadOption, $Option) {
+
+		$squads = $this->find(
+			'all',
+			array(
+				'conditions' => array(
+					'Races.id' => $id
+				)
+			)
+		);
+
+		foreach($squads as $k => $squad) {
+			$wargear_list = null;
+			foreach($squad['Unit'] as $k2 => $unit) {
+
+				$un = Cache::read('_unit_'.$unit['id'], 'units');
+				if(!$un) {
+					$un = $this->Unit->find(
+						'first',
+						array(
+							'conditions' => array(
+								'Unit.id' => $unit['id']
+							)
+						)
+					);
+					Cache::write('_unit_'.$unit['id'], $un, 'units');
+				}
+				$squads[$k]['Unit'][$k2]['unit_type'] = $un['UnitTypes']['name'];
+				$squads[$k]['Unit'][$k2]['Wargear'] = $un['Option'];
+
+				foreach($un['Option'] as $we) {
+					$wargear_list[] = $we['name'];
+				}
+
+				$upd = $SquadOption->find(
+					'all',
+					array(
+						'conditions' => array(
+							'SquadUnits.units_id' => $unit['id']
+						)
+					)
+				);
+				foreach($upd as $k3 => $upgrade) {
+					$squads[$k]['Unit'][$k2]['Upgrade'][$k3]['Groups'] = $upgrade['Groups'];
+
+					$options = Cache::read('_group_'.$upgrade['Groups']['id'], 'options');
+					if(!$options) {
+						$options = $Option->find(
+							'all',
+							array(
+								'conditions' => array(
+									'Groups.id' => $upgrade['Groups']['id']
+								),
+								'recursive' => 1
+							)
+						);
+						Cache::write('_group_'.$upgrade['Groups']['id'], $options, 'options');
+					}
+
+					foreach($options as $k4 => $option) {
+						$squads[$k]['Unit'][$k2]['Upgrade'][$k3]['Groups']['Option'][$k4] = $option['Option'];
+						$squads[$k]['Unit'][$k2]['Upgrade'][$k3]['Groups']['Option'][$k4]['OptionUpgrades'] = $option['OptionUpgrades'];
+					}
+
+					$squads[$k]['Unit'][$k2]['Upgrade'][$k3]['SquadOption'] = $upgrade['SquadOption'];
+				}
+			}
+			$squads[$k]['Unit_wargear'] = array_values(array_unique($wargear_list));
+		}
+
+		return $squads;
+	}
 }

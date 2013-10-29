@@ -123,7 +123,7 @@ class UnitTypesController extends AppController {
             throw new ForbiddenException(__('Forbidden: Not logged in'));
         }
 
-        $data = Cache::read('all', 'unit_types');
+        $data = Cache::read('all_types', 'units');
         if(!$data){
             $data = $this->UnitType->find(
                 'all',
@@ -131,7 +131,7 @@ class UnitTypesController extends AppController {
                     'recursive' => -1
                 )
             );
-            Cache::write('all', $data, 'unit_types');
+            Cache::write('all_types', $data, 'units');
         }
 
         return $this->Rest->response(200, __('Unit Types'), array('data' => $data));

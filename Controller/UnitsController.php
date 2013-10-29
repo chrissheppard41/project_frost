@@ -7,6 +7,12 @@ App::uses('AppController', 'Controller');
  */
 class UnitsController extends AppController {
 /**
+ * Components
+ * @var array
+ */
+    public $components = array('Rest');
+
+/**
  * admin_index method
  *
  * @return void
@@ -106,5 +112,56 @@ class UnitsController extends AppController {
             $this->flashMessage(__('Unit deleted'), 'alert-success', $this->referer());
         }
         $this->flashMessage(__('Unit was not deleted'), 'alert-error', $this->referer());
+    }
+
+
+    /**
+     * API endpoints
+     */
+
+     /**
+     * API unit_types to return all unit types
+     *
+     * @return void
+     */
+    public function unit($id = null) {
+        $this->request->onlyAllow('get');
+
+        $this->Unit->id = $id;
+        if (!$this->Unit->exists()) {
+            throw new NotFoundException(__('Invalid unit'));
+        }
+
+        $requiredParams = array(
+            'access' => null
+        );
+
+        // check that all required params have been supplied
+        if ($this->_hasRequiredParams($requiredParams, $this->request->query)) {
+            throw new BadRequestException(__('Incorrect parameters supplied'));
+        }
+
+        if(!$this->Unit->auth_check($this->request->query['access'], $this->Session->read('Token'))) {
+            throw new BadRequestException(__('Forbidden: Bad request'));
+        }
+
+        if(!$this->Auth->loggedIn()) {
+            throw new ForbiddenException(__('Forbidden: Not logged in'));
+        }
+
+        $data = Cache::read('_unit_'.$this->Unit->id, 'units');
+        if(!$data){
+            $data = $this->Unit->find(
+                'first',
+                array(
+                    'conditions' => array(
+                        'Unit.id' => $this->Unit->id
+                    )
+                )
+            );
+            Cache::write('_unit_'.$this->Unit->id, $data, 'units');
+        }
+
+        return $this->Rest->response(200, __('Unit'), array('data' => $data));
     }
 }

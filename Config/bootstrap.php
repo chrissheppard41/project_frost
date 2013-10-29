@@ -54,10 +54,18 @@ Cache::config(
 	)
 );
 Cache::config(
-	'unit_types', array(
+	'units', array(
 	    'engine' => 'File',
 	    'duration' => '+1 week',
-	    'path' => CACHE . 'unit_types' . DS,
+	    'path' => CACHE . 'units' . DS,
+	    'prefix' => '_'
+	)
+);
+Cache::config(
+	'options', array(
+	    'engine' => 'File',
+	    'duration' => '+1 week',
+	    'path' => CACHE . 'options' . DS,
 	    'prefix' => '_'
 	)
 );

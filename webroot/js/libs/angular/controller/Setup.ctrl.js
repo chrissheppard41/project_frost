@@ -51,19 +51,9 @@ function SetupCtrl($scope, $routeParams, $location, list) {
 			eachmodel[unit] = {
 				'id': $scope.currentDraggedSquad.Unit[unit].id,
 				'unitType': find[0].UnitType.name,
-				'count': parseInt($scope.currentDraggedSquad.Unit[unit].SquadUnit.min_count),
-				/*'min': parseInt($scope.currentDraggedSquad.Unit[unit].SquadUnit.min_count),
-				'max': parseInt($scope.currentDraggedSquad.Unit[unit].SquadUnit.max_count),
-				'ws': parseInt($scope.currentDraggedSquad.Unit[unit].weapon_skill),
-				'bs': parseInt($scope.currentDraggedSquad.Unit[unit].ballistic_skill),
-				's': parseInt($scope.currentDraggedSquad.Unit[unit].strength),
-				't': parseInt($scope.currentDraggedSquad.Unit[unit].toughness),
-				'w': parseInt($scope.currentDraggedSquad.Unit[unit].wounds),
-				'i': parseInt($scope.currentDraggedSquad.Unit[unit].initiative),
-				'a': parseInt($scope.currentDraggedSquad.Unit[unit].attacks),
-				'ld': parseInt($scope.currentDraggedSquad.Unit[unit].leadership),
-				'sv': parseInt($scope.currentDraggedSquad.Unit[unit].armour_save)*/
+				'count': parseInt($scope.currentDraggedSquad.Unit[unit].SquadUnit.min_count)
 			};
+
 		}
 
 		var thisunit = {

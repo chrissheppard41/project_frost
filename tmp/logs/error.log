@@ -1004,3 +1004,766 @@ Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
 Stack Trace:
 #0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-10-29 12:02:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:02:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:12:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:12:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:13:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:13:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:13:26 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/frost/Controller/UnitsController.php, line 141]
+2013-10-29 12:13:26 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /unit/1
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 141)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 141, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 141, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 12:13:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:13:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:14:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:26:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:26:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:27:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:27:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:27:52 Error: Fatal Error (1): Call to a member function auth_check() on a non-object in [/var/www/frost/Controller/UnitsController.php, line 144]
+2013-10-29 12:27:52 Error: [FatalErrorException] Call to a member function auth_check() on a non-object
+Request URL: /unit/1?access=testing_purposes_only
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 144)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 144, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 144, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 12:27:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:28:49 Error: Fatal Error (1): Call to a member function auth_check() on a non-object in [/var/www/frost/Controller/UnitsController.php, line 144]
+2013-10-29 12:28:49 Error: [FatalErrorException] Call to a member function auth_check() on a non-object
+Request URL: /unit/1?access=testing_purposes_only
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/frost/...', 144)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/frost/...', 144, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/frost/...', 144, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 12:29:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:29:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 12:29:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:10:44 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/frost/Controller/SquadsController.php, line 217]
+2013-10-29 15:10:44 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /squads_unit/4.json?url=%2Fsquads_unit%2F4.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/frost/...', 217)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/frost/...', 217, Array)
+#2 /var/www/cake/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/frost/...', 217, Array)
+#3 /var/www/cake/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-29 15:41:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:41:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:41:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:41:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:41:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:17 Error: [NotFoundException] Invalid squad
+Request URL: /admin/squads/view?url=%2Fadmin%2Fsquads%2Fview
+Stack Trace:
+#0 [internal function]: SquadsController->admin_view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 15:42:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:42:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:29 Error: [NotFoundException] Invalid squad
+Request URL: /admin/squads/view?url=%2Fadmin%2Fsquads%2Fview
+Stack Trace:
+#0 [internal function]: SquadsController->admin_view()
+#1 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#2 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-29 15:44:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/bootstrap-responsive.min.css?url=%2Fcss%2Flibs%2Fbootstrap-responsive.min.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 15:44:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/libs/icons.css?url=%2Fcss%2Flibs%2Ficons.css
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 16:00:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /squads_unit/4.json?url=%2Fsquads_unit%2F4.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `SquadOp...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `SquadOp...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `SquadOp...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2896): DboSource->read(Object(SquadOption), Array)
+#5 /var/www/cake/lib/Cake/Model/Model.php(2868): Model->_readDataSource('all', Array)
+#6 /var/www/frost/Controller/SquadsController.php(253): Model->find('all', Array)
+#7 [internal function]: SquadsController->squads_unit('4')
+#8 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-29 16:00:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Group.id' in 'where clause'
+Request URL: /squads_unit/4.json?url=%2Fsquads_unit%2F4.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `SquadOp...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `SquadOp...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `SquadOp...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2896): DboSource->read(Object(SquadOption), Array)
+#5 /var/www/cake/lib/Cake/Model/Model.php(2868): Model->_readDataSource('all', Array)
+#6 /var/www/frost/Controller/SquadsController.php(253): Model->find('all', Array)
+#7 [internal function]: SquadsController->squads_unit('4')
+#8 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-29 16:05:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Groups.id' in 'where clause'
+Request URL: /squads_unit/4.json?url=%2Fsquads_unit%2F4.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Group`....', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Group`....', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Group`....', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2896): DboSource->read(Object(Group), Array)
+#5 /var/www/cake/lib/Cake/Model/Model.php(2868): Model->_readDataSource('all', Array)
+#6 /var/www/frost/Controller/SquadsController.php(254): Model->find('all', Array)
+#7 [internal function]: SquadsController->squads_unit('4')
+#8 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-29 16:05:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /squads_unit/4.json?url=%2Fsquads_unit%2F4.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Group`....', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Group`....', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Group`....', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2896): DboSource->read(Object(Group), Array)
+#5 /var/www/cake/lib/Cake/Model/Model.php(2868): Model->_readDataSource('all', Array)
+#6 /var/www/frost/Controller/SquadsController.php(254): Model->find('all', Array)
+#7 [internal function]: SquadsController->squads_unit('4')
+#8 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-29 16:16:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Group.id' in 'where clause'
+Request URL: /squads_unit/4.json?url=%2Fsquads_unit%2F4.json
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Option`...', Array)
+#2 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Option`...', Array, Array)
+#3 /var/www/cake/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Option`...', false)
+#4 /var/www/cake/lib/Cake/Model/Model.php(2896): DboSource->read(Object(Option), Array)
+#5 /var/www/cake/lib/Cake/Model/Model.php(2868): Model->_readDataSource('all', Array)
+#6 /var/www/frost/Controller/SquadsController.php(254): Model->find('all', Array)
+#7 [internal function]: SquadsController->squads_unit('4')
+#8 /var/www/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SquadsController), Array)
+#9 /var/www/cake/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cake/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SquadsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-29 17:48:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:48:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:49:24 Error: [CacheException] Cache engine units is not properly configured.
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('units')
+#1 /var/www/frost/Config/bootstrap.php(63): Cache::config('units', Array)
+#2 /var/www/cake/lib/Cake/Core/Configure.php(92): include('/var/www/frost/...')
+#3 /var/www/cake/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#4 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(138): require('/var/www/cake/l...')
+#5 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(100): ShellDispatcher->_bootstrap()
+#6 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(56): ShellDispatcher->_initEnvironment()
+#7 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(67): ShellDispatcher->__construct(Array)
+#8 /var/www/frost/Console/cake.php(41): ShellDispatcher::run(Array)
+#9 {main}
+2013-10-29 17:49:47 Error: [CacheException] Cache engine units is not properly configured.
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('units')
+#1 /var/www/frost/Config/bootstrap.php(63): Cache::config('units', Array)
+#2 /var/www/cake/lib/Cake/Core/Configure.php(92): include('/var/www/frost/...')
+#3 /var/www/cake/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#4 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(138): require('/var/www/cake/l...')
+#5 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(100): ShellDispatcher->_bootstrap()
+#6 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(56): ShellDispatcher->_initEnvironment()
+#7 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(67): ShellDispatcher->__construct(Array)
+#8 /var/www/frost/Console/cake.php(41): ShellDispatcher::run(Array)
+#9 {main}
+2013-10-29 17:50:00 Error: [CacheException] Cache engine units is not properly configured.
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('units')
+#1 /var/www/frost/Config/bootstrap.php(63): Cache::config('units', Array)
+#2 /var/www/cake/lib/Cake/Core/Configure.php(92): include('/var/www/frost/...')
+#3 /var/www/cake/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#4 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(138): require('/var/www/cake/l...')
+#5 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(100): ShellDispatcher->_bootstrap()
+#6 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(56): ShellDispatcher->_initEnvironment()
+#7 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(67): ShellDispatcher->__construct(Array)
+#8 /var/www/frost/Console/cake.php(41): ShellDispatcher::run(Array)
+#9 {main}
+2013-10-29 17:50:30 Error: [CacheException] Cache engine units is not properly configured.
+Stack Trace:
+#0 /var/www/cake/lib/Cake/Cache/Cache.php(151): Cache::_buildEngine('units')
+#1 /var/www/frost/Config/bootstrap.php(63): Cache::config('units', Array)
+#2 /var/www/cake/lib/Cake/Core/Configure.php(92): include('/var/www/frost/...')
+#3 /var/www/cake/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#4 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(138): require('/var/www/cake/l...')
+#5 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(100): ShellDispatcher->_bootstrap()
+#6 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(56): ShellDispatcher->_initEnvironment()
+#7 /var/www/cake/lib/Cake/Console/ShellDispatcher.php(67): ShellDispatcher->__construct(Array)
+#8 /var/www/frost/Console/cake.php(41): ShellDispatcher::run(Array)
+#9 {main}
+2013-10-29 17:51:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:51:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:53:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:53:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:55:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:55:07 Error: [UnexpectedValueException] Referenced fixture class Races (Test/Fixture/RacesFixture.php) not found
+Stack Trace:
+#0 /var/www/cake/lib/Cake/TestSuite/Fixture/CakeFixtureManager.php(79): CakeFixtureManager->_loadFixtures(Array)
+#1 /var/www/cake/lib/Cake/TestSuite/CakeTestRunner.php(57): CakeFixtureManager->fixturize(Object(SquadTest))
+#2 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteCommand.php(97): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(246): CakeTestSuiteCommand->run(Array)
+#4 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(99): CakeTestSuiteDispatcher->_runTestCase()
+#5 /var/www/cake/lib/Cake/TestSuite/CakeTestSuiteDispatcher.php(116): CakeTestSuiteDispatcher->dispatch()
+#6 /var/www/frost/webroot/test.php(98): CakeTestSuiteDispatcher::run()
+#7 {main}
+2013-10-29 17:55:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:55:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/test-fail-icon.png?url=%2Fimg%2Ftest-fail-icon.png
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:56:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-29 17:56:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif?url=%2Fimg%2Fcake.power.gif
+Stack Trace:
+#0 /var/www/frost/webroot/index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

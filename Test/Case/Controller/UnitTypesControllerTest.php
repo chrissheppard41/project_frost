@@ -109,7 +109,7 @@ class UnitTypesControllerTest extends ControllerTestCase {
 			->with()
 			->will($this->returnValue(1));
 
-		@Cache::delete('all', 'unit_types');
+		@Cache::delete('all_types', 'units');
 
 		$this->testAction(
 			'/unit_types',
@@ -137,7 +137,7 @@ class UnitTypesControllerTest extends ControllerTestCase {
 
 
 
-		@Cache::delete('all', 'unit_types');
+		@Cache::delete('all_types', 'units');
 	}
 
 }
