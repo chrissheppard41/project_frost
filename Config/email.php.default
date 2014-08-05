@@ -51,12 +51,12 @@ class EmailConfig {
 
 	public $rehabDev = array(
 		'transport' => 'Smtp',
-		'from' => array('rehabbelfast@gmail.com' => 'rehabstudio'),
+		'from' => array('dfgdfgdfgdfg@gmail.com' => 'dfgdfgdfgdfgdfgdfgdfgd'),
 		'host' => 'ssl://smtp.gmail.com',
 		'port' => 465,
 		'timeout' => 30,
-		'username' => 'rehabbelfast@gmail.com',
-		'password' => 't84F1e6BaHer',
+		'username' => 'dfgdfgdfgfdgd@gmail.com',
+		'password' => 'fbdbdfbdb',
 		'client' => null,
 		'log' => false,
 		'charset' => 'utf-8',
